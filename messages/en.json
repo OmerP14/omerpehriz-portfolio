@@ -1,0 +1,241 @@
+{
+  "personal": {
+    "title": "Full Stack Developer",
+    "tagline": "Building modern web applications, mobile experiences, and digital solutions for businesses and startups.",
+    "bio1": "Hi, I'm Ömer — a Full Stack Developer passionate about building modern digital products that combine performance, functionality, and great user experience. I enjoy turning ideas into real-world solutions that help businesses grow and operate more efficiently.",
+    "bio2": "My expertise covers the entire development process, from frontend interfaces and user experience to backend systems, databases, APIs, and deployment. I build corporate websites, SaaS platforms, admin dashboards, custom business systems, and mobile applications using technologies such as React, Next.js, Node.js, React Native, Supabase, and PostgreSQL.",
+    "bio3": "Beyond software development, I also help businesses strengthen their digital presence through landing pages, logo design, catalogs, and branding-focused digital experiences. Whether it's a web platform, a mobile application, or a complete business website, my goal is always to deliver solutions that are professional, scalable, and easy to maintain.",
+    "availability": "Available for freelance work"
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "services": "Services",
+    "experience": "Experience",
+    "contact": "Contact",
+    "hireMe": "Hire Me"
+  },
+  "hero": {
+    "viewProjects": "View Projects",
+    "downloadCV": "Download CV",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "label": "About Me",
+    "heading": "Turning ideas into",
+    "headingHighlight": "digital reality",
+    "statsYearsLabel": "Years Experience",
+    "statsProjectsLabel": "Projects Shipped",
+    "statsClientsLabel": "Happy Clients",
+    "statsSatisfactionLabel": "Satisfaction Rate",
+    "valueShip": "Ship quality, ship fast",
+    "valueCode": "Clean code, always",
+    "valueDesign": "User-first design"
+  },
+  "projects": {
+    "label": "My Work",
+    "heading": "Projects I'm",
+    "headingHighlight": "proud of",
+    "desc": "Software I've built and designs I've crafted — all for real clients.",
+    "tabSoftware": "Software Projects",
+    "tabDesign": "Design Work",
+    "moreProjects": "More Projects",
+    "seeMore": "See more on GitHub",
+    "liveDemo": "Live Demo",
+    "code": "Code",
+    "viewDetails": "View details",
+    "items": {
+      "saas-analytics-dashboard": {
+        "title": "SaaS Analytics Dashboard",
+        "description": "A comprehensive analytics platform with real-time data visualization, multi-tenant team management, and automated reporting built for a B2B SaaS company.",
+        "longDescription": "This project involved building a full-stack analytics dashboard from scratch for a B2B SaaS client. The platform handles real-time data ingestion, custom chart rendering, and role-based access control across multiple tenant organizations. Key challenges included optimizing database queries for large datasets and building a responsive, data-dense UI that remained intuitive."
+      },
+      "ecommerce-mobile-app": {
+        "title": "E-Commerce Mobile App",
+        "description": "A cross-platform React Native shopping app with product discovery, real-time inventory, Apple Pay / Google Pay, and push notifications for a retail client.",
+        "longDescription": "Built a feature-complete e-commerce mobile application for iOS and Android. The app includes a product catalog with advanced filtering, cart management, integrated payment via Stripe, and order tracking. Implemented push notification campaigns that increased returning customer sessions by 35%."
+      },
+      "restaurant-management-system": {
+        "title": "Restaurant Management System",
+        "description": "Full-stack POS and kitchen management system with real-time order tracking, table management, inventory control, and daily reporting for restaurant chains.",
+        "longDescription": "Developed an end-to-end restaurant management system replacing a legacy paper-based process. The system includes a table-side ordering tablet interface, real-time kitchen display system (KDS), inventory tracking with automatic reorder alerts, and comprehensive sales reporting."
+      },
+      "ai-content-platform": {
+        "title": "AI Content Platform",
+        "description": "A content generation platform powered by AI with team collaboration, content scheduling, SEO analysis, and multi-channel publishing to WordPress, Medium, and social media.",
+        "longDescription": "Built a multi-tenant AI writing assistant platform. Features include AI-powered content generation, collaborative editing with real-time cursors (like Notion), SEO scoring, and one-click publishing to multiple channels. The platform scaled to 500+ active teams within three months of launch."
+      },
+      "real-estate-portal": {
+        "title": "Real Estate Portal",
+        "description": "Property listing platform with interactive maps, advanced search filters, virtual tour integration, mortgage calculator, and agent CRM for a real estate agency.",
+        "longDescription": "Designed and built a full property portal to replace a third-party listing service. Integrated Mapbox for interactive property maps, built a custom search engine with geo-filtering, and connected to a virtual tour provider for immersive property previews."
+      },
+      "fitness-tracking-app": {
+        "title": "Fitness Tracking App",
+        "description": "A React Native fitness app with custom workout plans, progress tracking, macro logging, wearable integration, and a social feed for workout sharing.",
+        "longDescription": "Built a comprehensive fitness tracking mobile application. Users can create custom workout programs, log meals with nutritional data, track body metrics over time, and connect Apple Health / Google Fit. Social features allow sharing workout achievements."
+      }
+    },
+    "designItems": {
+      "restaurant-branding": {
+        "title": "Restaurant Brand Identity",
+        "description": "Full visual identity for a restaurant chain — logo, menu layout, packaging, and brand guidelines."
+      },
+      "tech-company-logo": {
+        "title": "Tech Company Logo & Identity",
+        "description": "Minimal, modern logo design with complete brand guidelines, color palette, and typography system."
+      },
+      "product-catalog": {
+        "title": "Corporate Product Catalog",
+        "description": "40-page professionally designed product catalog with structured layout, photography direction, and print-ready files."
+      },
+      "landing-page-ui": {
+        "title": "SaaS Landing Page UI",
+        "description": "Conversion-focused landing page design with component library, responsive layouts, and developer handoff in Figma."
+      },
+      "retail-brand-identity": {
+        "title": "Retail Brand Identity",
+        "description": "Complete brand identity for a retail store: logo, signage, shopping bag, tag design, and social media templates."
+      },
+      "social-media-kit": {
+        "title": "Social Media Design Kit",
+        "description": "Cohesive set of post, story, and highlight templates for Instagram and LinkedIn — editable and on-brand."
+      }
+    }
+  },
+  "skills": {
+    "label": "Skills & Technologies",
+    "heading": "My",
+    "headingHighlight": "tech stack",
+    "desc": "Tools and technologies I use daily to ship production-grade products."
+  },
+  "services": {
+    "label": "Services",
+    "heading": "What I",
+    "headingHighlight": "build for you",
+    "desc": "End-to-end development services — from design to deployment.",
+    "ctaHeading": "Need something custom?",
+    "ctaDesc": "Every project is unique. Let's talk about what you need and find the best solution.",
+    "ctaButton": "Start a Conversation",
+    "items": [
+      {
+        "title": "Custom Websites",
+        "description": "Premium, responsive websites built with Next.js — fast, SEO-optimized, and designed to convert visitors into customers.",
+        "features": ["Next.js / React", "SEO & Core Web Vitals", "CMS Integration", "Responsive Design"]
+      },
+      {
+        "title": "Mobile Applications",
+        "description": "Cross-platform mobile apps with React Native that feel truly native on both iOS and Android — built once, deployed everywhere.",
+        "features": ["React Native + Expo", "iOS & Android", "App Store Deployment", "Push Notifications"]
+      },
+      {
+        "title": "Admin Dashboards",
+        "description": "Data-rich management interfaces with real-time updates, charts, and role-based access for your internal teams.",
+        "features": ["Real-time Data", "Charts & Analytics", "Role-based Access", "Data Export"]
+      },
+      {
+        "title": "Backend / API Development",
+        "description": "Robust, scalable REST APIs and backend services built on Node.js with proper authentication, validation, and documentation.",
+        "features": ["REST APIs", "JWT / OAuth", "Rate Limiting", "API Documentation"]
+      },
+      {
+        "title": "Database Design",
+        "description": "Efficient relational database schemas, query optimization, and migrations — built for performance and long-term maintainability.",
+        "features": ["PostgreSQL", "Supabase", "Data Modeling", "Query Optimization"]
+      },
+      {
+        "title": "UI/UX Implementation",
+        "description": "Pixel-perfect Figma-to-code implementation with smooth animations, accessibility compliance, and reusable component systems.",
+        "features": ["Figma to Code", "Framer Motion", "Accessibility", "Design Systems"]
+      },
+      {
+        "title": "Technical Consulting",
+        "description": "Architecture reviews, tech stack decisions, code audits, and performance optimization for teams and founders.",
+        "features": ["Architecture Review", "Tech Stack Advice", "Code Audit", "Performance Audit"]
+      }
+    ]
+  },
+  "experience": {
+    "label": "Experience",
+    "heading": "My",
+    "headingHighlight": "journey",
+    "desc": "Where I've worked and what I've learned along the way.",
+    "workTitle": "Work Experience",
+    "educationTitle": "Education",
+    "downloadCV": "Download Full Resume (PDF)",
+    "current": "Current",
+    "work": [
+      {
+        "role": "Senior Full Stack Developer",
+        "company": "Freelance / Self-Employed",
+        "period": "2022 — Present",
+        "description": "Building custom web applications and mobile apps for clients across retail, SaaS, hospitality, and real estate sectors. Managing full project lifecycle from discovery to deployment and post-launch support."
+      },
+      {
+        "role": "Full Stack Developer",
+        "company": "Tech Agency (Placeholder)",
+        "period": "2021 — 2022",
+        "description": "Developed and maintained multiple client web applications. Collaborated with product managers and UI designers to implement features, improve performance, and ensure cross-browser compatibility."
+      },
+      {
+        "role": "Junior Frontend Developer",
+        "company": "Startup (Placeholder)",
+        "period": "2020 — 2021",
+        "description": "Worked on the consumer-facing web application, implementing new features and fixing bugs. Gained hands-on experience with React, REST APIs, and agile development processes."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Science — Computer Science",
+        "institution": "Placeholder University",
+        "period": "2017 — 2021",
+        "description": "Graduated with honors. Focused on software engineering, algorithms, data structures, and web development. Final thesis on real-time collaborative applications."
+      }
+    ]
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "heading": "What clients",
+    "headingHighlight": "say"
+  },
+  "contact": {
+    "label": "Contact",
+    "heading": "Let's",
+    "headingHighlight": "work together",
+    "desc": "Have a project in mind or want to discuss an opportunity? I'd love to hear from you.",
+    "emailLabel": "Email",
+    "locationLabel": "Location",
+    "responseTimeLabel": "Response Time",
+    "responseTimeValue": "Within 24 hours",
+    "findMeOn": "Find me on",
+    "availableTitle": "Currently Available",
+    "availableDesc": "I'm open to freelance projects, full-time roles, and consulting engagements.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "namePlaceholder": "John Doe",
+      "emailPlaceholder": "john@example.com",
+      "subjectPlaceholder": "Project inquiry / Collaboration / Question",
+      "messagePlaceholder": "Tell me about your project — what you're building, timeline, and budget if applicable...",
+      "send": "Send Message",
+      "sending": "Sending…",
+      "successMsg": "Message sent! I'll get back to you within 24 hours.",
+      "errorMsg": "Something went wrong. Please email me directly at omerpehriz4@gmail.com",
+      "nameError": "Name must be at least 2 characters",
+      "emailError": "Please enter a valid email address",
+      "subjectError": "Subject must be at least 5 characters",
+      "messageError": "Message must be at least 20 characters"
+    }
+  },
+  "footer": {
+    "tagline": "Full Stack Developer building premium web and mobile experiences.",
+    "navigation": "Navigation",
+    "getInTouch": "Get in Touch",
+    "available": "Available for freelance",
+    "rights": "All rights reserved.",
+    "backToTop": "Back to top"
+  }
+}
