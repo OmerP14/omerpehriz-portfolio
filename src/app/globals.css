@@ -55,7 +55,6 @@ html {
   -webkit-text-size-adjust: 100%;
   color-scheme: dark;
   width: 100%;
-  overflow-x: clip;
   /* Reserves scrollbar space on both sides — prevents centering shift */
   scrollbar-gutter: stable;
 }

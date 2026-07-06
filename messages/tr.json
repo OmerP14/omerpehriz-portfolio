@@ -2,9 +2,9 @@
   "personal": {
     "title": "Full Stack Geliştirici",
     "tagline": "İşletmeler ve girişimler için modern web uygulamaları, mobil deneyimler ve dijital çözümler geliştiriyorum.",
-    "bio1": "Merhaba, ben Ömer — performans, işlevsellik ve mükemmel kullanıcı deneyimini bir araya getiren modern dijital ürünler oluşturma konusunda tutkulu bir Full Stack Geliştiriciyim. Fikirleri, işletmelerin büyümesine ve daha verimli çalışmasına yardımcı olan gerçek dünya çözümlerine dönüştürmekten keyif alıyorum.",
-    "bio2": "Uzmanlığım, frontend arayüzleri ve kullanıcı deneyiminden backend sistemler, veritabanları, API'ler ve deployment'a kadar geliştirme sürecinin tüm aşamalarını kapsamaktadır. React, Next.js, Node.js, React Native, Supabase ve PostgreSQL gibi teknolojileri kullanarak kurumsal web siteleri, SaaS platformları, yönetim panelleri, özel iş sistemleri ve mobil uygulamalar geliştiriyorum.",
-    "bio3": "Yazılım geliştirmenin yanı sıra, açılış sayfaları, logo tasarımı, kataloglar ve marka odaklı dijital deneyimler aracılığıyla işletmelerin dijital varlıklarını güçlendirmelerine de destek oluyorum. İster bir web platformu, ister mobil uygulama, isterse tam kapsamlı bir kurumsal web sitesi olsun; hedefim her zaman profesyonel, ölçeklenebilir ve bakımı kolay çözümler sunmaktır.",
+    "bio1": "Merhaba, ben Ömer — İstanbul Aydın Üniversitesi Yazılım Mühendisliği mezunuyum; tüm eğitimimi İngilizce dil ortamında tamamladım. Lisans süresince sadece ders değil, gerçek ürünler inşa ettim: web uygulamaları, mobil uygulamalar, yapay zeka destekli araçlar ve gömülü sistemler — her projeyle geliştirme sürecinin tamamına dokunarak.",
+    "bio2": "Deneyimim frontend geliştirme, backend servisleri, veritabanı tasarımı ve API entegrasyonunu kapsıyor. Cabitas'taki stajım boyunca doğrudan canlı sistemler üzerinde çalıştım; veritabanı mimarisine katkı sağladım, uygulama iş akışlarını yönettim ve gerçek bir mühendislik ekibinde yer aldım. Geliştirdiğim her şeye hem yapıcı hem de kalite odaklı bir bakış açısıyla yaklaşıyorum.",
+    "bio3": "Yazılımın yanı sıra dijital ve görsel çalışmalar da üretiyorum: açılış sayfaları, marka tasarımı ve kataloglar. İster bir web platformu, ister mobil uygulama, ister eksiksiz bir dijital varlık olsun — projeyi başından sonuna kadar tek elden yönetiyorum, el değiştirme yok, sahiplik tam.",
     "availability": "Freelance çalışmaya müsait"
   },
   "nav": {
@@ -25,10 +25,14 @@
     "label": "Hakkımda",
     "heading": "Fikirleri",
     "headingHighlight": "dijital gerçeğe dönüştürmek",
-    "statsYearsLabel": "Yıl Deneyim",
-    "statsProjectsLabel": "Teslim Edilen Proje",
-    "statsClientsLabel": "Mutlu Müşteri",
-    "statsSatisfactionLabel": "Memnuniyet Oranı",
+    "cap1Title": "Full Stack Web",
+    "cap1Desc": "React, Next.js & Node.js",
+    "cap2Title": "Mobil Uygulama",
+    "cap2Desc": "React Native, iOS & Android",
+    "cap3Title": "Veritabanı & API",
+    "cap3Desc": "PostgreSQL, Supabase, REST",
+    "cap4Title": "AI Destekli Geliştirme",
+    "cap4Desc": "Modern AI araçlarıyla hızlı ve akıllı build",
     "valueShip": "Kaliteli ve hızlı teslim",
     "valueCode": "Her zaman temiz kod",
     "valueDesign": "Kullanıcı odaklı tasarım"
@@ -46,35 +50,30 @@
     "code": "Kod",
     "viewDetails": "Detayları gör",
     "items": {
-      "saas-analytics-dashboard": {
-        "title": "SaaS Analitik Paneli",
-        "description": "Gerçek zamanlı veri görselleştirme, çok kiracılı ekip yönetimi ve otomatik raporlama özelliklerine sahip kapsamlı bir analitik platformu.",
-        "longDescription": "Bu proje, bir B2B SaaS müşterisi için sıfırdan tam yığınlı bir analitik panosu oluşturmayı kapsıyordu. Platform, gerçek zamanlı veri alımını, özel grafik oluşturmayı ve birden fazla kiracı kuruluş genelinde rol tabanlı erişim kontrolünü yönetiyor. Temel zorluklar arasında büyük veri kümeleri için veritabanı sorgularının optimize edilmesi ve sezgisel kalan duyarlı, veri yoğun bir kullanıcı arayüzü oluşturulması yer aldı."
+      "workify-ai": {
+        "title": "Workify AI – Görev Yönetim Uygulaması",
+        "description": "Backend servisleri, kullanıcı kimlik doğrulama ve üçüncü taraf API entegrasyonlarıyla desteklenen yapay zeka destekli görev ve çalışma alanı yönetim uygulaması.",
+        "longDescription": "Görev ve çalışma alanı yönetimini kolaylaştırmak amacıyla tasarlanan yapay zeka destekli bir üretkenlik platformunun geliştirilmesine katkı sağladım. Backend servisleri oluşturdum, kimlik doğrulama akışlarını hayata geçirdim ve üçüncü taraf API'leri entegre ettim. Geliştirme boyunca API yanıtlarını doğruladım ve sistem güvenilirliğini sağladım."
       },
-      "ecommerce-mobile-app": {
-        "title": "E-Ticaret Mobil Uygulaması",
-        "description": "Ürün keşfi, gerçek zamanlı envanter, Apple Pay / Google Pay ve anlık bildirimler içeren çapraz platform React Native alışveriş uygulaması.",
-        "longDescription": "iOS ve Android için eksiksiz özelliklere sahip bir e-ticaret mobil uygulaması geliştirildi. Uygulama; gelişmiş filtreleme seçenekli ürün kataloğu, sepet yönetimi, Stripe aracılığıyla entegre ödeme ve sipariş takibi içermektedir. Tekrar eden müşteri oturumlarını %35 artıran anlık bildirim kampanyaları uygulandı."
+      "easy-home-rent": {
+        "title": "Easy Home Rent – Kiralama Platformu",
+        "description": "Kullanıcı girişi, ilan yönetimi ve tam CRUD işlemleriyle donatılmış, İstanbul Aydın Üniversitesi'nde akademik proje olarak geliştirilen web tabanlı ev kiralama platformu.",
+        "longDescription": "Üniversite projesi kapsamında ev kiralama yönetimi için uçtan uca bir web uygulaması tasarlayıp geliştirdim. Kullanıcı kaydı ve kimlik doğrulama, ilan listeleme ve arama özellikleri ile kiralama verilerini yönetmek için tam CRUD işlevlerini hayata geçirdim. İşlevsel doğruluğu garantilemek için tüm temel özellikleri geliştirme süresince doğruladım."
       },
-      "restaurant-management-system": {
-        "title": "Restoran Yönetim Sistemi",
-        "description": "Restoran zincirleri için gerçek zamanlı sipariş takibi, masa yönetimi, envanter kontrolü ve günlük raporlama içeren tam yığınlı POS ve mutfak yönetim sistemi.",
-        "longDescription": "Eski kağıt tabanlı süreci değiştiren uçtan uca bir restoran yönetim sistemi geliştirildi. Sistem; masa başı sipariş tablet arayüzü, gerçek zamanlı mutfak ekran sistemi (KDS), otomatik yeniden sipariş uyarılarıyla envanter takibi ve kapsamlı satış raporlaması içermektedir."
+      "myfitly": {
+        "title": "MyFitly – Fitness & Diyet Uygulaması",
+        "description": "Antrenman kaydı, beslenme takibi ve ilerleme izleme özelliklerine sahip çapraz platform mobil fitness ve diyet uygulaması.",
+        "longDescription": "Uygulamalı bir mobil uygulama geliştirme kursu kapsamında fitness ve beslenme takibi için bir mobil uygulama geliştirdim. Egzersiz kaydı, günlük diyet takibi ve ilerleme görselleştirme gibi temel özellikleri hayata geçirdim. iOS ve Android'de tutarlı ve güvenilir bir kullanıcı deneyimi sunmak amacıyla geliştirme süresince uygulama davranışını sürekli doğruladım."
       },
-      "ai-content-platform": {
-        "title": "Yapay Zeka İçerik Platformu",
-        "description": "Ekip iş birliği, içerik planlaması, SEO analizi ve WordPress, Medium ile sosyal medyaya çok kanallı yayın özelliklerine sahip yapay zeka destekli içerik üretim platformu.",
-        "longDescription": "Çok kiracılı yapay zeka yazma asistanı platformu oluşturuldu. Özellikler; yapay zeka destekli içerik üretimi, gerçek zamanlı imleçlerle işbirlikçi düzenleme, SEO puanlaması ve birden fazla kanala tek tıkla yayınlamayı kapsamaktadır. Platform, yayından üç ay içinde 500'den fazla aktif ekibe ulaştı."
+      "firefighting-drone": {
+        "title": "Yangın Söndürme Dronu – Bitirme Projesi",
+        "description": "İstanbul Aydın Üniversitesi bitirme projesi olarak geliştirilen, özerk çalışma kapasitesine sahip yangın söndürme dronunun yazılım mantığı ve kontrol mekanizmaları.",
+        "longDescription": "Bitirme projesi olarak özerk bir yangın söndürme dronu için yazılım sisteminin tamamını tasarlayıp hayata geçirdim. Sistem mimarisi, kontrol akış mantığı ve güvenilir özerk operasyonu mümkün kılmak için sensör entegrasyonuna odaklandım. Sistem güvenliği ve doğruluğunu garanti altına almak amacıyla her aşamada işlevsel doğrulama gerçekleştirdim."
       },
-      "real-estate-portal": {
-        "title": "Gayrimenkul Portalı",
-        "description": "Etkileşimli haritalar, gelişmiş arama filtreleri, sanal tur entegrasyonu, ipotek hesaplayıcı ve bir emlak ajansı için acente CRM içeren mülk listeleme platformu.",
-        "longDescription": "Üçüncü taraf listeleme hizmetinin yerini alacak tam kapsamlı bir mülk portalı tasarlanıp geliştirildi. Etkileşimli mülk haritaları için Mapbox entegre edildi, coğrafi filtrelemeli özel bir arama motoru oluşturuldu ve sürükleyici mülk önizlemeleri için bir sanal tur sağlayıcısıyla bağlantı kuruldu."
-      },
-      "fitness-tracking-app": {
-        "title": "Fitness Takip Uygulaması",
-        "description": "Özel antrenman planları, ilerleme takibi, makro günlüğü, giyilebilir entegrasyon ve antrenman paylaşımı için sosyal akış içeren React Native fitness uygulaması.",
-        "longDescription": "Kapsamlı bir fitness takip mobil uygulaması oluşturuldu. Kullanıcılar özel antrenman programları oluşturabilir, besin değerleriyle öğünlerini kaydedebilir, zaman içinde vücut ölçümlerini takip edebilir ve Apple Health / Google Fit'e bağlanabilir. Sosyal özellikler, antrenman başarılarının paylaşılmasına olanak tanıyor."
+      "iot-smart-monitoring": {
+        "title": "IoT Akıllı İzleme Sistemleri",
+        "description": "Gerçek zamanlı veri toplama, işleme ve otomatik kontrol mantığı için sensör kullanan IoT tabanlı çevresel izleme sistemleri.",
+        "longDescription": "Çevresel veri toplama ve izleme için donanım sensörleri kullanan bir dizi IoT projesi geliştirdim. Veri işleme hatları ve temel otomatik kontrol mantığı kurdum; geliştirme ve test süreçleri boyunca sensör doğruluğunu ve sistem davranışını doğruladım. Gömülü sistemler ve gerçek zamanlı veri akışları konusunda uygulamalı deneyim kazandım."
       }
     },
     "designItems": {
@@ -167,30 +166,24 @@
     "current": "Aktif",
     "work": [
       {
-        "role": "Kıdemli Full Stack Geliştirici",
+        "role": "Full Stack Geliştirici",
         "company": "Serbest Çalışan",
         "period": "2022 — Günümüz",
-        "description": "Perakende, SaaS, konaklama ve gayrimenkul sektörlerindeki müşteriler için özel web uygulamaları ve mobil uygulamalar geliştiriyorum. Keşiften dağıtıma ve lansman sonrası desteğe kadar tüm proje yaşam döngüsünü yönetiyorum."
+        "description": "Farklı sektörlerdeki müşteriler için web uygulamaları, mobil uygulamalar ve tasarım projeleri geliştirip teslim ediyorum. Gereksinim analizinden mimariye, geliştirmeden test ve deploy'a kadar tüm süreçleri uçtan uca yönetiyorum."
       },
       {
-        "role": "Full Stack Geliştirici",
-        "company": "Teknoloji Ajansı (Placeholder)",
-        "period": "2021 — 2022",
-        "description": "Birden fazla müşteri web uygulaması geliştirdim ve bakımını üstlendim. Özellikleri hayata geçirmek, performansı iyileştirmek ve tarayıcılar arası uyumluluğu sağlamak için ürün yöneticileri ve UI tasarımcılarıyla iş birliği yaptım."
-      },
-      {
-        "role": "Junior Frontend Geliştirici",
-        "company": "Startup (Placeholder)",
-        "period": "2020 — 2021",
-        "description": "Tüketiciye yönelik web uygulaması üzerinde çalışarak yeni özellikler ekledim ve hataları düzelttim. React, REST API'ler ve çevik geliştirme süreçlerinde pratik deneyim kazandım."
+        "role": "Yazılım Mühendisliği Stajyeri",
+        "company": "Cabitas, Türkiye",
+        "period": "Eyl 2024 — Haz 2025",
+        "description": "Canlı yazılım sistemleri ve veritabanı yönetimi üzerinde çalıştım. Veritabanı yapılarının tasarlanması, bakımı ve güncellenmesine katkı sağladım; uygulama iş akışlarını destekledim. Gerçek ortamda bir mühendislik ekibiyle iş birliği yaparak üretim sistemleri konusunda uygulamalı deneyim kazandım."
       }
     ],
     "education": [
       {
-        "degree": "Bilgisayar Bilimleri Lisans Diploması",
-        "institution": "Placeholder Üniversitesi",
-        "period": "2017 — 2021",
-        "description": "Onur derecesiyle mezun oldum. Yazılım mühendisliği, algoritmalar, veri yapıları ve web geliştirme alanlarında uzmanlaştım. Bitirme tezim gerçek zamanlı işbirlikçi uygulamalar üzerineydi."
+        "degree": "Lisans — Yazılım Mühendisliği",
+        "institution": "İstanbul Aydın Üniversitesi",
+        "period": "2020 — 2025",
+        "description": "Tüm eğitimimi İngilizce dil ortamında tamamladım. Lisans süresince web uygulamaları, mobil uygulamalar, yapay zeka destekli bir görev yönetim aracı, IoT sistemleri ve mezuniyet projesi olarak bir yangın söndürme dronu geliştirdim. Salt teoriden çok gerçek, teslim edilmiş işlere dayanan uygulamalı bir mühendislik anlayışıyla mezun oldum."
       }
     ]
   },

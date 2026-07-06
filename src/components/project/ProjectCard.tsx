@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -17,23 +18,34 @@ export function ProjectCard({ project }: Props) {
     <article className="group bg-surface border border-border rounded-2xl overflow-hidden hover:border-accent/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-accent/5 flex flex-col">
       {/* Image */}
       <div className="relative h-52 bg-surface-elevated overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center text-foreground-secondary">
-            <div className="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-3">
+        {project.image ? (
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center">
               <span className="text-accent font-bold text-2xl">
                 {project.title.charAt(0)}
               </span>
             </div>
-            <p className="text-xs">Screenshot placeholder</p>
           </div>
-        </div>
+        )}
+
+        {/* Overlay gradient on hover */}
+        {project.image && (
+          <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        )}
 
         <div className="absolute top-4 left-4">
           <Badge variant="accent">{project.category}</Badge>
         </div>
-
         <div className="absolute top-4 right-4">
-          <span className="text-xs text-foreground-secondary bg-background/60 backdrop-blur-sm px-2 py-1 rounded-lg border border-border">
+          <span className="text-xs text-foreground-secondary bg-background/70 backdrop-blur-sm px-2 py-1 rounded-lg border border-border/50">
             {project.year}
           </span>
         </div>
@@ -67,7 +79,6 @@ export function ProjectCard({ project }: Props) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-xs text-foreground-secondary hover:text-accent transition-colors"
-                aria-label={`Live demo of ${project.title}`}
               >
                 <ExternalLink size={14} />
                 {t("liveDemo")}
@@ -79,7 +90,6 @@ export function ProjectCard({ project }: Props) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-xs text-foreground-secondary hover:text-accent transition-colors"
-                aria-label={`GitHub repo for ${project.title}`}
               >
                 <Github size={14} />
                 {t("code")}

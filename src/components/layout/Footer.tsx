@@ -1,5 +1,6 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { Github, Linkedin, Instagram, Mail, Code2, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Instagram, Mail, ArrowUp } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { personalInfo } from "@/content/personal";
 
@@ -28,13 +29,14 @@ export async function Footer() {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2 text-foreground font-bold text-lg">
-              <div className="p-1.5 rounded-lg bg-accent/10 border border-accent/20">
-                <Code2 size={16} className="text-accent" />
-              </div>
-              <span>
-                <span className="text-accent">Ö</span>mer Pehriz
-              </span>
+            <Link href="/" className="inline-flex">
+              <Image
+                src="/images/profile/logom/pngler/horizontal_white_cropped.png"
+                alt="Ömer Pehriz"
+                width={5131}
+                height={1579}
+                className="w-44 h-auto"
+              />
             </Link>
             <p className="text-foreground-secondary text-sm leading-relaxed max-w-xs">
               {t("tagline")}

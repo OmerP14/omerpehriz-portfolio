@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ExternalLink, Github, ArrowLeft, Calendar, Tag } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
@@ -41,16 +42,29 @@ export async function ProjectDetail({ project }: Props) {
           </p>
         </div>
 
-        {/* Hero image placeholder */}
-        <div className="h-72 sm:h-96 bg-surface border border-border rounded-2xl overflow-hidden mb-12 flex items-center justify-center">
-          <div className="text-center text-foreground-secondary">
-            <div className="w-20 h-20 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-4">
-              <span className="text-accent font-bold text-3xl">
-                {project.title.charAt(0)}
-              </span>
+        {/* Hero image */}
+        <div className="relative h-72 sm:h-96 bg-surface border border-border rounded-2xl overflow-hidden mb-12">
+          {project.image ? (
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 896px) 100vw, 896px"
+              priority
+            />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center text-foreground-secondary">
+                <div className="w-20 h-20 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-4">
+                  <span className="text-accent font-bold text-3xl">
+                    {project.title.charAt(0)}
+                  </span>
+                </div>
+                <p className="text-sm">No screenshot yet</p>
+              </div>
             </div>
-            <p className="text-sm">Project screenshot</p>
-          </div>
+          )}
         </div>
 
         {/* Meta row */}
@@ -106,12 +120,32 @@ export async function ProjectDetail({ project }: Props) {
         </div>
 
         {/* Long description */}
-        <div className="prose prose-invert prose-lg max-w-none">
+        <div className="mb-12">
           <h2 className="text-2xl font-bold text-foreground mb-4">About this project</h2>
           <p className="text-foreground-secondary leading-relaxed text-lg">
             {project.longDescription}
           </p>
         </div>
+
+        {/* Screenshots gallery */}
+        {project.screenshots && project.screenshots.length > 0 && (
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Screenshots</h2>
+            <div className="grid gap-4">
+              {project.screenshots.map((src, i) => (
+                <div key={i} className="relative w-full aspect-video rounded-2xl overflow-hidden border border-border bg-surface">
+                  <Image
+                    src={src}
+                    alt={`${project.title} screenshot ${i + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 896px) 100vw, 896px"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* CTA */}
         <div className="mt-16 p-8 bg-surface border border-border rounded-2xl text-center">

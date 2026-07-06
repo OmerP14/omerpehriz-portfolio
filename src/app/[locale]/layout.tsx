@@ -69,6 +69,19 @@ export async function generateMetadata({
       creator: "@omerpehriz",
       images: ["/og.png"],
     },
+    icons: {
+      icon: [
+        {
+          url: "/images/profile/logom/pngler/favicon_black.png",
+          media: "(prefers-color-scheme: light)",
+        },
+        {
+          url: "/images/profile/logom/pngler/favicon_white.png",
+          media: "(prefers-color-scheme: dark)",
+        },
+      ],
+      apple: "/images/profile/logom/pngler/favicon_white.png",
+    },
     robots: {
       index: true,
       follow: true,
@@ -125,8 +138,10 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Providers>
             <Navbar />
-            <main className="flex-1 w-full">{children}</main>
-            <Footer />
+            <div className="flex flex-col flex-1 overflow-x-hidden">
+              <main className="flex-1 w-full">{children}</main>
+              <Footer />
+            </div>
           </Providers>
         </NextIntlClientProvider>
       </body>

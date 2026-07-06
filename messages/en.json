@@ -2,9 +2,9 @@
   "personal": {
     "title": "Full Stack Developer",
     "tagline": "Building modern web applications, mobile experiences, and digital solutions for businesses and startups.",
-    "bio1": "Hi, I'm Ömer — a Full Stack Developer passionate about building modern digital products that combine performance, functionality, and great user experience. I enjoy turning ideas into real-world solutions that help businesses grow and operate more efficiently.",
-    "bio2": "My expertise covers the entire development process, from frontend interfaces and user experience to backend systems, databases, APIs, and deployment. I build corporate websites, SaaS platforms, admin dashboards, custom business systems, and mobile applications using technologies such as React, Next.js, Node.js, React Native, Supabase, and PostgreSQL.",
-    "bio3": "Beyond software development, I also help businesses strengthen their digital presence through landing pages, logo design, catalogs, and branding-focused digital experiences. Whether it's a web platform, a mobile application, or a complete business website, my goal is always to deliver solutions that are professional, scalable, and easy to maintain.",
+    "bio1": "Hi, I'm Ömer — a Software Engineering graduate from Istanbul Aydın University, where I earned my degree studying entirely in English. Throughout my degree I built real products: web applications, mobile apps, AI-assisted tools, and embedded systems — getting hands-on with the full development process from day one, not just in theory.",
+    "bio2": "My experience spans frontend development, backend services, database design, and API integration. During my internship at Cabitas I worked directly on production systems — contributing to database architecture, maintaining application workflows, and collaborating in a real engineering team. I bring both a builder's instinct and an engineer's eye for quality to everything I ship.",
+    "bio3": "Beyond core development, I also take on digital and visual work — landing pages, branding, and catalogs. Whether a client needs a web platform, a mobile product, or a complete online presence, I handle the project end-to-end: one person, full ownership, no handoffs.",
     "availability": "Available for freelance work"
   },
   "nav": {
@@ -25,10 +25,14 @@
     "label": "About Me",
     "heading": "Turning ideas into",
     "headingHighlight": "digital reality",
-    "statsYearsLabel": "Years Experience",
-    "statsProjectsLabel": "Projects Shipped",
-    "statsClientsLabel": "Happy Clients",
-    "statsSatisfactionLabel": "Satisfaction Rate",
+    "cap1Title": "Full Stack Web",
+    "cap1Desc": "React, Next.js & Node.js",
+    "cap2Title": "Mobile Apps",
+    "cap2Desc": "React Native, iOS & Android",
+    "cap3Title": "Database & APIs",
+    "cap3Desc": "PostgreSQL, Supabase, REST",
+    "cap4Title": "AI-Powered Dev",
+    "cap4Desc": "Faster builds with modern AI tools",
     "valueShip": "Ship quality, ship fast",
     "valueCode": "Clean code, always",
     "valueDesign": "User-first design"
@@ -46,35 +50,30 @@
     "code": "Code",
     "viewDetails": "View details",
     "items": {
-      "saas-analytics-dashboard": {
-        "title": "SaaS Analytics Dashboard",
-        "description": "A comprehensive analytics platform with real-time data visualization, multi-tenant team management, and automated reporting built for a B2B SaaS company.",
-        "longDescription": "This project involved building a full-stack analytics dashboard from scratch for a B2B SaaS client. The platform handles real-time data ingestion, custom chart rendering, and role-based access control across multiple tenant organizations. Key challenges included optimizing database queries for large datasets and building a responsive, data-dense UI that remained intuitive."
+      "workify-ai": {
+        "title": "Workify AI – Task Management App",
+        "description": "An AI-powered task and workspace management application with backend services, user authentication, and third-party API integrations.",
+        "longDescription": "Contributed to the development of an AI-assisted productivity platform designed to streamline task and workspace management. Built and integrated backend services, implemented authentication flows, and connected third-party APIs. Validated API responses and ensured system reliability throughout development — combining engineering with a quality-first mindset."
       },
-      "ecommerce-mobile-app": {
-        "title": "E-Commerce Mobile App",
-        "description": "A cross-platform React Native shopping app with product discovery, real-time inventory, Apple Pay / Google Pay, and push notifications for a retail client.",
-        "longDescription": "Built a feature-complete e-commerce mobile application for iOS and Android. The app includes a product catalog with advanced filtering, cart management, integrated payment via Stripe, and order tracking. Implemented push notification campaigns that increased returning customer sessions by 35%."
+      "easy-home-rent": {
+        "title": "Easy Home Rent – Rental Platform",
+        "description": "A web-based house rental platform with user authentication, property listings, and full CRUD operations — developed as an academic project at Istanbul Aydın University.",
+        "longDescription": "Designed and developed a web application for house rental management as a university project. Implemented user registration and authentication, property listing and search features, and complete CRUD operations for managing rental data. Designed application flows end-to-end and validated all major features during development to ensure functional correctness."
       },
-      "restaurant-management-system": {
-        "title": "Restaurant Management System",
-        "description": "Full-stack POS and kitchen management system with real-time order tracking, table management, inventory control, and daily reporting for restaurant chains.",
-        "longDescription": "Developed an end-to-end restaurant management system replacing a legacy paper-based process. The system includes a table-side ordering tablet interface, real-time kitchen display system (KDS), inventory tracking with automatic reorder alerts, and comprehensive sales reporting."
+      "myfitly": {
+        "title": "MyFitly – Fitness & Diet App",
+        "description": "A cross-platform mobile fitness and diet tracking application with workout logging, nutrition tracking, and progress monitoring.",
+        "longDescription": "Built a mobile application for fitness and nutrition tracking as part of a hands-on mobile development course. Implemented core features including exercise logging, daily diet tracking, and progress visualization. Validated application behavior throughout development to ensure a reliable and consistent user experience across iOS and Android."
       },
-      "ai-content-platform": {
-        "title": "AI Content Platform",
-        "description": "A content generation platform powered by AI with team collaboration, content scheduling, SEO analysis, and multi-channel publishing to WordPress, Medium, and social media.",
-        "longDescription": "Built a multi-tenant AI writing assistant platform. Features include AI-powered content generation, collaborative editing with real-time cursors (like Notion), SEO scoring, and one-click publishing to multiple channels. The platform scaled to 500+ active teams within three months of launch."
+      "firefighting-drone": {
+        "title": "Firefighting Drone – Graduation Project",
+        "description": "Software logic and autonomous control mechanisms for a firefighting drone, built as the graduation project at Istanbul Aydın University.",
+        "longDescription": "Designed and implemented the full software system for an autonomous firefighting drone as the university graduation project. Focused on system architecture, control flow logic, and sensor integration to enable reliable autonomous operation. Conducted functional validation at each development stage to ensure system safety and correctness under simulated conditions."
       },
-      "real-estate-portal": {
-        "title": "Real Estate Portal",
-        "description": "Property listing platform with interactive maps, advanced search filters, virtual tour integration, mortgage calculator, and agent CRM for a real estate agency.",
-        "longDescription": "Designed and built a full property portal to replace a third-party listing service. Integrated Mapbox for interactive property maps, built a custom search engine with geo-filtering, and connected to a virtual tour provider for immersive property previews."
-      },
-      "fitness-tracking-app": {
-        "title": "Fitness Tracking App",
-        "description": "A React Native fitness app with custom workout plans, progress tracking, macro logging, wearable integration, and a social feed for workout sharing.",
-        "longDescription": "Built a comprehensive fitness tracking mobile application. Users can create custom workout programs, log meals with nutritional data, track body metrics over time, and connect Apple Health / Google Fit. Social features allow sharing workout achievements."
+      "iot-smart-monitoring": {
+        "title": "IoT Smart Monitoring Systems",
+        "description": "IoT-based environmental monitoring systems using sensors for real-time data collection, processing, and automated control logic.",
+        "longDescription": "Developed a series of IoT projects using hardware sensors for environmental data collection and monitoring. Implemented data pipelines and basic automated control logic, then verified sensor accuracy and system behavior throughout development and testing. Gained practical experience with embedded systems and real-time data flows."
       }
     },
     "designItems": {
@@ -167,30 +166,24 @@
     "current": "Current",
     "work": [
       {
-        "role": "Senior Full Stack Developer",
+        "role": "Full Stack Developer",
         "company": "Freelance / Self-Employed",
         "period": "2022 — Present",
-        "description": "Building custom web applications and mobile apps for clients across retail, SaaS, hospitality, and real estate sectors. Managing full project lifecycle from discovery to deployment and post-launch support."
+        "description": "Building and delivering web applications, mobile apps, and design projects for clients across various industries. Managing projects end-to-end — from requirements and architecture through development, testing, and deployment."
       },
       {
-        "role": "Full Stack Developer",
-        "company": "Tech Agency (Placeholder)",
-        "period": "2021 — 2022",
-        "description": "Developed and maintained multiple client web applications. Collaborated with product managers and UI designers to implement features, improve performance, and ensure cross-browser compatibility."
-      },
-      {
-        "role": "Junior Frontend Developer",
-        "company": "Startup (Placeholder)",
-        "period": "2020 — 2021",
-        "description": "Worked on the consumer-facing web application, implementing new features and fixing bugs. Gained hands-on experience with React, REST APIs, and agile development processes."
+        "role": "Software Engineering Intern",
+        "company": "Cabitas, Türkiye",
+        "period": "Sep 2024 — Jun 2025",
+        "description": "Worked on production software systems and database management. Contributed to designing, maintaining, and updating database structures and application workflows. Collaborated with the team on real-world development tasks and gained hands-on experience with live systems."
       }
     ],
     "education": [
       {
-        "degree": "Bachelor of Science — Computer Science",
-        "institution": "Placeholder University",
-        "period": "2017 — 2021",
-        "description": "Graduated with honors. Focused on software engineering, algorithms, data structures, and web development. Final thesis on real-time collaborative applications."
+        "degree": "Bachelor of Science — Software Engineering",
+        "institution": "Istanbul Aydın University",
+        "period": "2020 — 2025",
+        "description": "Studied entirely in English. Built multiple practical projects throughout the degree — web applications, mobile apps, an AI-assisted task management tool, IoT systems, and a firefighting drone as the graduation project. Strong emphasis on hands-on engineering and real delivered work over pure theory."
       }
     ]
   },

@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, Code2, Globe } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
+import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, useRouter, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
@@ -49,7 +50,7 @@ export function Navbar() {
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           scrolled
             ? "bg-background/90 backdrop-blur-xl shadow-lg shadow-black/20"
-            : "bg-transparent"
+            : "bg-background/85 backdrop-blur-lg md:bg-transparent md:backdrop-blur-none"
         )}
       >
         {/* Scroll progress bar */}
@@ -57,21 +58,17 @@ export function Navbar() {
           className="absolute bottom-0 left-0 h-0.5 bg-accent transition-all duration-100 pointer-events-none"
           style={{ width: `${progress}%` }}
         />
-        <nav className={cn(
-          "layout-container flex items-center justify-between transition-all duration-300",
-          scrolled ? "h-12" : "h-16"
-        )}>
+        <nav className="layout-container flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link
-            href="/"
-            className="flex items-center gap-2 text-foreground font-bold text-lg group"
-          >
-            <div className="p-1.5 rounded-lg bg-accent/10 border border-accent/20 group-hover:bg-accent/20 transition-colors">
-              <Code2 size={16} className="text-accent" />
-            </div>
-            <span>
-              <span className="text-accent">Ö</span>mer Pehriz
-            </span>
+          <Link href="/" className="flex items-center group">
+            <Image
+              src="/images/profile/logom/pngler/horizontal_white_cropped.png"
+              alt="Ömer Pehriz"
+              width={5131}
+              height={1579}
+              className="w-32 md:w-40 h-auto opacity-90 group-hover:opacity-100 transition-opacity"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}
