@@ -14,7 +14,8 @@ interface ExperienceJson {
 }
 
 /**
- * Editable via the admin panel (Deneyim tab) — writes go straight to data/experience.json.
+ * Structural data (technologies/current) lives here; role/company/period/description text
+ * lives in messages/{locale}.json under experience.work / experience.education.
  * Loaded with a dynamic import so server components see the current file on every render.
  */
 export async function getExperienceConfig(): Promise<ExperienceJson> {

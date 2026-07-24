@@ -1,3 +1,5 @@
+import type { Project, DesignProject } from "@/types";
+
 export type RepoVisibility = "public" | "private" | "none";
 
 export interface GithubLink {
@@ -13,7 +15,7 @@ export interface SoftwareProjectData {
   category: string;
   /** Shown in the "Öne Çıkan Projeler" grid. */
   featured: boolean;
-  /** Rendered as the large showcase card above the featured grid. Only one project should set this. */
+  /** The first project in data/projects.json is always the big showcase card. */
   hero?: boolean;
   /** Path under /public, e.g. "/projects/slug.webp". Swap the file in place to update the screenshot. */
   image: string;
@@ -43,25 +45,78 @@ export interface DesignProjectData {
 
 export type AnyProjectData = SoftwareProjectData | DesignProjectData;
 
-interface ProjectsJson {
-  software: SoftwareProjectData[];
-  design: DesignProjectData[];
+interface SoftwareText {
+  title: string;
+  description: string;
+  longDescription: string;
+  problem?: string;
+  solution?: string;
+  features?: string[];
 }
 
+interface DesignText {
+  title: string;
+  description: string;
+}
+
+interface RawSoftwareEntry
+  extends Omit<SoftwareProjectData, "id" | "type" | "hero" | "screenshots"> {
+  screenshots?: string[];
+  tr: SoftwareText;
+  en: SoftwareText;
+}
+
+interface RawDesignEntry extends Omit<DesignProjectData, "id" | "type" | "image"> {
+  image?: string;
+  tr: DesignText;
+  en: DesignText;
+}
+
+interface ProjectsJson {
+  software: RawSoftwareEntry[];
+  design: RawDesignEntry[];
+}
+
+type Locale = "tr" | "en";
+
 /**
- * Editable via the admin panel (Yazılım/Tasarım Projeleri tabs) — writes go straight to
- * data/projects.json. Loaded with a dynamic import (not a static top-level one) so server
- * components see the current file on every render instead of a stale bundle-time snapshot.
+ * All project data and copy (TR + EN in one place) lives in data/projects.json — one object
+ * per project, see docs/projeler.md for the template. Loaded with a dynamic import (not a
+ * static top-level one) so server components see the current file on every render instead of
+ * a stale bundle-time snapshot.
  */
 async function loadProjectsJson(): Promise<ProjectsJson> {
   const mod = await import("./data/projects.json");
-  return mod.default as ProjectsJson;
+  return mod.default as unknown as ProjectsJson;
 }
 
-export async function getSoftwareProjects(): Promise<SoftwareProjectData[]> {
-  return (await loadProjectsJson()).software;
+export async function getSoftwareProjects(locale: Locale): Promise<Project[]> {
+  const { software } = await loadProjectsJson();
+  return software.map((entry, index) => {
+    const { tr, en, screenshots, ...structural } = entry;
+    const text = locale === "en" ? en : tr;
+    const data: SoftwareProjectData = {
+      ...structural,
+      id: index + 1,
+      type: "software",
+      hero: index === 0,
+      screenshots: screenshots ?? [],
+    };
+    return { ...data, ...text };
+  });
 }
 
-export async function getDesignProjects(): Promise<DesignProjectData[]> {
-  return (await loadProjectsJson()).design;
+export async function getDesignProjects(locale: Locale): Promise<DesignProject[]> {
+  const { design } = await loadProjectsJson();
+  return design.map((entry, index) => {
+    const { tr, en, image, ...structural } = entry;
+    const text = locale === "en" ? en : tr;
+    const data: DesignProjectData = {
+      ...structural,
+      id: index + 1,
+      type: "design",
+      image: image ?? "",
+    };
+    return { ...data, ...text };
+  });
 }

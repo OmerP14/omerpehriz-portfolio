@@ -4,7 +4,7 @@ import { getSoftwareProjects } from "@/content/projects";
 const BASE_URL = "https://omerpehriz.dev";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const projects = await getSoftwareProjects();
+  const projects = await getSoftwareProjects("tr");
   const projectEntries = projects.map((p) => ({
     url: `${BASE_URL}/projects/${p.slug}`,
     lastModified: new Date(),

@@ -1,9 +1,7 @@
 {
   "software": [
     {
-      "id": 1,
       "slug": "special-education-saas",
-      "type": "software",
       "technologies": [
         "Next.js",
         "React",
@@ -14,17 +12,51 @@
       ],
       "category": "SaaS Platform",
       "featured": true,
-      "hero": true,
       "image": "/projects/special-education-saas.webp",
-      "screenshots": [],
       "year": "2026",
       "status": "In Active Development",
-      "repoVisibility": "private"
+      "repoVisibility": "private",
+      "tr": {
+        "title": "Özel Eğitim Yönetim Sistemi",
+        "description": "Özel eğitim merkezlerinin öğrenci, veli, öğretmen, seans, ödeme, taksit, öğretmen hakedişi, günlük kasa, raporlama ve Excel aktarımı süreçlerini tek platformda yönetmesini sağlayan kapsamlı bir SaaS yönetim sistemi.",
+        "longDescription": "Özel eğitim merkezleri için öğrenci ve veli kayıtlarından öğretmen yönetimine, seans planlamasından ödeme ve taksit takibine kadar tüm operasyonel süreçleri tek bir panelde birleştiren kapsamlı bir SaaS platformu geliştiriyorum. Sistem; gün, hafta ve ay bazlı takvim yönetimi, öğretmen hakedişleri, günlük kasa takibi, finansal ve operasyonel raporlama ile Excel veri aktarım sihirbazını bir araya getiriyor. Rol bazlı paneller sayesinde yönetici, öğretmen ve ofis personeli kendi yetkilerine uygun ekranlarla çalışabiliyor. Uzun vadede multi-tenant bir SaaS yapısına dönüştürülmesi planlanıyor.",
+        "problem": "Özel eğitim merkezleri; öğrenci, veli, öğretmen, seans, ödeme ve raporlama süreçlerini genellikle dağınık Excel dosyaları ve birbirinden bağımsız araçlarla yönetiyor, bu da hata riskini ve operasyonel yükü artırıyor.",
+        "solution": "Tüm bu süreçleri tek bir SaaS panelinde birleştiren, rol bazlı erişim, otomatik çakışma kontrolü ve finansal raporlama sunan uçtan uca bir yönetim sistemi geliştiriyorum.",
+        "features": [
+          "Öğrenci ve veli yönetimi",
+          "Öğretmen yönetimi",
+          "Seans planlama ve çakışma kontrolü",
+          "Gün, hafta ve ay takvimi",
+          "Öğrenci ödeme ve taksit sistemi",
+          "Öğretmen hakedişleri ve ödemeleri",
+          "Günlük kasa",
+          "Finansal ve operasyonel raporlar",
+          "Excel veri aktarım sihirbazı",
+          "Rol bazlı paneller"
+        ]
+      },
+      "en": {
+        "title": "Special Education Management System",
+        "description": "A comprehensive SaaS management platform for special education centers, covering students, guardians, teachers, sessions, payments, payroll, reporting, calendar management and Excel imports.",
+        "longDescription": "I'm building a comprehensive SaaS platform for special education centers that unifies student and guardian records, teacher management, session scheduling, and payment/installment tracking into a single panel. The system brings together daily, weekly and monthly calendar views, teacher payroll, a daily cash register, financial and operational reporting, and an Excel data import wizard. Role-based dashboards let admins, teachers and office staff work within screens tailored to their permissions. A multi-tenant SaaS architecture is planned for a future phase.",
+        "problem": "Special education centers typically manage students, guardians, teachers, sessions, payments and reporting through scattered spreadsheets and disconnected tools, increasing error risk and operational overhead.",
+        "solution": "I'm building an end-to-end management system that unifies these processes into a single SaaS panel with role-based access, automatic scheduling conflict checks and financial reporting.",
+        "features": [
+          "Student and guardian management",
+          "Teacher management",
+          "Session scheduling with conflict detection",
+          "Daily, weekly and monthly calendar",
+          "Student payment and installment system",
+          "Teacher payroll and payments",
+          "Daily cash register",
+          "Financial and operational reports",
+          "Excel data import wizard",
+          "Role-based dashboards"
+        ]
+      }
     },
     {
-      "id": 2,
       "slug": "workify-ai",
-      "type": "software",
       "technologies": [
         "React",
         "Node.js",
@@ -35,15 +67,38 @@
       "category": "AI Web Application",
       "featured": true,
       "image": "/projects/workify-ai.webp",
-      "screenshots": [],
       "year": "2024",
       "status": "Prototype",
-      "repoVisibility": "none"
+      "repoVisibility": "none",
+      "tr": {
+        "title": "Workify AI – Yapay Zekâ Destekli Görev Yönetimi",
+        "description": "Kullanıcı kimlik doğrulama, çalışma alanları, görev yönetimi, backend servisleri ve üçüncü taraf yapay zekâ API entegrasyonları içeren üretkenlik uygulaması.",
+        "longDescription": "Görev ve çalışma alanı yönetimini kolaylaştırmak amacıyla tasarlanan yapay zekâ destekli bir üretkenlik platformunun geliştirilmesine katkı sağladım. Backend servisleri oluşturdum, kimlik doğrulama akışlarını hayata geçirdim ve üçüncü taraf API'leri entegre ettim. Geliştirme boyunca API yanıtlarını doğruladım ve sistem güvenilirliğini sağladım.",
+        "problem": "Ekiplerin görev ve çalışma alanı yönetimi genellikle dağınık araçlar arasında bölünüyor, yapay zekâ destekli otomasyondan yoksun kalıyor.",
+        "solution": "Kimlik doğrulama, çalışma alanları ve görev yönetimini tek bir uygulamada birleştirip üçüncü taraf yapay zekâ API'leri ile üretkenliği artıran bir prototip geliştirdim.",
+        "features": [
+          "Kullanıcı kimlik doğrulama",
+          "Çalışma alanı ve görev yönetimi",
+          "Yapay zekâ API entegrasyonu",
+          "Backend servisleri ve REST API"
+        ]
+      },
+      "en": {
+        "title": "Workify AI – AI-Powered Task Management",
+        "description": "An AI-powered productivity and task management application with authentication, workspaces, backend services and third-party AI integrations.",
+        "longDescription": "Contributed to the development of an AI-assisted productivity platform designed to streamline task and workspace management. Built and integrated backend services, implemented authentication flows, and connected third-party APIs. Validated API responses and ensured system reliability throughout development — combining engineering with a quality-first mindset.",
+        "problem": "Teams' task and workspace management is often split across disconnected tools, missing AI-powered automation.",
+        "solution": "I built a prototype that unifies authentication, workspaces and task management in a single app, boosting productivity with third-party AI APIs.",
+        "features": [
+          "User authentication",
+          "Workspace and task management",
+          "AI API integration",
+          "Backend services and REST API"
+        ]
+      }
     },
     {
-      "id": 3,
       "slug": "easy-home-rent",
-      "type": "software",
       "technologies": [
         "HTML",
         "CSS",
@@ -54,15 +109,38 @@
       "category": "Full-Stack Web Application",
       "featured": true,
       "image": "/projects/easy-home.webp",
-      "screenshots": [],
       "year": "2024",
       "status": "Academic Project",
-      "repoVisibility": "none"
+      "repoVisibility": "none",
+      "tr": {
+        "title": "Easy Home Rent – Kiralama Platformu",
+        "description": "Kullanıcı girişi, ilan yönetimi, kiralık ev listeleme, arama, filtreleme ve CRUD işlemleri bulunan web tabanlı kiralama platformu.",
+        "longDescription": "Üniversite projesi kapsamında ev kiralama yönetimi için uçtan uca bir web uygulaması tasarlayıp geliştirdim. Kullanıcı kaydı ve kimlik doğrulama, ilan listeleme ve arama özellikleri ile kiralama verilerini yönetmek için tam CRUD işlevlerini hayata geçirdim. İşlevsel doğruluğu garantilemek için tüm temel özellikleri geliştirme süresince doğruladım.",
+        "problem": "Kiralık ev arayan ve ilan veren kullanıcıları tek bir yerden buluşturacak, arama ve filtreleme imkânı sunan basit bir platform ihtiyacı vardı.",
+        "solution": "Kullanıcı girişi, ilan yönetimi, arama/filtreleme ve tam CRUD işlemleri içeren uçtan uca bir web uygulaması geliştirdim.",
+        "features": [
+          "Kullanıcı kayıt ve girişi",
+          "İlan oluşturma ve yönetimi",
+          "Arama ve filtreleme",
+          "Kiralık ev listeleme"
+        ]
+      },
+      "en": {
+        "title": "Easy Home Rent – Rental Platform",
+        "description": "A full-stack rental platform with authentication, property listings, search, filtering and CRUD operations.",
+        "longDescription": "Designed and developed a web application for house rental management as a university project. Implemented user registration and authentication, property listing and search features, and complete CRUD operations for managing rental data. Designed application flows end-to-end and validated all major features during development to ensure functional correctness.",
+        "problem": "There was a need for a simple platform to connect renters and listers with search and filtering capabilities.",
+        "solution": "I built an end-to-end web application with authentication, listing management, search/filtering, and full CRUD operations.",
+        "features": [
+          "User registration and login",
+          "Listing creation and management",
+          "Search and filtering",
+          "Rental property listings"
+        ]
+      }
     },
     {
-      "id": 4,
       "slug": "myfitly",
-      "type": "software",
       "technologies": [
         "React Native",
         "Expo",
@@ -72,15 +150,38 @@
       "category": "Mobile Application",
       "featured": false,
       "image": "/projects/myfitly.webp",
-      "screenshots": [],
       "year": "2023",
       "status": "Academic Project",
-      "repoVisibility": "none"
+      "repoVisibility": "none",
+      "tr": {
+        "title": "MyFitly – Fitness ve Diyet Uygulaması",
+        "description": "Antrenman kaydı, beslenme takibi, kullanıcı ilerleme göstergeleri ve mobil odaklı sağlık yönetimi özellikleri bulunan çapraz platform uygulaması.",
+        "longDescription": "Uygulamalı bir mobil uygulama geliştirme kursu kapsamında fitness ve beslenme takibi için bir mobil uygulama geliştirdim. Egzersiz kaydı, günlük diyet takibi ve ilerleme görselleştirme gibi temel özellikleri hayata geçirdim. iOS ve Android'de tutarlı ve güvenilir bir kullanıcı deneyimi sunmak amacıyla geliştirme süresince uygulama davranışını sürekli doğruladım.",
+        "problem": "Kullanıcıların antrenman ve beslenme takibini tek bir mobil uygulamadan, platform bağımsız şekilde yapabilmesi hedeflendi.",
+        "solution": "React Native ve Expo ile antrenman kaydı, beslenme takibi ve ilerleme göstergeleri sunan çapraz platform bir mobil uygulama geliştirdim.",
+        "features": [
+          "Antrenman kaydı",
+          "Beslenme takibi",
+          "İlerleme göstergeleri",
+          "iOS ve Android desteği"
+        ]
+      },
+      "en": {
+        "title": "MyFitly – Fitness & Diet App",
+        "description": "A cross-platform fitness and nutrition application featuring workout tracking, meal management and user progress monitoring.",
+        "longDescription": "Built a mobile application for fitness and nutrition tracking as part of a hands-on mobile development course. Implemented core features including exercise logging, daily diet tracking, and progress visualization. Validated application behavior throughout development to ensure a reliable and consistent user experience across iOS and Android.",
+        "problem": "Users needed to track workouts and nutrition from a single, platform-independent mobile app.",
+        "solution": "I built a cross-platform mobile app with React Native and Expo, featuring workout logging, nutrition tracking and progress indicators.",
+        "features": [
+          "Workout logging",
+          "Nutrition tracking",
+          "Progress indicators",
+          "iOS and Android support"
+        ]
+      }
     },
     {
-      "id": 5,
       "slug": "firefighting-drone",
-      "type": "software",
       "technologies": [
         "Python",
         "Arduino",
@@ -91,18 +192,41 @@
       "category": "Embedded Systems",
       "featured": false,
       "image": "/projects/firefighting-drone.webp",
-      "screenshots": [],
       "year": "2025",
       "status": "Graduation Project",
       "repoVisibility": "none",
       "tags": [
         "University Graduation Project"
-      ]
+      ],
+      "tr": {
+        "title": "Yangın Söndürme Dronu – Bitirme Projesi",
+        "description": "Yüksek taşıma kapasitesine sahip yangın söndürme dronunun yazılım mantığı, uzaktan kontrol mekanizmaları, sensör entegrasyonları ve gömülü sistem bileşenlerini kapsayan üniversite bitirme projesi.",
+        "longDescription": "Bitirme projesi olarak özerk bir yangın söndürme dronu için yazılım sisteminin tamamını tasarlayıp hayata geçirdim. Sistem mimarisi, kontrol akış mantığı ve güvenilir özerk operasyonu mümkün kılmak için sensör entegrasyonuna odaklandım. Sistem güvenliği ve doğruluğunu garanti altına almak amacıyla her aşamada işlevsel doğrulama gerçekleştirdim.",
+        "problem": "Orman yangınlarına hızlı müdahale edebilecek, yüksek taşıma kapasiteli ve uzaktan kontrol edilebilen bir söndürme sisteminin yazılım altyapısı eksikti.",
+        "solution": "Uzaktan kontrol mekanizmaları, sensör entegrasyonları ve gömülü sistem bileşenlerini kapsayan yazılım mantığını bitirme projesi olarak tasarlayıp geliştirdim.",
+        "features": [
+          "Uzaktan kontrol mekanizması",
+          "Sensör entegrasyonu",
+          "Gömülü sistem yazılımı",
+          "Yüksek taşıma kapasiteli söndürme mekanizması"
+        ]
+      },
+      "en": {
+        "title": "Firefighting Drone – Graduation Project",
+        "description": "A graduation project focused on the software logic, remote-control mechanisms, sensor integrations and embedded systems of a high-capacity firefighting drone.",
+        "longDescription": "Designed and implemented the full software system for an autonomous firefighting drone as the university graduation project. Focused on system architecture, control flow logic, and sensor integration to enable reliable autonomous operation. Conducted functional validation at each development stage to ensure system safety and correctness under simulated conditions.",
+        "problem": "Forest fires needed a fast-response system with high payload capacity and remote-control capability, but lacked a dedicated software foundation.",
+        "solution": "I designed and built the software logic covering remote-control mechanisms, sensor integrations and embedded system components as my graduation project.",
+        "features": [
+          "Remote-control mechanism",
+          "Sensor integration",
+          "Embedded systems software",
+          "High-capacity suppression mechanism"
+        ]
+      }
     },
     {
-      "id": 6,
       "slug": "iot-smart-monitoring",
-      "type": "software",
       "technologies": [
         "Arduino",
         "Python",
@@ -113,15 +237,38 @@
       "category": "IoT Project",
       "featured": false,
       "image": "/projects/iot-monitoring.webp",
-      "screenshots": [],
       "year": "2024",
       "status": "Academic Project",
-      "repoVisibility": "none"
+      "repoVisibility": "none",
+      "tr": {
+        "title": "IoT Akıllı İzleme Sistemleri",
+        "description": "Sensörlerden gerçek zamanlı veri toplayan, verileri işleyen ve otomatik kontrol mantıkları uygulayan IoT tabanlı çevresel izleme sistemi.",
+        "longDescription": "Çevresel veri toplama ve izleme için donanım sensörleri kullanan bir dizi IoT projesi geliştirdim. Veri işleme hatları ve temel otomatik kontrol mantığı kurdum; geliştirme ve test süreçleri boyunca sensör doğruluğunu ve sistem davranışını doğruladım. Gömülü sistemler ve gerçek zamanlı veri akışları konusunda uygulamalı deneyim kazandım.",
+        "problem": "Çevresel verilerin gerçek zamanlı olarak toplanıp izlenmesi ve otomatik kontrol mekanizmalarıyla yönetilmesi gerekiyordu.",
+        "solution": "Sensörlerden gerçek zamanlı veri toplayan, verileri işleyen ve otomatik kontrol mantıkları uygulayan bir IoT sistemi geliştirdim.",
+        "features": [
+          "Gerçek zamanlı sensör verisi",
+          "MQTT ile veri iletimi",
+          "Otomatik kontrol mantığı",
+          "Veri işleme hattı"
+        ]
+      },
+      "en": {
+        "title": "IoT Smart Monitoring Systems",
+        "description": "An IoT-based environmental monitoring system that collects real-time sensor data, processes measurements and supports automated control logic.",
+        "longDescription": "Developed a series of IoT projects using hardware sensors for environmental data collection and monitoring. Implemented data pipelines and basic automated control logic, then verified sensor accuracy and system behavior throughout development and testing. Gained practical experience with embedded systems and real-time data flows.",
+        "problem": "Environmental data needed to be collected and monitored in real time, with automated control mechanisms.",
+        "solution": "I built an IoT system that collects real-time sensor data, processes it, and applies automated control logic.",
+        "features": [
+          "Real-time sensor data",
+          "MQTT data transport",
+          "Automated control logic",
+          "Data processing pipeline"
+        ]
+      }
     },
     {
-      "id": 7,
       "slug": "personal-portfolio",
-      "type": "software",
       "technologies": [
         "Next.js",
         "React",
@@ -131,15 +278,38 @@
       "category": "Portfolio Website",
       "featured": false,
       "image": "/projects/portfolio.webp",
-      "screenshots": [],
       "year": "2026",
       "status": "In Development",
-      "repoVisibility": "private"
+      "repoVisibility": "private",
+      "tr": {
+        "title": "Kişisel Portföy Sitesi",
+        "description": "Yazılım, mobil uygulama, yapay zekâ, SaaS ve gömülü sistem projelerimi sergilemek için geliştirdiğim modern, responsive ve performans odaklı kişisel portföy sitesi.",
+        "longDescription": "Yazılım, mobil, yapay zekâ, SaaS ve gömülü sistem alanlarında geliştirdiğim projeleri tek bir çatı altında sergilemek amacıyla bu portföy sitesini tasarlayıp geliştiriyorum. Next.js ve Tailwind CSS ile koyu temalı, mor tonlu ve modern bir arayüz oluşturdum; çoklu dil desteği, animasyonlu bölümler ve responsive bir yapı ile masaüstü, tablet ve mobilde tutarlı bir deneyim sunuyor.",
+        "problem": "Yazılım, mobil, yapay zekâ, SaaS ve gömülü sistem projelerimi tek, modern ve performanslı bir yerde sergileyebileceğim bir platforma ihtiyaç duydum.",
+        "solution": "Next.js ve Tailwind CSS ile modern, responsive ve performans odaklı bir kişisel portföy sitesi geliştiriyorum.",
+        "features": [
+          "Proje vitrini",
+          "Responsive tasarım",
+          "Koyu tema ve modern arayüz",
+          "Çoklu dil desteği (TR/EN)"
+        ]
+      },
+      "en": {
+        "title": "Personal Portfolio Website",
+        "description": "A modern and responsive portfolio website built to showcase my software, mobile, AI, SaaS and embedded systems projects.",
+        "longDescription": "I designed and built this portfolio site to showcase the projects I've developed across software, mobile, AI, SaaS and embedded systems under one roof. Using Next.js and Tailwind CSS, I created a dark, purple-toned, modern interface with multi-language support, animated sections and a fully responsive layout that stays consistent across desktop, tablet and mobile.",
+        "problem": "I needed a single, modern and performant place to showcase my software, mobile, AI, SaaS and embedded systems projects.",
+        "solution": "I'm building a modern, responsive and performance-focused personal portfolio site with Next.js and Tailwind CSS.",
+        "features": [
+          "Project showcase",
+          "Responsive design",
+          "Dark theme and modern UI",
+          "Multi-language support (TR/EN)"
+        ]
+      }
     },
     {
-      "id": 8,
       "slug": "qr-reader",
-      "type": "software",
       "technologies": [
         "Python",
         "PDF Processing",
@@ -149,44 +319,77 @@
       "category": "Python Automation",
       "featured": false,
       "image": "/projects/qr-reader.webp",
-      "screenshots": [],
       "githubUrl": "https://github.com/OmerP14/QRReader",
       "year": "2024",
       "status": "Utility Project",
-      "repoVisibility": "public"
+      "repoVisibility": "public",
+      "tr": {
+        "title": "PDF QR Reader",
+        "description": "PDF belgelerindeki QR kodlarını okuyarak UUID verilerini çıkaran ve sonuçları Excel dosyasına aktaran Python tabanlı otomasyon aracı.",
+        "longDescription": "PDF belgeleri içindeki QR kodlarını otomatik olarak tarayıp okuyan, çözümlenen UUID verilerini yapılandırılmış bir Excel dosyasına aktaran bir Python otomasyon aracı geliştirdim. Araç, çok sayıda belgeyi toplu şekilde işleyerek manuel veri girişi ihtiyacını ortadan kaldırıyor.",
+        "problem": "Çok sayıda PDF belgesindeki QR kodlarını manuel olarak okuyup Excel'e aktarmak zaman alıcı ve hataya açıktı.",
+        "solution": "PDF belgelerindeki QR kodlarını otomatik okuyan, UUID verilerini çıkaran ve sonucu Excel dosyasına aktaran bir Python otomasyon aracı geliştirdim.",
+        "features": [
+          "PDF içinden QR kod okuma",
+          "UUID veri çıkarımı",
+          "Excel'e otomatik aktarım",
+          "Toplu belge işleme"
+        ]
+      },
+      "en": {
+        "title": "PDF QR Reader",
+        "description": "A Python automation tool that reads QR codes from PDF documents, extracts UUID values and exports the results to Excel.",
+        "longDescription": "I built a Python automation tool that scans and reads QR codes embedded in PDF documents, extracting the decoded UUID values into a structured Excel file. The tool processes multiple documents in batch, removing the need for manual data entry.",
+        "problem": "Manually reading QR codes from large batches of PDF documents and transferring them to Excel was slow and error-prone.",
+        "solution": "I built a Python automation tool that automatically reads QR codes from PDF documents, extracts UUID values, and exports the results to Excel.",
+        "features": [
+          "QR code reading from PDF",
+          "UUID data extraction",
+          "Automatic Excel export",
+          "Batch document processing"
+        ]
+      }
     }
   ],
   "design": [
     {
-      "id": 101,
       "slug": "restaurant-branding",
-      "type": "design",
       "designCategory": "Marka Kimliği",
       "tools": [
         "Adobe Illustrator",
         "Adobe Photoshop"
       ],
       "featured": true,
-      "image": "",
-      "year": "2024"
+      "year": "2024",
+      "tr": {
+        "title": "Restoran Marka Kimliği",
+        "description": "Bir restoran zinciri için logo, menü tasarımı, ambalaj ve marka rehberinden oluşan eksiksiz görsel kimlik paketi."
+      },
+      "en": {
+        "title": "Restaurant Brand Identity",
+        "description": "Full visual identity for a restaurant chain — logo, menu layout, packaging, and brand guidelines."
+      }
     },
     {
-      "id": 102,
       "slug": "tech-company-logo",
-      "type": "design",
       "designCategory": "Logo Tasarımı",
       "tools": [
         "Adobe Illustrator",
         "Figma"
       ],
       "featured": true,
-      "image": "",
-      "year": "2024"
+      "year": "2024",
+      "tr": {
+        "title": "Teknoloji Şirketi Logo & Kimlik",
+        "description": "Marka rehberi, renk paleti ve tipografi sistemiyle birlikte minimal ve modern logo tasarımı."
+      },
+      "en": {
+        "title": "Tech Company Logo & Identity",
+        "description": "Minimal, modern logo design with complete brand guidelines, color palette, and typography system."
+      }
     },
     {
-      "id": 103,
       "slug": "product-catalog",
-      "type": "design",
       "designCategory": "Katalog",
       "tools": [
         "Adobe InDesign",
@@ -194,25 +397,35 @@
         "Adobe Photoshop"
       ],
       "featured": true,
-      "image": "",
-      "year": "2024"
+      "year": "2024",
+      "tr": {
+        "title": "Kurumsal Ürün Kataloğu",
+        "description": "Yapılandırılmış yerleşim, fotoğraf yönetimi ve baskıya hazır dosyalarla profesyonelce tasarlanmış 40 sayfalık ürün kataloğu."
+      },
+      "en": {
+        "title": "Corporate Product Catalog",
+        "description": "40-page professionally designed product catalog with structured layout, photography direction, and print-ready files."
+      }
     },
     {
-      "id": 104,
       "slug": "landing-page-ui",
-      "type": "design",
       "designCategory": "UI Tasarımı",
       "tools": [
         "Figma"
       ],
       "featured": false,
-      "image": "",
-      "year": "2023"
+      "year": "2023",
+      "tr": {
+        "title": "SaaS Landing Page UI",
+        "description": "Figma'da teslim için dönüşüm odaklı açılış sayfası tasarımı; bileşen kütüphanesi ve duyarlı düzenler."
+      },
+      "en": {
+        "title": "SaaS Landing Page UI",
+        "description": "Conversion-focused landing page design with component library, responsive layouts, and developer handoff in Figma."
+      }
     },
     {
-      "id": 105,
       "slug": "retail-brand-identity",
-      "type": "design",
       "designCategory": "Marka Kimliği",
       "tools": [
         "Adobe Illustrator",
@@ -220,13 +433,18 @@
         "Adobe InDesign"
       ],
       "featured": false,
-      "image": "",
-      "year": "2023"
+      "year": "2023",
+      "tr": {
+        "title": "Perakende Marka Kimliği",
+        "description": "Bir perakende mağazası için eksiksiz marka kimliği: logo, tabelalar, alışveriş çantası, etiket tasarımı ve sosyal medya şablonları."
+      },
+      "en": {
+        "title": "Retail Brand Identity",
+        "description": "Complete brand identity for a retail store: logo, signage, shopping bag, tag design, and social media templates."
+      }
     },
     {
-      "id": 106,
       "slug": "social-media-kit",
-      "type": "design",
       "designCategory": "Sosyal Medya",
       "tools": [
         "Adobe Photoshop",
@@ -234,8 +452,15 @@
         "Figma"
       ],
       "featured": false,
-      "image": "",
-      "year": "2023"
+      "year": "2023",
+      "tr": {
+        "title": "Sosyal Medya Tasarım Kiti",
+        "description": "Instagram ve LinkedIn için düzenlenebilir, marka uyumlu gönderi, hikaye ve öne çıkarılan şablonlardan oluşan kapsamlı set."
+      },
+      "en": {
+        "title": "Social Media Design Kit",
+        "description": "Cohesive set of post, story, and highlight templates for Instagram and LinkedIn — editable and on-brand."
+      }
     }
   ]
 }

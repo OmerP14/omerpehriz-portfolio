@@ -9,10 +9,17 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { getSoftwareProjects, getDesignProjects } from "@/content/projects";
 import { getTestimonials } from "@/content/testimonials";
 
-export default async function Home() {
+interface Props {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function Home({ params }: Props) {
+  const { locale } = await params;
+  const loc = locale === "en" ? "en" : "tr";
+
   const [softwareProjects, designProjects, testimonials] = await Promise.all([
-    getSoftwareProjects(),
-    getDesignProjects(),
+    getSoftwareProjects(loc),
+    getDesignProjects(loc),
     getTestimonials(),
   ]);
 

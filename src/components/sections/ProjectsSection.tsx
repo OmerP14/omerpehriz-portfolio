@@ -11,47 +11,21 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 import { ProjectCard } from "@/components/project/ProjectCard";
 import { FeaturedProjectHero } from "@/components/project/FeaturedProjectHero";
 import { DesignCard } from "@/components/project/DesignCard";
-import type { SoftwareProjectData, DesignProjectData } from "@/content/projects";
 import type { Project, DesignProject } from "@/types";
 import { cn } from "@/lib/utils";
 
 type Tab = "software" | "design";
 
-interface SoftwareItemText {
-  title: string;
-  description: string;
-  longDescription: string;
-  problem?: string;
-  solution?: string;
-  features?: string[];
-}
-
 interface Props {
-  softwareProjects: SoftwareProjectData[];
-  designProjects: DesignProjectData[];
+  softwareProjects: Project[];
+  designProjects: DesignProject[];
 }
 
-export function ProjectsSection({ softwareProjects, designProjects }: Props) {
+export function ProjectsSection({ softwareProjects: localizedSoftware, designProjects: localizedDesign }: Props) {
   const [activeTab, setActiveTab] = useState<Tab>("software");
   const t = useTranslations("projects");
 
-  const softwareItems = t.raw("items") as Record<string, SoftwareItemText>;
-  const designItems = t.raw("designItems") as Record<
-    string,
-    { title: string; description: string }
-  >;
-
-  const localizedSoftware: Project[] = softwareProjects.map((p) => ({
-    ...p,
-    ...(softwareItems[p.slug] ?? { title: p.slug, description: "", longDescription: "" }),
-  }));
-
-  const localizedDesign: DesignProject[] = designProjects.map((p) => ({
-    ...p,
-    ...(designItems[p.slug] ?? { title: p.slug, description: "" }),
-  }));
-
-  const heroProject = localizedSoftware.find((p) => p.featured && p.hero);
+  const heroProject = localizedSoftware.find((p) => p.hero);
   const restFeatured = localizedSoftware.filter((p) => p.featured && !p.hero);
   const otherSoftware = localizedSoftware.filter((p) => !p.featured);
 
