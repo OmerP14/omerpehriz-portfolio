@@ -50,7 +50,7 @@ export function DesignCard({ project }: Props) {
   const Icon = config.icon;
 
   return (
-    <article className="group bg-surface border border-border rounded-2xl overflow-hidden hover:border-accent/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-accent/5 flex flex-col">
+    <article className="group h-full bg-surface border border-border rounded-2xl overflow-hidden hover:border-accent/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-accent/5 flex flex-col">
       {/* Preview area */}
       <div className={`relative h-52 bg-gradient-to-br ${config.gradient} border-b border-border overflow-hidden`}>
         {/* Decorative grid */}

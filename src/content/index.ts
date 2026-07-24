@@ -1,6 +1,6 @@
 export { personalInfo } from "./personal";
-export { projects, featuredProjects } from "./projects";
+export { getSoftwareProjects, getDesignProjects } from "./projects";
 export { skillGroups } from "./skills";
-export { workExperienceConfig, educationConfig } from "./experience";
+export { getExperienceConfig } from "./experience";
 export { servicesConfig } from "./services";
-export { testimonials } from "./testimonials";
+export { getTestimonials } from "./testimonials";

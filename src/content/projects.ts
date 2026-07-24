@@ -1,15 +1,33 @@
+export type RepoVisibility = "public" | "private" | "none";
+
+export interface GithubLink {
+  label: string;
+  url: string;
+}
+
 export interface SoftwareProjectData {
   id: number;
   slug: string;
   type: "software";
   technologies: string[];
   category: string;
+  /** Shown in the "Öne Çıkan Projeler" grid. */
   featured: boolean;
+  /** Rendered as the large showcase card above the featured grid. Only one project should set this. */
+  hero?: boolean;
+  /** Path under /public, e.g. "/projects/slug.webp". Swap the file in place to update the screenshot. */
   image: string;
   screenshots: string[];
-  liveUrl: string;
-  githubUrl: string;
+  liveUrl?: string;
+  githubUrl?: string;
+  /** Use when a project ships as separate repos (e.g. frontend/backend). */
+  githubLinks?: GithubLink[];
   year: string;
+  /** Literal status label shown on the card/detail badge (e.g. "In Active Development"). */
+  status: string;
+  repoVisibility: RepoVisibility;
+  /** Extra badges shown on the project detail page (e.g. "University Graduation Project"). */
+  tags?: string[];
 }
 
 export interface DesignProjectData {
@@ -25,137 +43,25 @@ export interface DesignProjectData {
 
 export type AnyProjectData = SoftwareProjectData | DesignProjectData;
 
-export const softwareProjects: SoftwareProjectData[] = [
-  {
-    id: 1,
-    slug: "workify-ai",
-    type: "software",
-    technologies: ["React", "Node.js", "OpenAI API", "PostgreSQL", "Supabase", "JavaScript"],
-    category: "Web App",
-    featured: true,
-    image: "/images/projects/workify-ai.png",
-    screenshots: [],
-    liveUrl: "#",
-    githubUrl: "#",
-    year: "2024",
-  },
-  {
-    id: 2,
-    slug: "easy-home-rent",
-    type: "software",
-    technologies: ["HTML", "CSS", "JavaScript", "Java", "PostgreSQL"],
-    category: "Web App",
-    featured: true,
-    image: "/images/projects/easy-home-rent.png",
-    screenshots: [],
-    liveUrl: "#",
-    githubUrl: "#",
-    year: "2024",
-  },
-  {
-    id: 3,
-    slug: "myfitly",
-    type: "software",
-    technologies: ["React Native", "Expo", "JavaScript", "Supabase"],
-    category: "Mobile App",
-    featured: true,
-    image: "/images/projects/myfitly.png",
-    screenshots: [],
-    liveUrl: "#",
-    githubUrl: "#",
-    year: "2023",
-  },
-  {
-    id: 4,
-    slug: "firefighting-drone",
-    type: "software",
-    technologies: ["Python", "Arduino", "C++", "Embedded Systems"],
-    category: "Embedded",
-    featured: false,
-    image: "/images/projects/firefighting-drone.png",
-    screenshots: [],
-    liveUrl: "#",
-    githubUrl: "#",
-    year: "2025",
-  },
-  {
-    id: 5,
-    slug: "iot-smart-monitoring",
-    type: "software",
-    technologies: ["Arduino", "Python", "MQTT", "Sensors"],
-    category: "IoT",
-    featured: false,
-    image: "/images/projects/iot-monitoring.png",
-    screenshots: [],
-    liveUrl: "#",
-    githubUrl: "#",
-    year: "2024",
-  },
-];
+interface ProjectsJson {
+  software: SoftwareProjectData[];
+  design: DesignProjectData[];
+}
 
-export const designProjects: DesignProjectData[] = [
-  {
-    id: 101,
-    slug: "restaurant-branding",
-    type: "design",
-    designCategory: "Marka Kimliği",
-    tools: ["Adobe Illustrator", "Adobe Photoshop"],
-    featured: true,
-    image: "",
-    year: "2024",
-  },
-  {
-    id: 102,
-    slug: "tech-company-logo",
-    type: "design",
-    designCategory: "Logo Tasarımı",
-    tools: ["Adobe Illustrator", "Figma"],
-    featured: true,
-    image: "",
-    year: "2024",
-  },
-  {
-    id: 103,
-    slug: "product-catalog",
-    type: "design",
-    designCategory: "Katalog",
-    tools: ["Adobe InDesign", "Adobe Illustrator", "Adobe Photoshop"],
-    featured: true,
-    image: "",
-    year: "2024",
-  },
-  {
-    id: 104,
-    slug: "landing-page-ui",
-    type: "design",
-    designCategory: "UI Tasarımı",
-    tools: ["Figma"],
-    featured: false,
-    image: "",
-    year: "2023",
-  },
-  {
-    id: 105,
-    slug: "retail-brand-identity",
-    type: "design",
-    designCategory: "Marka Kimliği",
-    tools: ["Adobe Illustrator", "Adobe Photoshop", "Adobe InDesign"],
-    featured: false,
-    image: "",
-    year: "2023",
-  },
-  {
-    id: 106,
-    slug: "social-media-kit",
-    type: "design",
-    designCategory: "Sosyal Medya",
-    tools: ["Adobe Photoshop", "Adobe Illustrator", "Figma"],
-    featured: false,
-    image: "",
-    year: "2023",
-  },
-];
+/**
+ * Editable via the admin panel (Yazılım/Tasarım Projeleri tabs) — writes go straight to
+ * data/projects.json. Loaded with a dynamic import (not a static top-level one) so server
+ * components see the current file on every render instead of a stale bundle-time snapshot.
+ */
+async function loadProjectsJson(): Promise<ProjectsJson> {
+  const mod = await import("./data/projects.json");
+  return mod.default as ProjectsJson;
+}
 
-// Legacy export for project detail pages (software only)
-export const projects = softwareProjects;
-export const featuredProjects = softwareProjects.filter((p) => p.featured);
+export async function getSoftwareProjects(): Promise<SoftwareProjectData[]> {
+  return (await loadProjectsJson()).software;
+}
+
+export async function getDesignProjects(): Promise<DesignProjectData[]> {
+  return (await loadProjectsJson()).design;
+}

@@ -1,9 +1,13 @@
 import type { SoftwareProjectData, DesignProjectData } from "@/content/projects";
+import type { TestimonialData } from "@/content/testimonials";
 
 export interface Project extends SoftwareProjectData {
   title: string;
   description: string;
   longDescription: string;
+  problem?: string;
+  solution?: string;
+  features?: string[];
 }
 
 export interface DesignProject extends DesignProjectData {
@@ -43,13 +47,9 @@ export interface Service {
   highlight: boolean;
 }
 
-export interface Testimonial {
-  id: number;
-  name: string;
+export interface Testimonial extends TestimonialData {
   role: string;
-  company: string;
   content: string;
-  rating: number;
 }
 
 export interface SocialLink {

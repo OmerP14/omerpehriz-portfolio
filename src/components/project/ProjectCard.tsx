@@ -1,10 +1,12 @@
 "use client";
 
-import Image from "next/image";
-import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import { ExternalLink, Github, ArrowRight, Lock } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Badge } from "@/components/ui/Badge";
+import { StatusBadge } from "@/components/project/StatusBadge";
+import { ProjectImage } from "@/components/project/ProjectImage";
+import { getGithubLinks, hasLiveDemo } from "@/lib/project-utils";
 import type { Project } from "@/types";
 
 interface Props {
@@ -13,36 +15,26 @@ interface Props {
 
 export function ProjectCard({ project }: Props) {
   const t = useTranslations("projects");
+  const githubLinks = getGithubLinks(project);
+  const showLiveDemo = hasLiveDemo(project);
 
   return (
-    <article className="group bg-surface border border-border rounded-2xl overflow-hidden hover:border-accent/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-accent/5 flex flex-col">
+    <article className="group h-full bg-surface border border-border rounded-2xl overflow-hidden hover:border-accent/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-accent/5 flex flex-col">
       {/* Image */}
       <div className="relative h-52 bg-surface-elevated overflow-hidden">
-        {project.image ? (
-          <Image
-            src={project.image}
-            alt={project.title}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
-        ) : (
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center">
-              <span className="text-accent font-bold text-2xl">
-                {project.title.charAt(0)}
-              </span>
-            </div>
-          </div>
-        )}
+        <ProjectImage
+          src={project.image}
+          alt={project.title}
+          category={project.category}
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="group-hover:scale-105 transition-transform duration-500"
+        />
 
-        {/* Overlay gradient on hover */}
-        {project.image && (
-          <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-        <div className="absolute top-4 left-4">
+        <div className="absolute top-4 left-4 flex flex-col items-start gap-2">
           <Badge variant="accent">{project.category}</Badge>
+          <StatusBadge status={project.status} />
         </div>
         <div className="absolute top-4 right-4">
           <span className="text-xs text-foreground-secondary bg-background/70 backdrop-blur-sm px-2 py-1 rounded-lg border border-border/50">
@@ -72,8 +64,8 @@ export function ProjectCard({ project }: Props) {
         </div>
 
         <div className="flex items-center justify-between pt-4 border-t border-border">
-          <div className="flex gap-3">
-            {project.liveUrl && project.liveUrl !== "#" && (
+          <div className="flex flex-wrap items-center gap-3">
+            {showLiveDemo && (
               <a
                 href={project.liveUrl}
                 target="_blank"
@@ -84,16 +76,23 @@ export function ProjectCard({ project }: Props) {
                 {t("liveDemo")}
               </a>
             )}
-            {project.githubUrl && project.githubUrl !== "#" && (
+            {githubLinks.map((link) => (
               <a
-                href={project.githubUrl}
+                key={link.url}
+                href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-xs text-foreground-secondary hover:text-accent transition-colors"
               >
                 <Github size={14} />
-                {t("code")}
+                {link.label === "GitHub" ? t("code") : link.label}
               </a>
+            ))}
+            {!githubLinks.length && project.repoVisibility === "private" && (
+              <span className="flex items-center gap-1.5 text-xs text-foreground-secondary">
+                <Lock size={14} />
+                {t("privateRepository")}
+              </span>
             )}
           </div>
           <Link

@@ -8,22 +8,16 @@ export interface EducationConfig {
   type: "education";
 }
 
-export const workExperienceConfig: WorkConfig[] = [
-  {
-    type: "work",
-    technologies: ["Next.js", "React Native", "Node.js", "Supabase", "TypeScript"],
-    current: true,
-  },
-  {
-    type: "work",
-    technologies: ["React", "Node.js", "PostgreSQL", "AWS"],
-    current: false,
-  },
-  {
-    type: "work",
-    technologies: ["React", "JavaScript", "CSS", "REST APIs"],
-    current: false,
-  },
-];
+interface ExperienceJson {
+  work: WorkConfig[];
+  education: EducationConfig[];
+}
 
-export const educationConfig: EducationConfig[] = [{ type: "education" }];
+/**
+ * Editable via the admin panel (Deneyim tab) — writes go straight to data/experience.json.
+ * Loaded with a dynamic import so server components see the current file on every render.
+ */
+export async function getExperienceConfig(): Promise<ExperienceJson> {
+  const mod = await import("./data/experience.json");
+  return mod.default as ExperienceJson;
+}

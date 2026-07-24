@@ -49,31 +49,126 @@
     "liveDemo": "Canlı Demo",
     "code": "Kod",
     "viewDetails": "Detayları gör",
+    "privateRepository": "Private Repository",
+    "featuredLabel": "Öne Çıkan Proje",
+    "aboutTitle": "Proje Hakkında",
+    "problemTitle": "Problem",
+    "solutionTitle": "Çözüm Yaklaşımı",
+    "featuresTitle": "Öne Çıkan Özellikler",
+    "technologiesLabel": "Teknolojiler",
+    "yearLabel": "Yıl",
+    "linksLabel": "Bağlantılar",
+    "screenshotsTitle": "Ekran Görüntüleri",
     "items": {
+      "special-education-saas": {
+        "title": "Özel Eğitim Yönetim Sistemi",
+        "description": "Özel eğitim merkezlerinin öğrenci, veli, öğretmen, seans, ödeme, taksit, öğretmen hakedişi, günlük kasa, raporlama ve Excel aktarımı süreçlerini tek platformda yönetmesini sağlayan kapsamlı bir SaaS yönetim sistemi.",
+        "longDescription": "Özel eğitim merkezleri için öğrenci ve veli kayıtlarından öğretmen yönetimine, seans planlamasından ödeme ve taksit takibine kadar tüm operasyonel süreçleri tek bir panelde birleştiren kapsamlı bir SaaS platformu geliştiriyorum. Sistem; gün, hafta ve ay bazlı takvim yönetimi, öğretmen hakedişleri, günlük kasa takibi, finansal ve operasyonel raporlama ile Excel veri aktarım sihirbazını bir araya getiriyor. Rol bazlı paneller sayesinde yönetici, öğretmen ve ofis personeli kendi yetkilerine uygun ekranlarla çalışabiliyor. Uzun vadede multi-tenant bir SaaS yapısına dönüştürülmesi planlanıyor.",
+        "problem": "Özel eğitim merkezleri; öğrenci, veli, öğretmen, seans, ödeme ve raporlama süreçlerini genellikle dağınık Excel dosyaları ve birbirinden bağımsız araçlarla yönetiyor, bu da hata riskini ve operasyonel yükü artırıyor.",
+        "solution": "Tüm bu süreçleri tek bir SaaS panelinde birleştiren, rol bazlı erişim, otomatik çakışma kontrolü ve finansal raporlama sunan uçtan uca bir yönetim sistemi geliştiriyorum.",
+        "features": [
+          "Öğrenci ve veli yönetimi",
+          "Öğretmen yönetimi",
+          "Seans planlama ve çakışma kontrolü",
+          "Gün, hafta ve ay takvimi",
+          "Öğrenci ödeme ve taksit sistemi",
+          "Öğretmen hakedişleri ve ödemeleri",
+          "Günlük kasa",
+          "Finansal ve operasyonel raporlar",
+          "Excel veri aktarım sihirbazı",
+          "Rol bazlı paneller"
+        ]
+      },
       "workify-ai": {
-        "title": "Workify AI – Görev Yönetim Uygulaması",
-        "description": "Backend servisleri, kullanıcı kimlik doğrulama ve üçüncü taraf API entegrasyonlarıyla desteklenen yapay zeka destekli görev ve çalışma alanı yönetim uygulaması.",
-        "longDescription": "Görev ve çalışma alanı yönetimini kolaylaştırmak amacıyla tasarlanan yapay zeka destekli bir üretkenlik platformunun geliştirilmesine katkı sağladım. Backend servisleri oluşturdum, kimlik doğrulama akışlarını hayata geçirdim ve üçüncü taraf API'leri entegre ettim. Geliştirme boyunca API yanıtlarını doğruladım ve sistem güvenilirliğini sağladım."
+        "title": "Workify AI – Yapay Zekâ Destekli Görev Yönetimi",
+        "description": "Kullanıcı kimlik doğrulama, çalışma alanları, görev yönetimi, backend servisleri ve üçüncü taraf yapay zekâ API entegrasyonları içeren üretkenlik uygulaması.",
+        "longDescription": "Görev ve çalışma alanı yönetimini kolaylaştırmak amacıyla tasarlanan yapay zekâ destekli bir üretkenlik platformunun geliştirilmesine katkı sağladım. Backend servisleri oluşturdum, kimlik doğrulama akışlarını hayata geçirdim ve üçüncü taraf API'leri entegre ettim. Geliştirme boyunca API yanıtlarını doğruladım ve sistem güvenilirliğini sağladım.",
+        "problem": "Ekiplerin görev ve çalışma alanı yönetimi genellikle dağınık araçlar arasında bölünüyor, yapay zekâ destekli otomasyondan yoksun kalıyor.",
+        "solution": "Kimlik doğrulama, çalışma alanları ve görev yönetimini tek bir uygulamada birleştirip üçüncü taraf yapay zekâ API'leri ile üretkenliği artıran bir prototip geliştirdim.",
+        "features": [
+          "Kullanıcı kimlik doğrulama",
+          "Çalışma alanı ve görev yönetimi",
+          "Yapay zekâ API entegrasyonu",
+          "Backend servisleri ve REST API"
+        ]
       },
       "easy-home-rent": {
         "title": "Easy Home Rent – Kiralama Platformu",
-        "description": "Kullanıcı girişi, ilan yönetimi ve tam CRUD işlemleriyle donatılmış, İstanbul Aydın Üniversitesi'nde akademik proje olarak geliştirilen web tabanlı ev kiralama platformu.",
-        "longDescription": "Üniversite projesi kapsamında ev kiralama yönetimi için uçtan uca bir web uygulaması tasarlayıp geliştirdim. Kullanıcı kaydı ve kimlik doğrulama, ilan listeleme ve arama özellikleri ile kiralama verilerini yönetmek için tam CRUD işlevlerini hayata geçirdim. İşlevsel doğruluğu garantilemek için tüm temel özellikleri geliştirme süresince doğruladım."
+        "description": "Kullanıcı girişi, ilan yönetimi, kiralık ev listeleme, arama, filtreleme ve CRUD işlemleri bulunan web tabanlı kiralama platformu.",
+        "longDescription": "Üniversite projesi kapsamında ev kiralama yönetimi için uçtan uca bir web uygulaması tasarlayıp geliştirdim. Kullanıcı kaydı ve kimlik doğrulama, ilan listeleme ve arama özellikleri ile kiralama verilerini yönetmek için tam CRUD işlevlerini hayata geçirdim. İşlevsel doğruluğu garantilemek için tüm temel özellikleri geliştirme süresince doğruladım.",
+        "problem": "Kiralık ev arayan ve ilan veren kullanıcıları tek bir yerden buluşturacak, arama ve filtreleme imkânı sunan basit bir platform ihtiyacı vardı.",
+        "solution": "Kullanıcı girişi, ilan yönetimi, arama/filtreleme ve tam CRUD işlemleri içeren uçtan uca bir web uygulaması geliştirdim.",
+        "features": [
+          "Kullanıcı kayıt ve girişi",
+          "İlan oluşturma ve yönetimi",
+          "Arama ve filtreleme",
+          "Kiralık ev listeleme"
+        ]
       },
       "myfitly": {
-        "title": "MyFitly – Fitness & Diyet Uygulaması",
-        "description": "Antrenman kaydı, beslenme takibi ve ilerleme izleme özelliklerine sahip çapraz platform mobil fitness ve diyet uygulaması.",
-        "longDescription": "Uygulamalı bir mobil uygulama geliştirme kursu kapsamında fitness ve beslenme takibi için bir mobil uygulama geliştirdim. Egzersiz kaydı, günlük diyet takibi ve ilerleme görselleştirme gibi temel özellikleri hayata geçirdim. iOS ve Android'de tutarlı ve güvenilir bir kullanıcı deneyimi sunmak amacıyla geliştirme süresince uygulama davranışını sürekli doğruladım."
+        "title": "MyFitly – Fitness ve Diyet Uygulaması",
+        "description": "Antrenman kaydı, beslenme takibi, kullanıcı ilerleme göstergeleri ve mobil odaklı sağlık yönetimi özellikleri bulunan çapraz platform uygulaması.",
+        "longDescription": "Uygulamalı bir mobil uygulama geliştirme kursu kapsamında fitness ve beslenme takibi için bir mobil uygulama geliştirdim. Egzersiz kaydı, günlük diyet takibi ve ilerleme görselleştirme gibi temel özellikleri hayata geçirdim. iOS ve Android'de tutarlı ve güvenilir bir kullanıcı deneyimi sunmak amacıyla geliştirme süresince uygulama davranışını sürekli doğruladım.",
+        "problem": "Kullanıcıların antrenman ve beslenme takibini tek bir mobil uygulamadan, platform bağımsız şekilde yapabilmesi hedeflendi.",
+        "solution": "React Native ve Expo ile antrenman kaydı, beslenme takibi ve ilerleme göstergeleri sunan çapraz platform bir mobil uygulama geliştirdim.",
+        "features": [
+          "Antrenman kaydı",
+          "Beslenme takibi",
+          "İlerleme göstergeleri",
+          "iOS ve Android desteği"
+        ]
       },
       "firefighting-drone": {
         "title": "Yangın Söndürme Dronu – Bitirme Projesi",
-        "description": "İstanbul Aydın Üniversitesi bitirme projesi olarak geliştirilen, özerk çalışma kapasitesine sahip yangın söndürme dronunun yazılım mantığı ve kontrol mekanizmaları.",
-        "longDescription": "Bitirme projesi olarak özerk bir yangın söndürme dronu için yazılım sisteminin tamamını tasarlayıp hayata geçirdim. Sistem mimarisi, kontrol akış mantığı ve güvenilir özerk operasyonu mümkün kılmak için sensör entegrasyonuna odaklandım. Sistem güvenliği ve doğruluğunu garanti altına almak amacıyla her aşamada işlevsel doğrulama gerçekleştirdim."
+        "description": "Yüksek taşıma kapasitesine sahip yangın söndürme dronunun yazılım mantığı, uzaktan kontrol mekanizmaları, sensör entegrasyonları ve gömülü sistem bileşenlerini kapsayan üniversite bitirme projesi.",
+        "longDescription": "Bitirme projesi olarak özerk bir yangın söndürme dronu için yazılım sisteminin tamamını tasarlayıp hayata geçirdim. Sistem mimarisi, kontrol akış mantığı ve güvenilir özerk operasyonu mümkün kılmak için sensör entegrasyonuna odaklandım. Sistem güvenliği ve doğruluğunu garanti altına almak amacıyla her aşamada işlevsel doğrulama gerçekleştirdim.",
+        "problem": "Orman yangınlarına hızlı müdahale edebilecek, yüksek taşıma kapasiteli ve uzaktan kontrol edilebilen bir söndürme sisteminin yazılım altyapısı eksikti.",
+        "solution": "Uzaktan kontrol mekanizmaları, sensör entegrasyonları ve gömülü sistem bileşenlerini kapsayan yazılım mantığını bitirme projesi olarak tasarlayıp geliştirdim.",
+        "features": [
+          "Uzaktan kontrol mekanizması",
+          "Sensör entegrasyonu",
+          "Gömülü sistem yazılımı",
+          "Yüksek taşıma kapasiteli söndürme mekanizması"
+        ]
       },
       "iot-smart-monitoring": {
         "title": "IoT Akıllı İzleme Sistemleri",
-        "description": "Gerçek zamanlı veri toplama, işleme ve otomatik kontrol mantığı için sensör kullanan IoT tabanlı çevresel izleme sistemleri.",
-        "longDescription": "Çevresel veri toplama ve izleme için donanım sensörleri kullanan bir dizi IoT projesi geliştirdim. Veri işleme hatları ve temel otomatik kontrol mantığı kurdum; geliştirme ve test süreçleri boyunca sensör doğruluğunu ve sistem davranışını doğruladım. Gömülü sistemler ve gerçek zamanlı veri akışları konusunda uygulamalı deneyim kazandım."
+        "description": "Sensörlerden gerçek zamanlı veri toplayan, verileri işleyen ve otomatik kontrol mantıkları uygulayan IoT tabanlı çevresel izleme sistemi.",
+        "longDescription": "Çevresel veri toplama ve izleme için donanım sensörleri kullanan bir dizi IoT projesi geliştirdim. Veri işleme hatları ve temel otomatik kontrol mantığı kurdum; geliştirme ve test süreçleri boyunca sensör doğruluğunu ve sistem davranışını doğruladım. Gömülü sistemler ve gerçek zamanlı veri akışları konusunda uygulamalı deneyim kazandım.",
+        "problem": "Çevresel verilerin gerçek zamanlı olarak toplanıp izlenmesi ve otomatik kontrol mekanizmalarıyla yönetilmesi gerekiyordu.",
+        "solution": "Sensörlerden gerçek zamanlı veri toplayan, verileri işleyen ve otomatik kontrol mantıkları uygulayan bir IoT sistemi geliştirdim.",
+        "features": [
+          "Gerçek zamanlı sensör verisi",
+          "MQTT ile veri iletimi",
+          "Otomatik kontrol mantığı",
+          "Veri işleme hattı"
+        ]
+      },
+      "personal-portfolio": {
+        "title": "Kişisel Portföy Sitesi",
+        "description": "Yazılım, mobil uygulama, yapay zekâ, SaaS ve gömülü sistem projelerimi sergilemek için geliştirdiğim modern, responsive ve performans odaklı kişisel portföy sitesi.",
+        "longDescription": "Yazılım, mobil, yapay zekâ, SaaS ve gömülü sistem alanlarında geliştirdiğim projeleri tek bir çatı altında sergilemek amacıyla bu portföy sitesini tasarlayıp geliştiriyorum. Next.js ve Tailwind CSS ile koyu temalı, mor tonlu ve modern bir arayüz oluşturdum; çoklu dil desteği, animasyonlu bölümler ve responsive bir yapı ile masaüstü, tablet ve mobilde tutarlı bir deneyim sunuyor.",
+        "problem": "Yazılım, mobil, yapay zekâ, SaaS ve gömülü sistem projelerimi tek, modern ve performanslı bir yerde sergileyebileceğim bir platforma ihtiyaç duydum.",
+        "solution": "Next.js ve Tailwind CSS ile modern, responsive ve performans odaklı bir kişisel portföy sitesi geliştiriyorum.",
+        "features": [
+          "Proje vitrini",
+          "Responsive tasarım",
+          "Koyu tema ve modern arayüz",
+          "Çoklu dil desteği (TR/EN)"
+        ]
+      },
+      "qr-reader": {
+        "title": "PDF QR Reader",
+        "description": "PDF belgelerindeki QR kodlarını okuyarak UUID verilerini çıkaran ve sonuçları Excel dosyasına aktaran Python tabanlı otomasyon aracı.",
+        "longDescription": "PDF belgeleri içindeki QR kodlarını otomatik olarak tarayıp okuyan, çözümlenen UUID verilerini yapılandırılmış bir Excel dosyasına aktaran bir Python otomasyon aracı geliştirdim. Araç, çok sayıda belgeyi toplu şekilde işleyerek manuel veri girişi ihtiyacını ortadan kaldırıyor.",
+        "problem": "Çok sayıda PDF belgesindeki QR kodlarını manuel olarak okuyup Excel'e aktarmak zaman alıcı ve hataya açıktı.",
+        "solution": "PDF belgelerindeki QR kodlarını otomatik okuyan, UUID verilerini çıkaran ve sonucu Excel dosyasına aktaran bir Python otomasyon aracı geliştirdim.",
+        "features": [
+          "PDF içinden QR kod okuma",
+          "UUID veri çıkarımı",
+          "Excel'e otomatik aktarım",
+          "Toplu belge işleme"
+        ]
       }
     },
     "designItems": {
@@ -121,37 +216,72 @@
       {
         "title": "Kurumsal Web Siteleri",
         "description": "Next.js ile oluşturulmuş, hızlı, SEO optimizasyonlu ve ziyaretçileri müşteriye dönüştürmek için tasarlanmış premium web siteleri.",
-        "features": ["Next.js / React", "SEO & Core Web Vitals", "CMS Entegrasyonu", "Duyarlı Tasarım"]
+        "features": [
+          "Next.js / React",
+          "SEO & Core Web Vitals",
+          "CMS Entegrasyonu",
+          "Duyarlı Tasarım"
+        ]
       },
       {
         "title": "Mobil Uygulamalar",
         "description": "React Native ile oluşturulmuş, iOS ve Android'de gerçek native hissiyat veren çapraz platform mobil uygulamalar — bir kez geliştir, her yerde çalıştır.",
-        "features": ["React Native + Expo", "iOS & Android", "App Store Yayını", "Anlık Bildirimler"]
+        "features": [
+          "React Native + Expo",
+          "iOS & Android",
+          "App Store Yayını",
+          "Anlık Bildirimler"
+        ]
       },
       {
         "title": "Yönetim Panelleri",
         "description": "İç ekipleriniz için gerçek zamanlı güncellemeler, grafikler ve rol tabanlı erişim içeren veri yoğun yönetim arayüzleri.",
-        "features": ["Gerçek Zamanlı Veri", "Grafikler & Analitik", "Rol Tabanlı Erişim", "Veri Dışa Aktarma"]
+        "features": [
+          "Gerçek Zamanlı Veri",
+          "Grafikler & Analitik",
+          "Rol Tabanlı Erişim",
+          "Veri Dışa Aktarma"
+        ]
       },
       {
         "title": "Backend / API Geliştirme",
         "description": "Node.js üzerine inşa edilmiş, kimlik doğrulama, doğrulama ve dokümantasyonla donatılmış güçlü ve ölçeklenebilir REST API'ler.",
-        "features": ["REST API'ler", "JWT / OAuth", "Rate Limiting", "API Dokümantasyonu"]
+        "features": [
+          "REST API'ler",
+          "JWT / OAuth",
+          "Rate Limiting",
+          "API Dokümantasyonu"
+        ]
       },
       {
         "title": "Veritabanı Tasarımı",
         "description": "Performans ve uzun vadeli sürdürülebilirlik için oluşturulmuş verimli ilişkisel veritabanı şemaları, sorgu optimizasyonu ve migrasyonlar.",
-        "features": ["PostgreSQL", "Supabase", "Veri Modelleme", "Sorgu Optimizasyonu"]
+        "features": [
+          "PostgreSQL",
+          "Supabase",
+          "Veri Modelleme",
+          "Sorgu Optimizasyonu"
+        ]
       },
       {
         "title": "UI/UX Kodlama",
         "description": "Figma tasarımlarının piksel mükemmelliğinde koda dönüştürülmesi; akıcı animasyonlar, erişilebilirlik standartları ve yeniden kullanılabilir bileşen sistemleri.",
-        "features": ["Figma'dan Koda", "Framer Motion", "Erişilebilirlik", "Tasarım Sistemleri"]
+        "features": [
+          "Figma'dan Koda",
+          "Framer Motion",
+          "Erişilebilirlik",
+          "Tasarım Sistemleri"
+        ]
       },
       {
         "title": "Teknik Danışmanlık",
         "description": "Ekipler ve kurucular için mimari incelemeler, teknoloji yığını kararları, kod denetimleri ve performans optimizasyonu.",
-        "features": ["Mimari İnceleme", "Teknoloji Yığını Tavsiyesi", "Kod Denetimi", "Performans Analizi"]
+        "features": [
+          "Mimari İnceleme",
+          "Teknoloji Yığını Tavsiyesi",
+          "Kod Denetimi",
+          "Performans Analizi"
+        ]
       }
     ]
   },
@@ -190,7 +320,29 @@
   "testimonials": {
     "label": "Referanslar",
     "heading": "Müşteriler ne",
-    "headingHighlight": "diyor"
+    "headingHighlight": "diyor",
+    "items": {
+      "1": {
+        "role": "CEO",
+        "content": "Ömer, SaaS panelimizi planlanandan önce teslim etti ve tüm beklentilerimizin ötesine geçti. Kod kalitesi olağanüstüydü ve proje boyunca iletişimi kusursuzdu. Onu ikinci bir proje için tekrar işe aldık."
+      },
+      "2": {
+        "role": "Kurucu",
+        "content": "Karmaşık bir e-ticaret mobil uygulamasının hızlıca geliştirilmesine ihtiyacımız vardı. Ömer, 8 hafta içinde cilalanmış, yayına hazır bir uygulama teslim etti. UX detaylarına gösterdiği özen ve akıcı animasyonlar kullanıcı yorumlarımızda gerçek bir fark yarattı."
+      },
+      "3": {
+        "role": "CTO",
+        "content": "Analitik platformumuz üzerinde Ömer ile çalışmak baştan sona keyifliydi. Teknik gereksinimleri hemen kavradı, doğru soruları sordu ve gururla yayına alabileceğimiz temiz, sürdürülebilir bir kod teslim etti."
+      },
+      "4": {
+        "role": "Operasyon Direktörü",
+        "content": "Ömer'in geliştirdiği restoran yönetim sistemi mutfaklarımızı işletme biçimimizi kökten değiştirdi. Gerçek zamanlı siparişler, sıfır kağıt israfı ve personel dakikalar içinde sistemi kavradı. Yaptığımız en iyi teknoloji yatırımı."
+      },
+      "5": {
+        "role": "Ürün Müdürü",
+        "content": "Ömer projeye yarı yolda katıldı ve hızla adapte oldu. Karmaşık gereksinimleri anlayıp temiz React bileşenlerine dönüştürme becerisi nadir rastlanan bir yetenek. Artık frontend işleri için başvurduğumuz geliştirici o."
+      }
+    }
   },
   "contact": {
     "label": "İletişim",

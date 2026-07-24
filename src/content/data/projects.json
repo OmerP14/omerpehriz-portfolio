@@ -1,0 +1,241 @@
+{
+  "software": [
+    {
+      "id": 1,
+      "slug": "special-education-saas",
+      "type": "software",
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Supabase"
+      ],
+      "category": "SaaS Platform",
+      "featured": true,
+      "hero": true,
+      "image": "/projects/special-education-saas.webp",
+      "screenshots": [],
+      "year": "2026",
+      "status": "In Active Development",
+      "repoVisibility": "private"
+    },
+    {
+      "id": 2,
+      "slug": "workify-ai",
+      "type": "software",
+      "technologies": [
+        "React",
+        "Node.js",
+        "JavaScript",
+        "OpenAI API",
+        "PostgreSQL"
+      ],
+      "category": "AI Web Application",
+      "featured": true,
+      "image": "/projects/workify-ai.webp",
+      "screenshots": [],
+      "year": "2024",
+      "status": "Prototype",
+      "repoVisibility": "none"
+    },
+    {
+      "id": 3,
+      "slug": "easy-home-rent",
+      "type": "software",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Java",
+        "SQL"
+      ],
+      "category": "Full-Stack Web Application",
+      "featured": true,
+      "image": "/projects/easy-home.webp",
+      "screenshots": [],
+      "year": "2024",
+      "status": "Academic Project",
+      "repoVisibility": "none"
+    },
+    {
+      "id": 4,
+      "slug": "myfitly",
+      "type": "software",
+      "technologies": [
+        "React Native",
+        "Expo",
+        "JavaScript",
+        "Supabase"
+      ],
+      "category": "Mobile Application",
+      "featured": false,
+      "image": "/projects/myfitly.webp",
+      "screenshots": [],
+      "year": "2023",
+      "status": "Academic Project",
+      "repoVisibility": "none"
+    },
+    {
+      "id": 5,
+      "slug": "firefighting-drone",
+      "type": "software",
+      "technologies": [
+        "Python",
+        "Arduino",
+        "C++",
+        "Embedded Systems",
+        "Sensors"
+      ],
+      "category": "Embedded Systems",
+      "featured": false,
+      "image": "/projects/firefighting-drone.webp",
+      "screenshots": [],
+      "year": "2025",
+      "status": "Graduation Project",
+      "repoVisibility": "none",
+      "tags": [
+        "University Graduation Project"
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "iot-smart-monitoring",
+      "type": "software",
+      "technologies": [
+        "Arduino",
+        "Python",
+        "MQTT",
+        "IoT",
+        "Sensors"
+      ],
+      "category": "IoT Project",
+      "featured": false,
+      "image": "/projects/iot-monitoring.webp",
+      "screenshots": [],
+      "year": "2024",
+      "status": "Academic Project",
+      "repoVisibility": "none"
+    },
+    {
+      "id": 7,
+      "slug": "personal-portfolio",
+      "type": "software",
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      "category": "Portfolio Website",
+      "featured": false,
+      "image": "/projects/portfolio.webp",
+      "screenshots": [],
+      "year": "2026",
+      "status": "In Development",
+      "repoVisibility": "private"
+    },
+    {
+      "id": 8,
+      "slug": "qr-reader",
+      "type": "software",
+      "technologies": [
+        "Python",
+        "PDF Processing",
+        "QR Code",
+        "Excel Automation"
+      ],
+      "category": "Python Automation",
+      "featured": false,
+      "image": "/projects/qr-reader.webp",
+      "screenshots": [],
+      "githubUrl": "https://github.com/OmerP14/QRReader",
+      "year": "2024",
+      "status": "Utility Project",
+      "repoVisibility": "public"
+    }
+  ],
+  "design": [
+    {
+      "id": 101,
+      "slug": "restaurant-branding",
+      "type": "design",
+      "designCategory": "Marka Kimliği",
+      "tools": [
+        "Adobe Illustrator",
+        "Adobe Photoshop"
+      ],
+      "featured": true,
+      "image": "",
+      "year": "2024"
+    },
+    {
+      "id": 102,
+      "slug": "tech-company-logo",
+      "type": "design",
+      "designCategory": "Logo Tasarımı",
+      "tools": [
+        "Adobe Illustrator",
+        "Figma"
+      ],
+      "featured": true,
+      "image": "",
+      "year": "2024"
+    },
+    {
+      "id": 103,
+      "slug": "product-catalog",
+      "type": "design",
+      "designCategory": "Katalog",
+      "tools": [
+        "Adobe InDesign",
+        "Adobe Illustrator",
+        "Adobe Photoshop"
+      ],
+      "featured": true,
+      "image": "",
+      "year": "2024"
+    },
+    {
+      "id": 104,
+      "slug": "landing-page-ui",
+      "type": "design",
+      "designCategory": "UI Tasarımı",
+      "tools": [
+        "Figma"
+      ],
+      "featured": false,
+      "image": "",
+      "year": "2023"
+    },
+    {
+      "id": 105,
+      "slug": "retail-brand-identity",
+      "type": "design",
+      "designCategory": "Marka Kimliği",
+      "tools": [
+        "Adobe Illustrator",
+        "Adobe Photoshop",
+        "Adobe InDesign"
+      ],
+      "featured": false,
+      "image": "",
+      "year": "2023"
+    },
+    {
+      "id": 106,
+      "slug": "social-media-kit",
+      "type": "design",
+      "designCategory": "Sosyal Medya",
+      "tools": [
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Figma"
+      ],
+      "featured": false,
+      "image": "",
+      "year": "2023"
+    }
+  ]
+}

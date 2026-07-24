@@ -5,7 +5,7 @@ import { GradientText } from "@/components/ui/GradientText";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { Badge } from "@/components/ui/Badge";
 import { TiltCard } from "@/components/ui/TiltCard";
-import { workExperienceConfig, educationConfig } from "@/content/experience";
+import { getExperienceConfig } from "@/content/experience";
 import type { ExperienceItem } from "@/types";
 import { Briefcase, GraduationCap, Download } from "lucide-react";
 
@@ -107,6 +107,7 @@ function TimelineItem({
 
 export async function ExperienceSection() {
   const t = await getTranslations("experience");
+  const { work: workExperienceConfig, education: educationConfig } = await getExperienceConfig();
 
   const workTexts = t.raw("work") as Array<{
     role: string;

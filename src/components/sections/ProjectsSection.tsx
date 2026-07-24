@@ -9,21 +9,33 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { GradientText } from "@/components/ui/GradientText";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { ProjectCard } from "@/components/project/ProjectCard";
+import { FeaturedProjectHero } from "@/components/project/FeaturedProjectHero";
 import { DesignCard } from "@/components/project/DesignCard";
-import { softwareProjects, designProjects } from "@/content/projects";
+import type { SoftwareProjectData, DesignProjectData } from "@/content/projects";
 import type { Project, DesignProject } from "@/types";
 import { cn } from "@/lib/utils";
 
 type Tab = "software" | "design";
 
-export function ProjectsSection() {
+interface SoftwareItemText {
+  title: string;
+  description: string;
+  longDescription: string;
+  problem?: string;
+  solution?: string;
+  features?: string[];
+}
+
+interface Props {
+  softwareProjects: SoftwareProjectData[];
+  designProjects: DesignProjectData[];
+}
+
+export function ProjectsSection({ softwareProjects, designProjects }: Props) {
   const [activeTab, setActiveTab] = useState<Tab>("software");
   const t = useTranslations("projects");
 
-  const softwareItems = t.raw("items") as Record<
-    string,
-    { title: string; description: string; longDescription: string }
-  >;
+  const softwareItems = t.raw("items") as Record<string, SoftwareItemText>;
   const designItems = t.raw("designItems") as Record<
     string,
     { title: string; description: string }
@@ -38,6 +50,10 @@ export function ProjectsSection() {
     ...p,
     ...(designItems[p.slug] ?? { title: p.slug, description: "" }),
   }));
+
+  const heroProject = localizedSoftware.find((p) => p.featured && p.hero);
+  const restFeatured = localizedSoftware.filter((p) => p.featured && !p.hero);
+  const otherSoftware = localizedSoftware.filter((p) => !p.featured);
 
   return (
     <SectionWrapper id="projects">
@@ -84,28 +100,42 @@ export function ProjectsSection() {
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              {localizedSoftware.filter((p) => p.featured).map((project, i) => (
-                <motion.div
-                  key={project.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.08, duration: 0.4 }}
-                >
-                  <ProjectCard project={project} />
-                </motion.div>
-              ))}
-            </div>
+            {heroProject && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+              >
+                <FeaturedProjectHero project={heroProject} />
+              </motion.div>
+            )}
 
-            {localizedSoftware.some((p) => !p.featured) && (
+            {restFeatured.length > 0 && (
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                {restFeatured.map((project, i) => (
+                  <motion.div
+                    key={project.id}
+                    className="h-full"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: i * 0.08, duration: 0.4 }}
+                  >
+                    <ProjectCard project={project} />
+                  </motion.div>
+                ))}
+              </div>
+            )}
+
+            {otherSoftware.length > 0 && (
               <>
                 <h3 className="text-xl font-bold text-foreground mb-6 mt-12">
                   {t("moreProjects")}
                 </h3>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-                  {localizedSoftware.filter((p) => !p.featured).map((project, i) => (
+                  {otherSoftware.map((project, i) => (
                     <motion.div
                       key={project.id}
+                      className="h-full"
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: i * 0.07, duration: 0.4 }}
@@ -141,6 +171,7 @@ export function ProjectsSection() {
               {localizedDesign.filter((p) => p.featured).map((project, i) => (
                 <motion.div
                   key={project.id}
+                  className="h-full"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.08, duration: 0.4 }}
@@ -159,6 +190,7 @@ export function ProjectsSection() {
                   {localizedDesign.filter((p) => !p.featured).map((project, i) => (
                     <motion.div
                       key={project.id}
+                      className="h-full"
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: i * 0.07, duration: 0.4 }}

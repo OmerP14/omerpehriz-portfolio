@@ -5,7 +5,7 @@ import { GradientText } from "@/components/ui/GradientText";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { ContactForm } from "@/components/ui/ContactForm";
 import { personalInfo } from "@/content/personal";
-import { Mail, MapPin, Github, Linkedin, Instagram, MessageCircle, Clock } from "lucide-react";
+import { Mail, MapPin, Github, Linkedin, Instagram, Clock } from "lucide-react";
 
 export async function ContactSection() {
   const t = await getTranslations("contact");
@@ -35,7 +35,6 @@ export async function ContactSection() {
     { icon: Github, label: "GitHub", href: personalInfo.social.github },
     { icon: Linkedin, label: "LinkedIn", href: personalInfo.social.linkedin },
     { icon: Instagram, label: "Instagram", href: personalInfo.social.instagram ?? "#" },
-    { icon: MessageCircle, label: "WhatsApp", href: personalInfo.social.whatsapp ?? "#" },
   ];
 
   return (

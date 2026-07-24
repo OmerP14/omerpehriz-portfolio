@@ -49,31 +49,126 @@
     "liveDemo": "Live Demo",
     "code": "Code",
     "viewDetails": "View details",
+    "privateRepository": "Private Repository",
+    "featuredLabel": "Featured Project",
+    "aboutTitle": "About this project",
+    "problemTitle": "The Problem",
+    "solutionTitle": "The Solution",
+    "featuresTitle": "Key Features",
+    "technologiesLabel": "Technologies",
+    "yearLabel": "Year",
+    "linksLabel": "Links",
+    "screenshotsTitle": "Screenshots",
     "items": {
+      "special-education-saas": {
+        "title": "Special Education Management System",
+        "description": "A comprehensive SaaS management platform for special education centers, covering students, guardians, teachers, sessions, payments, payroll, reporting, calendar management and Excel imports.",
+        "longDescription": "I'm building a comprehensive SaaS platform for special education centers that unifies student and guardian records, teacher management, session scheduling, and payment/installment tracking into a single panel. The system brings together daily, weekly and monthly calendar views, teacher payroll, a daily cash register, financial and operational reporting, and an Excel data import wizard. Role-based dashboards let admins, teachers and office staff work within screens tailored to their permissions. A multi-tenant SaaS architecture is planned for a future phase.",
+        "problem": "Special education centers typically manage students, guardians, teachers, sessions, payments and reporting through scattered spreadsheets and disconnected tools, increasing error risk and operational overhead.",
+        "solution": "I'm building an end-to-end management system that unifies these processes into a single SaaS panel with role-based access, automatic scheduling conflict checks and financial reporting.",
+        "features": [
+          "Student and guardian management",
+          "Teacher management",
+          "Session scheduling with conflict detection",
+          "Daily, weekly and monthly calendar",
+          "Student payment and installment system",
+          "Teacher payroll and payments",
+          "Daily cash register",
+          "Financial and operational reports",
+          "Excel data import wizard",
+          "Role-based dashboards"
+        ]
+      },
       "workify-ai": {
-        "title": "Workify AI – Task Management App",
-        "description": "An AI-powered task and workspace management application with backend services, user authentication, and third-party API integrations.",
-        "longDescription": "Contributed to the development of an AI-assisted productivity platform designed to streamline task and workspace management. Built and integrated backend services, implemented authentication flows, and connected third-party APIs. Validated API responses and ensured system reliability throughout development — combining engineering with a quality-first mindset."
+        "title": "Workify AI – AI-Powered Task Management",
+        "description": "An AI-powered productivity and task management application with authentication, workspaces, backend services and third-party AI integrations.",
+        "longDescription": "Contributed to the development of an AI-assisted productivity platform designed to streamline task and workspace management. Built and integrated backend services, implemented authentication flows, and connected third-party APIs. Validated API responses and ensured system reliability throughout development — combining engineering with a quality-first mindset.",
+        "problem": "Teams' task and workspace management is often split across disconnected tools, missing AI-powered automation.",
+        "solution": "I built a prototype that unifies authentication, workspaces and task management in a single app, boosting productivity with third-party AI APIs.",
+        "features": [
+          "User authentication",
+          "Workspace and task management",
+          "AI API integration",
+          "Backend services and REST API"
+        ]
       },
       "easy-home-rent": {
         "title": "Easy Home Rent – Rental Platform",
-        "description": "A web-based house rental platform with user authentication, property listings, and full CRUD operations — developed as an academic project at Istanbul Aydın University.",
-        "longDescription": "Designed and developed a web application for house rental management as a university project. Implemented user registration and authentication, property listing and search features, and complete CRUD operations for managing rental data. Designed application flows end-to-end and validated all major features during development to ensure functional correctness."
+        "description": "A full-stack rental platform with authentication, property listings, search, filtering and CRUD operations.",
+        "longDescription": "Designed and developed a web application for house rental management as a university project. Implemented user registration and authentication, property listing and search features, and complete CRUD operations for managing rental data. Designed application flows end-to-end and validated all major features during development to ensure functional correctness.",
+        "problem": "There was a need for a simple platform to connect renters and listers with search and filtering capabilities.",
+        "solution": "I built an end-to-end web application with authentication, listing management, search/filtering, and full CRUD operations.",
+        "features": [
+          "User registration and login",
+          "Listing creation and management",
+          "Search and filtering",
+          "Rental property listings"
+        ]
       },
       "myfitly": {
         "title": "MyFitly – Fitness & Diet App",
-        "description": "A cross-platform mobile fitness and diet tracking application with workout logging, nutrition tracking, and progress monitoring.",
-        "longDescription": "Built a mobile application for fitness and nutrition tracking as part of a hands-on mobile development course. Implemented core features including exercise logging, daily diet tracking, and progress visualization. Validated application behavior throughout development to ensure a reliable and consistent user experience across iOS and Android."
+        "description": "A cross-platform fitness and nutrition application featuring workout tracking, meal management and user progress monitoring.",
+        "longDescription": "Built a mobile application for fitness and nutrition tracking as part of a hands-on mobile development course. Implemented core features including exercise logging, daily diet tracking, and progress visualization. Validated application behavior throughout development to ensure a reliable and consistent user experience across iOS and Android.",
+        "problem": "Users needed to track workouts and nutrition from a single, platform-independent mobile app.",
+        "solution": "I built a cross-platform mobile app with React Native and Expo, featuring workout logging, nutrition tracking and progress indicators.",
+        "features": [
+          "Workout logging",
+          "Nutrition tracking",
+          "Progress indicators",
+          "iOS and Android support"
+        ]
       },
       "firefighting-drone": {
         "title": "Firefighting Drone – Graduation Project",
-        "description": "Software logic and autonomous control mechanisms for a firefighting drone, built as the graduation project at Istanbul Aydın University.",
-        "longDescription": "Designed and implemented the full software system for an autonomous firefighting drone as the university graduation project. Focused on system architecture, control flow logic, and sensor integration to enable reliable autonomous operation. Conducted functional validation at each development stage to ensure system safety and correctness under simulated conditions."
+        "description": "A graduation project focused on the software logic, remote-control mechanisms, sensor integrations and embedded systems of a high-capacity firefighting drone.",
+        "longDescription": "Designed and implemented the full software system for an autonomous firefighting drone as the university graduation project. Focused on system architecture, control flow logic, and sensor integration to enable reliable autonomous operation. Conducted functional validation at each development stage to ensure system safety and correctness under simulated conditions.",
+        "problem": "Forest fires needed a fast-response system with high payload capacity and remote-control capability, but lacked a dedicated software foundation.",
+        "solution": "I designed and built the software logic covering remote-control mechanisms, sensor integrations and embedded system components as my graduation project.",
+        "features": [
+          "Remote-control mechanism",
+          "Sensor integration",
+          "Embedded systems software",
+          "High-capacity suppression mechanism"
+        ]
       },
       "iot-smart-monitoring": {
         "title": "IoT Smart Monitoring Systems",
-        "description": "IoT-based environmental monitoring systems using sensors for real-time data collection, processing, and automated control logic.",
-        "longDescription": "Developed a series of IoT projects using hardware sensors for environmental data collection and monitoring. Implemented data pipelines and basic automated control logic, then verified sensor accuracy and system behavior throughout development and testing. Gained practical experience with embedded systems and real-time data flows."
+        "description": "An IoT-based environmental monitoring system that collects real-time sensor data, processes measurements and supports automated control logic.",
+        "longDescription": "Developed a series of IoT projects using hardware sensors for environmental data collection and monitoring. Implemented data pipelines and basic automated control logic, then verified sensor accuracy and system behavior throughout development and testing. Gained practical experience with embedded systems and real-time data flows.",
+        "problem": "Environmental data needed to be collected and monitored in real time, with automated control mechanisms.",
+        "solution": "I built an IoT system that collects real-time sensor data, processes it, and applies automated control logic.",
+        "features": [
+          "Real-time sensor data",
+          "MQTT data transport",
+          "Automated control logic",
+          "Data processing pipeline"
+        ]
+      },
+      "personal-portfolio": {
+        "title": "Personal Portfolio Website",
+        "description": "A modern and responsive portfolio website built to showcase my software, mobile, AI, SaaS and embedded systems projects.",
+        "longDescription": "I designed and built this portfolio site to showcase the projects I've developed across software, mobile, AI, SaaS and embedded systems under one roof. Using Next.js and Tailwind CSS, I created a dark, purple-toned, modern interface with multi-language support, animated sections and a fully responsive layout that stays consistent across desktop, tablet and mobile.",
+        "problem": "I needed a single, modern and performant place to showcase my software, mobile, AI, SaaS and embedded systems projects.",
+        "solution": "I'm building a modern, responsive and performance-focused personal portfolio site with Next.js and Tailwind CSS.",
+        "features": [
+          "Project showcase",
+          "Responsive design",
+          "Dark theme and modern UI",
+          "Multi-language support (TR/EN)"
+        ]
+      },
+      "qr-reader": {
+        "title": "PDF QR Reader",
+        "description": "A Python automation tool that reads QR codes from PDF documents, extracts UUID values and exports the results to Excel.",
+        "longDescription": "I built a Python automation tool that scans and reads QR codes embedded in PDF documents, extracting the decoded UUID values into a structured Excel file. The tool processes multiple documents in batch, removing the need for manual data entry.",
+        "problem": "Manually reading QR codes from large batches of PDF documents and transferring them to Excel was slow and error-prone.",
+        "solution": "I built a Python automation tool that automatically reads QR codes from PDF documents, extracts UUID values, and exports the results to Excel.",
+        "features": [
+          "QR code reading from PDF",
+          "UUID data extraction",
+          "Automatic Excel export",
+          "Batch document processing"
+        ]
       }
     },
     "designItems": {
@@ -121,37 +216,72 @@
       {
         "title": "Custom Websites",
         "description": "Premium, responsive websites built with Next.js — fast, SEO-optimized, and designed to convert visitors into customers.",
-        "features": ["Next.js / React", "SEO & Core Web Vitals", "CMS Integration", "Responsive Design"]
+        "features": [
+          "Next.js / React",
+          "SEO & Core Web Vitals",
+          "CMS Integration",
+          "Responsive Design"
+        ]
       },
       {
         "title": "Mobile Applications",
         "description": "Cross-platform mobile apps with React Native that feel truly native on both iOS and Android — built once, deployed everywhere.",
-        "features": ["React Native + Expo", "iOS & Android", "App Store Deployment", "Push Notifications"]
+        "features": [
+          "React Native + Expo",
+          "iOS & Android",
+          "App Store Deployment",
+          "Push Notifications"
+        ]
       },
       {
         "title": "Admin Dashboards",
         "description": "Data-rich management interfaces with real-time updates, charts, and role-based access for your internal teams.",
-        "features": ["Real-time Data", "Charts & Analytics", "Role-based Access", "Data Export"]
+        "features": [
+          "Real-time Data",
+          "Charts & Analytics",
+          "Role-based Access",
+          "Data Export"
+        ]
       },
       {
         "title": "Backend / API Development",
         "description": "Robust, scalable REST APIs and backend services built on Node.js with proper authentication, validation, and documentation.",
-        "features": ["REST APIs", "JWT / OAuth", "Rate Limiting", "API Documentation"]
+        "features": [
+          "REST APIs",
+          "JWT / OAuth",
+          "Rate Limiting",
+          "API Documentation"
+        ]
       },
       {
         "title": "Database Design",
         "description": "Efficient relational database schemas, query optimization, and migrations — built for performance and long-term maintainability.",
-        "features": ["PostgreSQL", "Supabase", "Data Modeling", "Query Optimization"]
+        "features": [
+          "PostgreSQL",
+          "Supabase",
+          "Data Modeling",
+          "Query Optimization"
+        ]
       },
       {
         "title": "UI/UX Implementation",
         "description": "Pixel-perfect Figma-to-code implementation with smooth animations, accessibility compliance, and reusable component systems.",
-        "features": ["Figma to Code", "Framer Motion", "Accessibility", "Design Systems"]
+        "features": [
+          "Figma to Code",
+          "Framer Motion",
+          "Accessibility",
+          "Design Systems"
+        ]
       },
       {
         "title": "Technical Consulting",
         "description": "Architecture reviews, tech stack decisions, code audits, and performance optimization for teams and founders.",
-        "features": ["Architecture Review", "Tech Stack Advice", "Code Audit", "Performance Audit"]
+        "features": [
+          "Architecture Review",
+          "Tech Stack Advice",
+          "Code Audit",
+          "Performance Audit"
+        ]
       }
     ]
   },
@@ -190,7 +320,29 @@
   "testimonials": {
     "label": "Testimonials",
     "heading": "What clients",
-    "headingHighlight": "say"
+    "headingHighlight": "say",
+    "items": {
+      "1": {
+        "role": "CEO",
+        "content": "Ömer delivered our SaaS dashboard ahead of schedule and exceeded every expectation. His code quality is exceptional, and his communication throughout the project was outstanding. We've already rehired him for a second project."
+      },
+      "2": {
+        "role": "Founder",
+        "content": "We needed a complex e-commerce mobile app built fast. Ömer delivered a polished, production-ready app in 8 weeks. The attention to UX detail and the smooth animations made a real difference in our user reviews."
+      },
+      "3": {
+        "role": "CTO",
+        "content": "Working with Ömer on our analytics platform was a pleasure from start to finish. He understood the technical requirements immediately, asked the right questions, and delivered clean, maintainable code we were proud to ship."
+      },
+      "4": {
+        "role": "Operations Director",
+        "content": "The restaurant management system Ömer built has transformed how we run our kitchens. Real-time orders, zero paper waste, and the staff picked it up in minutes. Best tech investment we've made."
+      },
+      "5": {
+        "role": "Product Manager",
+        "content": "Ömer joined mid-project and quickly got up to speed. His ability to understand complex requirements and translate them into clean React components is rare. He's now our go-to developer for frontend work."
+      }
+    }
   },
   "contact": {
     "label": "Contact",

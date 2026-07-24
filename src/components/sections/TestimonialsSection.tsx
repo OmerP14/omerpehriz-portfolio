@@ -8,7 +8,12 @@ import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { GradientText } from "@/components/ui/GradientText";
 import { SectionLabel } from "@/components/ui/SectionLabel";
-import { testimonials } from "@/content/testimonials";
+import type { TestimonialData } from "@/content/testimonials";
+import type { Testimonial } from "@/types";
+
+interface Props {
+  testimonials: TestimonialData[];
+}
 
 function StarRating({ rating }: { rating: number }) {
   return (
@@ -24,10 +29,16 @@ function StarRating({ rating }: { rating: number }) {
   );
 }
 
-export function TestimonialsSection() {
+export function TestimonialsSection({ testimonials: testimonialsData }: Props) {
   const [current, setCurrent] = useState(0);
   const [dir, setDir] = useState(1);
   const t = useTranslations("testimonials");
+
+  const items = t.raw("items") as Record<string, { role: string; content: string }>;
+  const testimonials: Testimonial[] = testimonialsData.map((td) => ({
+    ...td,
+    ...(items[td.id] ?? { role: "", content: "" }),
+  }));
 
   const go = (next: number) => {
     setDir(next > current ? 1 : -1);
