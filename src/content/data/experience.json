@@ -9,11 +9,6 @@
       "type": "work",
       "technologies": ["React", "Node.js", "PostgreSQL", "AWS"],
       "current": false
-    },
-    {
-      "type": "work",
-      "technologies": ["React", "JavaScript", "CSS", "REST APIs"],
-      "current": false
     }
   ],
   "education": [{ "type": "education" }]

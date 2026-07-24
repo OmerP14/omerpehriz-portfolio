@@ -1,11 +1,12 @@
 {
   "personal": {
-    "title": "Full Stack Developer",
-    "tagline": "Building modern web applications, mobile experiences, and digital solutions for businesses and startups.",
+    "title": "Software Engineer",
+    "tagline": "Building modern web, mobile, and SaaS applications.",
     "bio1": "Hi, I'm Ömer — a Software Engineering graduate from Istanbul Aydın University, where I earned my degree studying entirely in English. Throughout my degree I built real products: web applications, mobile apps, AI-assisted tools, and embedded systems — getting hands-on with the full development process from day one, not just in theory.",
     "bio2": "My experience spans frontend development, backend services, database design, and API integration. During my internship at Cabitas I worked directly on production systems — contributing to database architecture, maintaining application workflows, and collaborating in a real engineering team. I bring both a builder's instinct and an engineer's eye for quality to everything I ship.",
-    "bio3": "Beyond core development, I also take on digital and visual work — landing pages, branding, and catalogs. Whether a client needs a web platform, a mobile product, or a complete online presence, I handle the project end-to-end: one person, full ownership, no handoffs.",
-    "availability": "Available for freelance work"
+    "bio3": "Beyond core development, I also take on digital and visual work — landing pages, branding, and catalogs. I like owning a project end-to-end, whether it's a web platform, a mobile app, or a complete digital presence — one person, full ownership, no handoffs.",
+    "availability": "Available for freelance work",
+    "seoDescription": "Software Engineer specializing in modern web applications, SaaS platforms, mobile development and AI-powered software."
   },
   "nav": {
     "about": "About",
@@ -41,7 +42,7 @@
     "label": "My Work",
     "heading": "Projects I'm",
     "headingHighlight": "proud of",
-    "desc": "Software I've built and designs I've crafted — all for real clients.",
+    "desc": "Software projects, academic work, and products I'm actively building.",
     "tabSoftware": "Software Projects",
     "tabDesign": "Design Work",
     "moreProjects": "More Projects",
@@ -64,7 +65,7 @@
     "label": "Skills & Technologies",
     "heading": "My",
     "headingHighlight": "tech stack",
-    "desc": "Tools and technologies I use daily to ship production-grade products."
+    "desc": "Tools and technologies I use to build the projects in my portfolio."
   },
   "services": {
     "label": "Services",
@@ -91,7 +92,7 @@
         "features": [
           "React Native + Expo",
           "iOS & Android",
-          "App Store Deployment",
+          "Expo Workflow",
           "Push Notifications"
         ]
       },
@@ -134,16 +135,6 @@
           "Accessibility",
           "Design Systems"
         ]
-      },
-      {
-        "title": "Technical Consulting",
-        "description": "Architecture reviews, tech stack decisions, code audits, and performance optimization for teams and founders.",
-        "features": [
-          "Architecture Review",
-          "Tech Stack Advice",
-          "Code Audit",
-          "Performance Audit"
-        ]
       }
     ]
   },
@@ -158,10 +149,10 @@
     "current": "Current",
     "work": [
       {
-        "role": "Full Stack Developer",
-        "company": "Freelance / Self-Employed",
-        "period": "2022 — Present",
-        "description": "Building and delivering web applications, mobile apps, and design projects for clients across various industries. Managing projects end-to-end — from requirements and architecture through development, testing, and deployment."
+        "role": "Independent Software Developer",
+        "company": "Self-Employed",
+        "period": "2024 — Present",
+        "description": "Designing and building personal software projects end-to-end — web applications, mobile apps, and SaaS platforms. I handle everything from architecture and development through testing and deployment."
       },
       {
         "role": "Software Engineering Intern",
@@ -179,33 +170,6 @@
       }
     ]
   },
-  "testimonials": {
-    "label": "Testimonials",
-    "heading": "What clients",
-    "headingHighlight": "say",
-    "items": {
-      "1": {
-        "role": "CEO",
-        "content": "Ömer delivered our SaaS dashboard ahead of schedule and exceeded every expectation. His code quality is exceptional, and his communication throughout the project was outstanding. We've already rehired him for a second project."
-      },
-      "2": {
-        "role": "Founder",
-        "content": "We needed a complex e-commerce mobile app built fast. Ömer delivered a polished, production-ready app in 8 weeks. The attention to UX detail and the smooth animations made a real difference in our user reviews."
-      },
-      "3": {
-        "role": "CTO",
-        "content": "Working with Ömer on our analytics platform was a pleasure from start to finish. He understood the technical requirements immediately, asked the right questions, and delivered clean, maintainable code we were proud to ship."
-      },
-      "4": {
-        "role": "Operations Director",
-        "content": "The restaurant management system Ömer built has transformed how we run our kitchens. Real-time orders, zero paper waste, and the staff picked it up in minutes. Best tech investment we've made."
-      },
-      "5": {
-        "role": "Product Manager",
-        "content": "Ömer joined mid-project and quickly got up to speed. His ability to understand complex requirements and translate them into clean React components is rare. He's now our go-to developer for frontend work."
-      }
-    }
-  },
   "contact": {
     "label": "Contact",
     "heading": "Let's",
@@ -217,7 +181,7 @@
     "responseTimeValue": "Within 24 hours",
     "findMeOn": "Find me on",
     "availableTitle": "Currently Available",
-    "availableDesc": "I'm open to freelance projects, full-time roles, and consulting engagements.",
+    "availableDesc": "I'm open to freelance projects and full-time roles.",
     "form": {
       "name": "Name",
       "email": "Email",
@@ -238,7 +202,7 @@
     }
   },
   "footer": {
-    "tagline": "Full Stack Developer building premium web and mobile experiences.",
+    "tagline": "Software Engineer building modern web, mobile, and SaaS applications.",
     "navigation": "Navigation",
     "getInTouch": "Get in Touch",
     "available": "Available for freelance",

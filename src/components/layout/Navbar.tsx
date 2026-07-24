@@ -58,21 +58,21 @@ export function Navbar() {
           className="absolute bottom-0 left-0 h-0.5 bg-accent transition-all duration-100 pointer-events-none"
           style={{ width: `${progress}%` }}
         />
-        <nav className="layout-container flex items-center justify-between h-16 md:h-20">
+        <nav className="layout-container flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center group">
+          <Link href="/" className="flex items-center group shrink-0">
             <Image
               src="/images/profile/logom/pngler/horizontal_white_cropped.png"
               alt="Ömer Pehriz"
               width={5131}
               height={1579}
-              className="w-32 md:w-40 h-auto opacity-90 group-hover:opacity-100 transition-opacity"
+              className="w-40 lg:w-56 h-auto opacity-90 group-hover:opacity-100 transition-opacity"
               priority
             />
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -102,7 +102,7 @@ export function Navbar() {
           </div>
 
           {/* Mobile: lang toggle + hamburger */}
-          <div className="md:hidden flex items-center gap-2">
+          <div className="lg:hidden flex items-center gap-2">
             <button
               onClick={toggleLocale}
               className="flex items-center gap-1 px-2.5 py-1.5 text-xs text-foreground-secondary hover:text-foreground rounded-lg border border-border hover:border-accent/40 transition-all"
@@ -125,7 +125,7 @@ export function Navbar() {
       {/* Mobile overlay */}
       {mobileOpen && (
         <div
-          className="fixed inset-0 z-40 bg-background/95 backdrop-blur-xl md:hidden"
+          className="fixed inset-0 z-40 bg-background/95 backdrop-blur-xl lg:hidden"
           onClick={() => setMobileOpen(false)}
         >
           <div

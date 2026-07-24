@@ -31,18 +31,18 @@ export async function generateMetadata({
       default: `Ömer Pehriz | ${t("title")}`,
       template: `%s | Ömer Pehriz`,
     },
-    description: t("tagline"),
+    description: t("seoDescription"),
     keywords: [
-      "Full Stack Developer",
-      "Full Stack Geliştirici",
+      "Software Engineer",
+      "Yazılım Mühendisi",
       "React Developer",
       "Next.js Developer",
       "TypeScript",
       "Node.js",
       "React Native",
-      "Freelance Developer",
+      "SaaS Development",
       "Ömer Pehriz",
-      "Web Developer Turkey",
+      "Software Engineer Turkey",
     ],
     authors: [{ name: "Ömer Pehriz", url: "https://omerpehriz.dev" }],
     creator: "Ömer Pehriz",
@@ -51,7 +51,7 @@ export async function generateMetadata({
       locale: locale === "tr" ? "tr_TR" : "en_US",
       url: "https://omerpehriz.dev",
       title: `Ömer Pehriz | ${t("title")}`,
-      description: t("tagline"),
+      description: t("seoDescription"),
       siteName: "Ömer Pehriz",
       images: [
         {
@@ -65,22 +65,16 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: `Ömer Pehriz | ${t("title")}`,
-      description: t("tagline"),
+      description: t("seoDescription"),
       creator: "@omerpehriz",
       images: ["/og.png"],
     },
     icons: {
       icon: [
-        {
-          url: "/images/profile/logom/pngler/favicon_black.png",
-          media: "(prefers-color-scheme: light)",
-        },
-        {
-          url: "/images/profile/logom/pngler/favicon_white.png",
-          media: "(prefers-color-scheme: dark)",
-        },
+        { url: "/favicon-black-32.png", sizes: "32x32", media: "(prefers-color-scheme: light)" },
+        { url: "/favicon-white-32.png", sizes: "32x32", media: "(prefers-color-scheme: dark)" },
       ],
-      apple: "/images/profile/logom/pngler/favicon_white.png",
+      apple: "/favicon-white-180.png",
     },
     robots: {
       index: true,

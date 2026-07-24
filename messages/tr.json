@@ -1,11 +1,12 @@
 {
   "personal": {
-    "title": "Full Stack Geliştirici",
-    "tagline": "İşletmeler ve girişimler için modern web uygulamaları, mobil deneyimler ve dijital çözümler geliştiriyorum.",
+    "title": "Yazılım Mühendisi",
+    "tagline": "Modern web, mobil ve SaaS uygulamaları geliştiriyorum.",
     "bio1": "Merhaba, ben Ömer — İstanbul Aydın Üniversitesi Yazılım Mühendisliği mezunuyum; tüm eğitimimi İngilizce dil ortamında tamamladım. Lisans süresince sadece ders değil, gerçek ürünler inşa ettim: web uygulamaları, mobil uygulamalar, yapay zeka destekli araçlar ve gömülü sistemler — her projeyle geliştirme sürecinin tamamına dokunarak.",
     "bio2": "Deneyimim frontend geliştirme, backend servisleri, veritabanı tasarımı ve API entegrasyonunu kapsıyor. Cabitas'taki stajım boyunca doğrudan canlı sistemler üzerinde çalıştım; veritabanı mimarisine katkı sağladım, uygulama iş akışlarını yönettim ve gerçek bir mühendislik ekibinde yer aldım. Geliştirdiğim her şeye hem yapıcı hem de kalite odaklı bir bakış açısıyla yaklaşıyorum.",
-    "bio3": "Yazılımın yanı sıra dijital ve görsel çalışmalar da üretiyorum: açılış sayfaları, marka tasarımı ve kataloglar. İster bir web platformu, ister mobil uygulama, ister eksiksiz bir dijital varlık olsun — projeyi başından sonuna kadar tek elden yönetiyorum, el değiştirme yok, sahiplik tam.",
-    "availability": "Freelance çalışmaya müsait"
+    "bio3": "Yazılımın yanı sıra dijital ve görsel çalışmalar da üretiyorum: açılış sayfaları, marka tasarımı ve kataloglar. İster bir web platformu, ister mobil uygulama, ister eksiksiz bir dijital varlık olsun — bir projeyi başından sonuna kadar tek elden yönetmeyi seviyorum, el değiştirme yok, sahiplik tam.",
+    "availability": "Freelance çalışmaya müsait",
+    "seoDescription": "Modern web uygulamaları, SaaS platformları, mobil geliştirme ve yapay zeka destekli yazılımlar konusunda uzmanlaşmış Yazılım Mühendisi."
   },
   "nav": {
     "about": "Hakkımda",
@@ -41,7 +42,7 @@
     "label": "Çalışmalarım",
     "heading": "Gurur duyduğum",
     "headingHighlight": "işler",
-    "desc": "Geliştirdiğim yazılımlar ve tasarladığım görsel işler — tamamı gerçek müşteriler için.",
+    "desc": "Yazılım projelerim, akademik çalışmalarım ve üzerinde aktif olarak çalıştığım ürünler.",
     "tabSoftware": "Yazılım Projeleri",
     "tabDesign": "Tasarım İşleri",
     "moreProjects": "Daha Fazla Proje",
@@ -64,7 +65,7 @@
     "label": "Yetenekler & Teknolojiler",
     "heading": "Teknoloji",
     "headingHighlight": "yığınım",
-    "desc": "Üretim kalitesinde ürünler göndermek için her gün kullandığım araç ve teknolojiler."
+    "desc": "Projelerimi geliştirirken kullandığım araç ve teknolojiler."
   },
   "services": {
     "label": "Hizmetler",
@@ -91,7 +92,7 @@
         "features": [
           "React Native + Expo",
           "iOS & Android",
-          "App Store Yayını",
+          "Expo İş Akışı",
           "Anlık Bildirimler"
         ]
       },
@@ -134,16 +135,6 @@
           "Erişilebilirlik",
           "Tasarım Sistemleri"
         ]
-      },
-      {
-        "title": "Teknik Danışmanlık",
-        "description": "Ekipler ve kurucular için mimari incelemeler, teknoloji yığını kararları, kod denetimleri ve performans optimizasyonu.",
-        "features": [
-          "Mimari İnceleme",
-          "Teknoloji Yığını Tavsiyesi",
-          "Kod Denetimi",
-          "Performans Analizi"
-        ]
       }
     ]
   },
@@ -158,10 +149,10 @@
     "current": "Aktif",
     "work": [
       {
-        "role": "Full Stack Geliştirici",
+        "role": "Bağımsız Yazılım Geliştiricisi",
         "company": "Serbest Çalışan",
-        "period": "2022 — Günümüz",
-        "description": "Farklı sektörlerdeki müşteriler için web uygulamaları, mobil uygulamalar ve tasarım projeleri geliştirip teslim ediyorum. Gereksinim analizinden mimariye, geliştirmeden test ve deploy'a kadar tüm süreçleri uçtan uca yönetiyorum."
+        "period": "2024 — Günümüz",
+        "description": "Kişisel yazılım projelerimi uçtan uca tasarlayıp geliştiriyorum — web uygulamaları, mobil uygulamalar ve SaaS platformları. Mimariden geliştirmeye, testten dağıtıma kadar tüm süreçleri kendim yürütüyorum."
       },
       {
         "role": "Yazılım Mühendisliği Stajyeri",
@@ -179,33 +170,6 @@
       }
     ]
   },
-  "testimonials": {
-    "label": "Referanslar",
-    "heading": "Müşteriler ne",
-    "headingHighlight": "diyor",
-    "items": {
-      "1": {
-        "role": "CEO",
-        "content": "Ömer, SaaS panelimizi planlanandan önce teslim etti ve tüm beklentilerimizin ötesine geçti. Kod kalitesi olağanüstüydü ve proje boyunca iletişimi kusursuzdu. Onu ikinci bir proje için tekrar işe aldık."
-      },
-      "2": {
-        "role": "Kurucu",
-        "content": "Karmaşık bir e-ticaret mobil uygulamasının hızlıca geliştirilmesine ihtiyacımız vardı. Ömer, 8 hafta içinde cilalanmış, yayına hazır bir uygulama teslim etti. UX detaylarına gösterdiği özen ve akıcı animasyonlar kullanıcı yorumlarımızda gerçek bir fark yarattı."
-      },
-      "3": {
-        "role": "CTO",
-        "content": "Analitik platformumuz üzerinde Ömer ile çalışmak baştan sona keyifliydi. Teknik gereksinimleri hemen kavradı, doğru soruları sordu ve gururla yayına alabileceğimiz temiz, sürdürülebilir bir kod teslim etti."
-      },
-      "4": {
-        "role": "Operasyon Direktörü",
-        "content": "Ömer'in geliştirdiği restoran yönetim sistemi mutfaklarımızı işletme biçimimizi kökten değiştirdi. Gerçek zamanlı siparişler, sıfır kağıt israfı ve personel dakikalar içinde sistemi kavradı. Yaptığımız en iyi teknoloji yatırımı."
-      },
-      "5": {
-        "role": "Ürün Müdürü",
-        "content": "Ömer projeye yarı yolda katıldı ve hızla adapte oldu. Karmaşık gereksinimleri anlayıp temiz React bileşenlerine dönüştürme becerisi nadir rastlanan bir yetenek. Artık frontend işleri için başvurduğumuz geliştirici o."
-      }
-    }
-  },
   "contact": {
     "label": "İletişim",
     "heading": "Birlikte",
@@ -217,7 +181,7 @@
     "responseTimeValue": "24 saat içinde",
     "findMeOn": "Beni bul",
     "availableTitle": "Şu An Müsait",
-    "availableDesc": "Freelance projeler, tam zamanlı roller ve danışmanlık işleri için açığım.",
+    "availableDesc": "Freelance projeler ve tam zamanlı roller için açığım.",
     "form": {
       "name": "İsim",
       "email": "E-posta",
@@ -238,7 +202,7 @@
     }
   },
   "footer": {
-    "tagline": "Full Stack Geliştirici — premium web ve mobil deneyimler inşa ediyorum.",
+    "tagline": "Yazılım Mühendisi — modern web, mobil ve SaaS uygulamaları geliştiriyorum.",
     "navigation": "Navigasyon",
     "getInTouch": "İletişime Geç",
     "available": "Freelance çalışmaya müsait",

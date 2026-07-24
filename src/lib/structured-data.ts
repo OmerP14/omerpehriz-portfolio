@@ -5,7 +5,7 @@ export function personSchema() {
     name: "Ömer Pehriz",
     url: "https://omerpehriz.dev",
     email: "omerpehriz4@gmail.com",
-    jobTitle: "Full Stack Developer",
+    jobTitle: "Software Engineer",
     knowsAbout: [
       "React",
       "Next.js",
@@ -25,7 +25,7 @@ export function websiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Ömer Pehriz | Full Stack Developer",
+    name: "Ömer Pehriz | Software Engineer",
     url: "https://omerpehriz.dev",
     author: { "@type": "Person", name: "Ömer Pehriz" },
   };

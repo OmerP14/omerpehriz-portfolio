@@ -1,5 +1,4 @@
 import type { SoftwareProjectData, DesignProjectData } from "@/content/projects";
-import type { TestimonialData } from "@/content/testimonials";
 
 export interface Project extends SoftwareProjectData {
   title: string;
@@ -45,11 +44,6 @@ export interface Service {
   description: string;
   features: string[];
   highlight: boolean;
-}
-
-export interface Testimonial extends TestimonialData {
-  role: string;
-  content: string;
 }
 
 export interface SocialLink {

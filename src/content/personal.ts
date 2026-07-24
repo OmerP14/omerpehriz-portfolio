@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Ömer Pehriz",
   firstName: "Ömer",
   email: "omerpehriz4@gmail.com",
-  location: "Istanbul, Turkey",
+  location: "Konya, Türkiye",
   cvPath: "/cv.pdf",
   avatarPath: "/images/profile/avatar.jpg",
   social: {

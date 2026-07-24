@@ -63,48 +63,64 @@ export function ContactForm() {
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
       <div className="grid sm:grid-cols-2 gap-5">
         <div>
-          <label className={labelClass}>{t("name")}</label>
-          <input {...register("name")} placeholder={t("namePlaceholder")} className={inputClass} />
+          <label htmlFor="contact-name" className={labelClass}>{t("name")}</label>
+          <input
+            id="contact-name"
+            {...register("name")}
+            placeholder={t("namePlaceholder")}
+            className={inputClass}
+            aria-invalid={!!errors.name}
+            aria-describedby={errors.name ? "contact-name-error" : undefined}
+          />
           {errors.name && (
-            <p className="mt-1.5 text-xs text-red-400">{errors.name.message}</p>
+            <p id="contact-name-error" className="mt-1.5 text-xs text-red-400">{errors.name.message}</p>
           )}
         </div>
         <div>
-          <label className={labelClass}>{t("email")}</label>
+          <label htmlFor="contact-email" className={labelClass}>{t("email")}</label>
           <input
+            id="contact-email"
             {...register("email")}
             type="email"
             placeholder={t("emailPlaceholder")}
             className={inputClass}
+            aria-invalid={!!errors.email}
+            aria-describedby={errors.email ? "contact-email-error" : undefined}
           />
           {errors.email && (
-            <p className="mt-1.5 text-xs text-red-400">{errors.email.message}</p>
+            <p id="contact-email-error" className="mt-1.5 text-xs text-red-400">{errors.email.message}</p>
           )}
         </div>
       </div>
 
       <div>
-        <label className={labelClass}>{t("subject")}</label>
+        <label htmlFor="contact-subject" className={labelClass}>{t("subject")}</label>
         <input
+          id="contact-subject"
           {...register("subject")}
           placeholder={t("subjectPlaceholder")}
           className={inputClass}
+          aria-invalid={!!errors.subject}
+          aria-describedby={errors.subject ? "contact-subject-error" : undefined}
         />
         {errors.subject && (
-          <p className="mt-1.5 text-xs text-red-400">{errors.subject.message}</p>
+          <p id="contact-subject-error" className="mt-1.5 text-xs text-red-400">{errors.subject.message}</p>
         )}
       </div>
 
       <div>
-        <label className={labelClass}>{t("message")}</label>
+        <label htmlFor="contact-message" className={labelClass}>{t("message")}</label>
         <textarea
+          id="contact-message"
           {...register("message")}
           rows={6}
           placeholder={t("messagePlaceholder")}
           className={`${inputClass} resize-none`}
+          aria-invalid={!!errors.message}
+          aria-describedby={errors.message ? "contact-message-error" : undefined}
         />
         {errors.message && (
-          <p className="mt-1.5 text-xs text-red-400">{errors.message.message}</p>
+          <p id="contact-message-error" className="mt-1.5 text-xs text-red-400">{errors.message.message}</p>
         )}
       </div>
 

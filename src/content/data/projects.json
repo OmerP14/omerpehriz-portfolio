@@ -7,8 +7,7 @@
         "React",
         "TypeScript",
         "Tailwind CSS",
-        "shadcn/ui",
-        "Supabase"
+        "shadcn/ui"
       ],
       "category": "SaaS Platform",
       "featured": true,
