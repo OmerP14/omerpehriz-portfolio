@@ -12,6 +12,10 @@ import {
   LayoutTemplate,
   Terminal,
   Code2,
+  AudioLines,
+  Building2,
+  Monitor,
+  Gamepad2,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -51,12 +55,36 @@ const categoryConfig: Record<string, { icon: React.ElementType; gradient: string
     gradient: "from-accent/25 via-fuchsia-500/10 to-transparent",
     accent: "text-accent-light",
   },
+  "AI Voice Agent": {
+    icon: AudioLines,
+    gradient: "from-violet-500/25 via-fuchsia-500/10 to-transparent",
+    accent: "text-violet-400",
+  },
+  "Corporate Website & CMS": {
+    icon: Building2,
+    gradient: "from-sky-500/25 via-indigo-500/10 to-transparent",
+    accent: "text-sky-400",
+  },
+  "Desktop Application": {
+    icon: Monitor,
+    gradient: "from-teal-500/25 via-cyan-500/10 to-transparent",
+    accent: "text-teal-400",
+  },
   "Python Automation": {
     icon: Terminal,
     gradient: "from-slate-500/25 via-accent/10 to-transparent",
     accent: "text-slate-300",
   },
 };
+
+const gameConfig = {
+  icon: Gamepad2,
+  gradient: "from-amber-500/25 via-rose-500/10 to-transparent",
+  accent: "text-amber-400",
+};
+categoryConfig["Mobile Game"] = gameConfig;
+categoryConfig["Multiplayer Game"] = gameConfig;
+categoryConfig["Unity Game"] = gameConfig;
 
 const defaultConfig = {
   icon: Code2,

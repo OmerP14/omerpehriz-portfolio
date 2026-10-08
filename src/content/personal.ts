@@ -3,11 +3,13 @@ export const personalInfo = {
   firstName: "Ömer",
   email: "omerpehriz4@gmail.com",
   location: "Konya, Türkiye",
-  cvPath: "/cv.pdf",
+  /** CV per locale; download name is set via cvFileName. */
+  cvPath: { tr: "/cv-tr.pdf", en: "/cv-en.pdf" },
+  cvFileName: { tr: "Omer-Pehriz-CV-TR.pdf", en: "Omer-Pehriz-CV-EN.pdf" },
   avatarPath: "/images/profile/avatar.jpg",
   social: {
     github: "https://github.com/OmerP14",
-    linkedin: "https://www.linkedin.com/in/%C3%B6mer-pehriz-381801260/",
+    linkedin: "https://www.linkedin.com/in/omerpehriz/",
     instagram: "https://instagram.com/omerpehriz",
   },
 };

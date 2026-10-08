@@ -15,8 +15,8 @@ export function personSchema() {
       "Supabase",
     ],
     sameAs: [
-      "https://github.com/omerpehriz",
-      "https://linkedin.com/in/omerpehriz",
+      "https://github.com/OmerP14",
+      "https://www.linkedin.com/in/omerpehriz/",
     ],
   };
 }

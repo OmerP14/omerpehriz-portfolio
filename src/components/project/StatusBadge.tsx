@@ -7,12 +7,14 @@ type StatusStyle = {
 };
 
 const STATUS_STYLES: Record<string, StatusStyle> = {
+  Live: { variant: "success", pulse: true },
   "In Active Development": { variant: "success", pulse: true },
   "In Development": { variant: "outline", pulse: true },
   Prototype: { variant: "outline" },
   "Academic Project": { variant: "default" },
   "Graduation Project": { variant: "accent" },
   "Utility Project": { variant: "default" },
+  Completed: { variant: "accent" },
 };
 
 interface Props {

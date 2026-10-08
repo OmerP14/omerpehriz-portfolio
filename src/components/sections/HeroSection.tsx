@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowDown, Download, Mail, Github, Linkedin } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { personalInfo } from "@/content/personal";
 import { HeroBackground } from "@/components/ui/HeroBackground";
@@ -16,6 +16,7 @@ const fadeUp = (delay: number) => ({
 export function HeroSection() {
   const t = useTranslations("personal");
   const th = useTranslations("hero");
+  const locale = useLocale() === "en" ? "en" : "tr";
 
   return (
     <section
@@ -77,8 +78,8 @@ export function HeroSection() {
               {th("viewProjects")}
             </Link>
             <a
-              href={personalInfo.cvPath}
-              download
+              href={personalInfo.cvPath[locale]}
+              download={personalInfo.cvFileName[locale]}
               className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-4 border border-border hover:border-accent/50 text-foreground hover:text-accent font-semibold rounded-xl transition-all duration-200 hover:-translate-y-0.5"
             >
               <Download size={18} />

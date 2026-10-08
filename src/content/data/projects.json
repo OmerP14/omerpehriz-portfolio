@@ -1,20 +1,74 @@
 {
   "software": [
     {
+      "slug": "nova-voice-agent",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Whisper",
+        "RAG",
+        "Qwen2.5",
+        "Piper",
+        "Docker"
+      ],
+      "category": "AI Voice Agent",
+      "featured": true,
+      "image": "/projects/nova-voice-agent.webp",
+      "githubUrl": "https://github.com/OmerP14/voice-agent",
+      "year": "2026",
+      "status": "Completed",
+      "repoVisibility": "public",
+      "tr": {
+        "title": "Nova — Sesli Yapay Zeka Asistanı",
+        "description": "Tamamen yerelde, açık kaynak bileşenlerle çalışan; konuşmayı tanıyan, RAG ile şirket belgelerinden bilgi çeken ve sesli yanıt veren Türkçe/İngilizce sesli yapay zeka asistanı.",
+        "longDescription": "Kullanıcıyı dinleyen, konuşulan dili (Türkçe/İngilizce) kendisi algılayan ve aynı dilde sesli yanıt veren uçtan uca bir sesli asistan geliştirdim. Sistem; Silero VAD, Whisper ile konuşma tanıma, bge-m3 tabanlı RAG, yerel Qwen2.5 dil modeli ve Piper ile metinden sese dönüşümden oluşuyor ve tamamen yerelde çalışıyor. Bilgileri modelin hafızasından değil kaynaklardan alıyor: şirket belgeleri, canlı SQL ürün veritabanı, hava durumu ve piyasa API'leri. Kod tabanlı hesaplama ve sayı doğrulama katmanları uydurma bilgileri engelliyor. Değerlendirmelerde doğruluk/halüsinasyon testinde 27/27, çok turlu konuşma senaryolarında 38/38 ve dil algılamada 24/24 skor aldı; medyan algılanan gecikme 2.8–4.2 sn.",
+        "problem": "Hazır sesli asistanlar bulut servislerine bağımlı, şirket verisiyle güvenilir şekilde beslenmesi zor ve sık sık uydurma (halüsinasyon) bilgi üretiyor.",
+        "solution": "Tamamen yerelde çalışan, cevaplarını belgeler, SQL veritabanı ve API'ler gibi kaynaklara dayandıran ve sayıları kodla doğrulayan açık kaynak bir sesli asistan geliştirdim.",
+        "features": [
+          "Türkçe/İngilizce otomatik dil algılama",
+          "Whisper ile konuşma tanıma",
+          "RAG ile şirket belgelerinden cevap",
+          "Canlı SQL ürün veritabanı ve harici API entegrasyonu",
+          "Kod tabanlı hesaplama ve sayı doğrulama",
+          "Piper ile akışlı sesli yanıt",
+          "Söz kesme (barge-in) desteği",
+          "Docker ile kurulum"
+        ]
+      },
+      "en": {
+        "title": "Nova — Voice AI Agent",
+        "description": "A bilingual (Turkish/English) voice assistant that runs fully locally on open-source components: speech recognition, RAG over company documents, a local LLM and text-to-speech.",
+        "longDescription": "I built an end-to-end voice assistant that listens to the user, detects the spoken language (Turkish/English) on its own and answers out loud in the same language. The pipeline combines Silero VAD, Whisper speech recognition, bge-m3 based RAG, a local Qwen2.5 language model and Piper text-to-speech, all running locally. It takes facts from sources rather than its own memory: company documents, a live SQL product database, and weather and market APIs. Code-based calculation and number verification layers block hallucinated facts. It scored 27/27 on the accuracy and hallucination evaluation, 38/38 on multi-turn conversation scenarios and 24/24 on language detection, with a median perceived latency of 2.8–4.2 s.",
+        "problem": "Off-the-shelf voice assistants depend on cloud services, are hard to ground reliably in company data and often hallucinate facts.",
+        "solution": "I built a fully local, open-source voice assistant that grounds its answers in documents, a SQL database and APIs, and verifies numbers with code.",
+        "features": [
+          "Automatic Turkish/English language detection",
+          "Whisper speech recognition",
+          "RAG answers from company documents",
+          "Live SQL product database and external APIs",
+          "Code-based calculation and number verification",
+          "Streaming speech output with Piper",
+          "Barge-in support",
+          "Docker setup"
+        ]
+      }
+    },
+    {
       "slug": "special-education-saas",
       "technologies": [
         "Next.js",
         "React",
         "TypeScript",
-        "Tailwind CSS",
-        "shadcn/ui"
+        "Supabase",
+        "Tailwind CSS"
       ],
       "category": "SaaS Platform",
       "featured": true,
       "image": "/projects/special-education-saas.webp",
+      "githubUrl": "https://github.com/OmerP14/special-education-management-system",
       "year": "2026",
       "status": "In Active Development",
-      "repoVisibility": "private",
+      "repoVisibility": "public",
       "tr": {
         "title": "Özel Eğitim Yönetim Sistemi",
         "description": "Özel eğitim merkezlerinin öğrenci, veli, öğretmen, seans, ödeme, taksit, öğretmen hakedişi, günlük kasa, raporlama ve Excel aktarımı süreçlerini tek platformda yönetmesini sağlayan kapsamlı bir SaaS yönetim sistemi.",
@@ -55,86 +109,187 @@
       }
     },
     {
-      "slug": "workify-ai",
+      "slug": "konyap-website",
       "technologies": [
         "React",
-        "Node.js",
-        "JavaScript",
-        "OpenAI API",
-        "PostgreSQL"
+        "Supabase",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Netlify"
       ],
-      "category": "AI Web Application",
+      "category": "Corporate Website & CMS",
       "featured": true,
-      "image": "/projects/workify-ai.webp",
-      "year": "2024",
-      "status": "Prototype",
-      "repoVisibility": "none",
+      "image": "/projects/konyap-website.webp",
+      "liveUrl": "https://konyapmuhendislik.com",
+      "githubUrl": "https://github.com/OmerP14/Konyap-website",
+      "year": "2026",
+      "status": "Live",
+      "repoVisibility": "public",
       "tr": {
-        "title": "Workify AI – Yapay Zekâ Destekli Görev Yönetimi",
-        "description": "Kullanıcı kimlik doğrulama, çalışma alanları, görev yönetimi, backend servisleri ve üçüncü taraf yapay zekâ API entegrasyonları içeren üretkenlik uygulaması.",
-        "longDescription": "Görev ve çalışma alanı yönetimini kolaylaştırmak amacıyla tasarlanan yapay zekâ destekli bir üretkenlik platformunun geliştirilmesine katkı sağladım. Backend servisleri oluşturdum, kimlik doğrulama akışlarını hayata geçirdim ve üçüncü taraf API'leri entegre ettim. Geliştirme boyunca API yanıtlarını doğruladım ve sistem güvenilirliğini sağladım.",
-        "problem": "Ekiplerin görev ve çalışma alanı yönetimi genellikle dağınık araçlar arasında bölünüyor, yapay zekâ destekli otomasyondan yoksun kalıyor.",
-        "solution": "Kimlik doğrulama, çalışma alanları ve görev yönetimini tek bir uygulamada birleştirip üçüncü taraf yapay zekâ API'leri ile üretkenliği artıran bir prototip geliştirdim.",
+        "title": "Konyap Mühendislik Web Sitesi & CMS",
+        "description": "Konya'daki bir inşaat firması için geliştirdiğim, yayında olan kurumsal web sitesi ve şirketin projelerini ve site içeriğini geliştiriciye ihtiyaç duymadan yönettiği özel CMS paneli.",
+        "longDescription": "Konyap Mühendislik için canlıda olan kurumsal web sitesini ve buna bağlı özel bir içerik yönetim panelini geliştirdim. Site; firmanın villa ve konut projelerini, hizmetlerini ve iletişim kanallarını sergiliyor. Supabase Auth ile korunan yönetim paneli sayesinde firma projeleri, hizmetleri, gelen mesajları ve şirket bilgilerini kod yazmadan yönetebiliyor. Projede SEO (meta etiketleri, JSON-LD, sitemap), performans (kod bölme, lazy loading, WebP) ve güvenlik (Row-Level Security, girdi doğrulama) tarafına özellikle önem verdim.",
+        "problem": "Firmanın projelerini ve site içeriğini güncellemek için her seferinde bir geliştiriciye ihtiyaç duyması süreci yavaşlatıyordu.",
+        "solution": "Hızlı ve SEO uyumlu bir kurumsal site ile birlikte, firmanın tüm içeriği kendisinin yönettiği yetkili bir CMS paneli geliştirdim.",
         "features": [
-          "Kullanıcı kimlik doğrulama",
-          "Çalışma alanı ve görev yönetimi",
-          "Yapay zekâ API entegrasyonu",
-          "Backend servisleri ve REST API"
+          "Proje portföyü, galeri ve kat planları",
+          "Supabase Auth korumalı yönetim paneli",
+          "Sürükle-bırak proje sıralama",
+          "İletişim ve talep formları, e-posta bildirimi",
+          "Etkileşimli harita",
+          "SEO: meta etiketleri, JSON-LD, sitemap",
+          "Row-Level Security ve girdi doğrulama"
         ]
       },
       "en": {
-        "title": "Workify AI – AI-Powered Task Management",
-        "description": "An AI-powered productivity and task management application with authentication, workspaces, backend services and third-party AI integrations.",
-        "longDescription": "Contributed to the development of an AI-assisted productivity platform designed to streamline task and workspace management. Built and integrated backend services, implemented authentication flows, and connected third-party APIs. Validated API responses and ensured system reliability throughout development — combining engineering with a quality-first mindset.",
-        "problem": "Teams' task and workspace management is often split across disconnected tools, missing AI-powered automation.",
-        "solution": "I built a prototype that unifies authentication, workspaces and task management in a single app, boosting productivity with third-party AI APIs.",
+        "title": "Konyap Website & CMS",
+        "description": "A production corporate website for a construction company in Konya, with a custom CMS so the company manages its projects and site content without a developer.",
+        "longDescription": "I built the live corporate website for Konyap Mühendislik together with a custom content management panel. The site showcases the company's villa and residential projects, services and contact channels. A Supabase Auth-protected admin panel lets the company manage projects, services, incoming messages and company details without touching code. I put particular focus on SEO (meta tags, JSON-LD, sitemap), performance (code splitting, lazy loading, WebP) and security (Row-Level Security, input validation).",
+        "problem": "The company needed a developer every time it wanted to update its projects or site content, which slowed everything down.",
+        "solution": "I built a fast, SEO-friendly corporate site together with an authenticated CMS panel so the company can manage all of its content itself.",
         "features": [
-          "User authentication",
-          "Workspace and task management",
-          "AI API integration",
-          "Backend services and REST API"
+          "Project portfolio with galleries and floor plans",
+          "Supabase Auth-protected admin panel",
+          "Drag-and-drop project ordering",
+          "Contact and lead forms with email notifications",
+          "Interactive map",
+          "SEO: meta tags, JSON-LD, sitemap",
+          "Row-Level Security and input validation"
         ]
       }
     },
     {
-      "slug": "easy-home-rent",
+      "slug": "ober-yapi-website",
       "technologies": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Java",
-        "SQL"
+        "React",
+        "Supabase",
+        "Tailwind CSS",
+        "Render"
       ],
-      "category": "Full-Stack Web Application",
+      "category": "Corporate Website & CMS",
       "featured": true,
-      "image": "/projects/easy-home.webp",
-      "year": "2024",
-      "status": "Academic Project",
-      "repoVisibility": "none",
+      "image": "",
+      "liveUrl": "https://oberyapi.com",
+      "year": "2026",
+      "status": "Live",
+      "repoVisibility": "private",
       "tr": {
-        "title": "Easy Home Rent – Kiralama Platformu",
-        "description": "Kullanıcı girişi, ilan yönetimi, kiralık ev listeleme, arama, filtreleme ve CRUD işlemleri bulunan web tabanlı kiralama platformu.",
-        "longDescription": "Üniversite projesi kapsamında ev kiralama yönetimi için uçtan uca bir web uygulaması tasarlayıp geliştirdim. Kullanıcı kaydı ve kimlik doğrulama, ilan listeleme ve arama özellikleri ile kiralama verilerini yönetmek için tam CRUD işlevlerini hayata geçirdim. İşlevsel doğruluğu garantilemek için tüm temel özellikleri geliştirme süresince doğruladım.",
-        "problem": "Kiralık ev arayan ve ilan veren kullanıcıları tek bir yerden buluşturacak, arama ve filtreleme imkânı sunan basit bir platform ihtiyacı vardı.",
-        "solution": "Kullanıcı girişi, ilan yönetimi, arama/filtreleme ve tam CRUD işlemleri içeren uçtan uca bir web uygulaması geliştirdim.",
+        "title": "Ober Yapı Web Sitesi & CMS",
+        "description": "Ober Yapı için geliştirdiğim, özel içerik yönetim sistemine sahip, responsive ve yayında olan kurumsal web sitesi.",
+        "longDescription": "Ober Yapı için responsive bir kurumsal web sitesi ve buna bağlı özel bir içerik yönetim sistemi geliştirdim. Firma, site içeriğini geliştiriciye ihtiyaç duymadan panel üzerinden güncelleyebiliyor. Projenin dağıtım ve barındırma sürecini de Render üzerinde kurdum.",
+        "problem": "Firmanın kurumsal kimliğini yansıtan ve içeriğini kendisinin güncelleyebileceği modern bir web sitesine ihtiyacı vardı.",
+        "solution": "Supabase destekli özel bir CMS ile birlikte responsive bir kurumsal site geliştirdim ve Render üzerinde yayına aldım.",
         "features": [
-          "Kullanıcı kayıt ve girişi",
-          "İlan oluşturma ve yönetimi",
-          "Arama ve filtreleme",
-          "Kiralık ev listeleme"
+          "Responsive kurumsal tasarım",
+          "Özel içerik yönetim sistemi",
+          "Supabase veritabanı ve kimlik doğrulama",
+          "Render üzerinde dağıtım ve barındırma"
         ]
       },
       "en": {
-        "title": "Easy Home Rent – Rental Platform",
-        "description": "A full-stack rental platform with authentication, property listings, search, filtering and CRUD operations.",
-        "longDescription": "Designed and developed a web application for house rental management as a university project. Implemented user registration and authentication, property listing and search features, and complete CRUD operations for managing rental data. Designed application flows end-to-end and validated all major features during development to ensure functional correctness.",
-        "problem": "There was a need for a simple platform to connect renters and listers with search and filtering capabilities.",
-        "solution": "I built an end-to-end web application with authentication, listing management, search/filtering, and full CRUD operations.",
+        "title": "Ober Yapı Website & CMS",
+        "description": "A responsive, production corporate website for Ober Yapı with a custom content management system.",
+        "longDescription": "I built a responsive corporate website for Ober Yapı together with a custom content management system, so the company can update its site content from a panel without a developer. I also set up the project's deployment and hosting on Render.",
+        "problem": "The company needed a modern website that reflects its brand and whose content it can update on its own.",
+        "solution": "I built a responsive corporate site with a custom Supabase-backed CMS and deployed it on Render.",
         "features": [
-          "User registration and login",
-          "Listing creation and management",
-          "Search and filtering",
-          "Rental property listings"
+          "Responsive corporate design",
+          "Custom content management system",
+          "Supabase database and authentication",
+          "Deployment and hosting on Render"
+        ]
+      }
+    },
+    {
+      "slug": "sukran-card-game",
+      "technologies": [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "Firebase",
+        "Zustand"
+      ],
+      "category": "Mobile Game",
+      "featured": false,
+      "image": "/projects/sukran-card-game.webp",
+      "githubUrl": "https://github.com/OmerP14/Sukran-MobileGame",
+      "year": "2026",
+      "status": "In Development",
+      "repoVisibility": "public",
+      "tr": {
+        "title": "Şükran Mobil Kart Oyunu",
+        "description": "Geleneksel Türk kart oyunu Şükran'ın React Native ile geliştirdiğim mobil versiyonu: özel kurallar, bot yapay zekası, kademeli odalar ve Firebase hesapları.",
+        "longDescription": "Geleneksel Türk kart oyunu Şükran'ı React Native (Expo) ve TypeScript ile mobile taşıdım. Dört oyuncu birbirinden kart istiyor, dörtlü setleri tamamlamaya çalışıyor ve sırasını korumak için zamanında \"Şükran!\" demek zorunda. Oyun motoru (dağıtım, istekler, Şükran aşaması, set tamamlama, sıralama) saf TypeScript modüllerinde yer alıyor. Oyuncu, farklı zorluk seviyelerindeki üç bota karşı; farklı bahis, süre ve para birimlerine sahip kademeli odalarda oynuyor. Hesaplar ve arkadaşlar Firebase ile yönetiliyor.",
+        "problem": "Şükran gibi geleneksel kart oyunlarının kurallarına sadık, mobilde oynanabilen bir versiyonu yoktu.",
+        "solution": "Özel kuralları, sıra ve oyun durumu mantığını eksiksiz uygulayan; botlara karşı oynanabilen mobil bir kart oyunu geliştirdim.",
+        "features": [
+          "Saf TypeScript oyun motoru",
+          "3 zorluk seviyesinde bot yapay zekası",
+          "Kademeli odalar ve iki farklı para birimi",
+          "Zamanlı Şükran mekaniği",
+          "Ödül havuzu dağıtımı",
+          "Firebase hesapları ve arkadaş sistemi"
+        ]
+      },
+      "en": {
+        "title": "Şükran Mobile Card Game",
+        "description": "A mobile take on Şükran, the traditional Turkish card game, built with React Native: custom rules, bot AI, tiered rooms and Firebase accounts.",
+        "longDescription": "I brought Şükran, a traditional Turkish card game, to mobile with React Native (Expo) and TypeScript. Four players ask each other for cards, try to complete sets of four, and have to say \"Şükran!\" in time to keep their turn. The game engine (dealing, requests, the Şükran phase, set completion, ranking) lives in pure TypeScript modules. You play against three bots with different difficulty levels across tiered rooms with their own stakes, clocks and currencies. Accounts and friends are handled with Firebase.",
+        "problem": "There was no mobile version of traditional card games like Şükran that stays faithful to their rules.",
+        "solution": "I built a mobile card game that fully implements the custom rules, turn order and game-state logic, playable against bots.",
+        "features": [
+          "Pure TypeScript game engine",
+          "Bot AI with 3 difficulty levels",
+          "Tiered rooms and two currencies",
+          "Timed Şükran mechanic",
+          "Prize pool payouts",
+          "Firebase accounts and friends"
+        ]
+      }
+    },
+    {
+      "slug": "escape-room-coop",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Netcode for GameObjects",
+        "Unity Relay"
+      ],
+      "category": "Multiplayer Game",
+      "featured": false,
+      "image": "",
+      "githubUrl": "https://github.com/OmerP14/EscapeRoom",
+      "year": "2026",
+      "status": "Completed",
+      "repoVisibility": "public",
+      "tr": {
+        "title": "Escape Room Co-op",
+        "description": "Dört oyuncuya kadar destekleyen, oda kodu ile eşleşme, senkronize bulmacalar ve Unity Netcode + Relay ile gerçek zamanlı çok oyunculu, çevrimiçi bir kaçış odası oyunu.",
+        "longDescription": "Unity ile birinci şahıs, çevrimiçi ve co-op bir kaçış odası oyunu geliştirdim. 4 oyuncuya kadar oyuncu paylaşılabilir 6 haneli bir oda koduyla aynı odaya katılıyor; Unity Relay sayesinde port yönlendirme ya da özel sunucu gerekmiyor. Oyuncular birlikte bulmacaları çözüyor ve ortak geri sayım bitmeden kaçmaya çalışıyor. Oyuncu hareketi ve animasyonu istemci yetkili, bulmaca ve oyun durumu ise sunucu yetkili olarak senkronize ediliyor.",
+        "problem": "Çevrimiçi çok oyunculu oyunlarda genellikle özel sunucu ya da port yönlendirme gerekiyor ve oyun durumunu tüm oyuncular arasında tutarlı tutmak zor.",
+        "solution": "Unity Relay ile oda koduna dayalı bağlantı kurdum; Netcode for GameObjects ile hareketi, bulmacaları ve zamanlayıcıyı tüm oyuncular arasında senkronize ettim.",
+        "features": [
+          "4 oyunculu çevrimiçi co-op",
+          "Oda kodu ile eşleşme (Unity Relay)",
+          "İki oyunculu senkronize bulmacalar",
+          "Bilgi asimetrisine dayalı bulmaca",
+          "Senkronize geri sayım",
+          "Tüm oyuncular için duraklatma menüsü"
+        ]
+      },
+      "en": {
+        "title": "Escape Room Co-op",
+        "description": "An online co-op escape room game for up to four players with room-code matchmaking, synchronized puzzles and real-time multiplayer using Unity Netcode and Relay.",
+        "longDescription": "I built a first-person, networked co-op escape room in Unity. Up to four players join the same room with a shareable 6-character code; thanks to Unity Relay there is no dedicated server or port forwarding. Players solve puzzles together and race a shared countdown to escape. Player movement and animation are owner-authoritative, while puzzle and game state are server-authoritative and synced to every client.",
+        "problem": "Online multiplayer games usually need a dedicated server or port forwarding, and keeping game state consistent across players is hard.",
+        "solution": "I set up room-code based connections with Unity Relay and synced movement, puzzles and the timer across all players with Netcode for GameObjects.",
+        "features": [
+          "4-player online co-op",
+          "Room-code matchmaking (Unity Relay)",
+          "Two-player synchronized puzzles",
+          "Information-asymmetry puzzle",
+          "Synced countdown timer",
+          "Pause menu for all players"
         ]
       }
     },
@@ -149,161 +304,128 @@
       "category": "Mobile Application",
       "featured": false,
       "image": "/projects/myfitly.webp",
-      "year": "2023",
-      "status": "Academic Project",
-      "repoVisibility": "none",
+      "githubUrl": "https://github.com/OmerP14/MyFitly",
+      "year": "2025",
+      "status": "Completed",
+      "repoVisibility": "public",
       "tr": {
         "title": "MyFitly – Fitness ve Diyet Uygulaması",
-        "description": "Antrenman kaydı, beslenme takibi, kullanıcı ilerleme göstergeleri ve mobil odaklı sağlık yönetimi özellikleri bulunan çapraz platform uygulaması.",
+        "description": "Antrenman planlama, kalori ve beslenme takibi ile vücut ölçüleri takibi sunan, React Native ve Supabase ile geliştirilmiş fitness ve beslenme uygulaması.",
         "longDescription": "Uygulamalı bir mobil uygulama geliştirme kursu kapsamında fitness ve beslenme takibi için bir mobil uygulama geliştirdim. Egzersiz kaydı, günlük diyet takibi ve ilerleme görselleştirme gibi temel özellikleri hayata geçirdim. iOS ve Android'de tutarlı ve güvenilir bir kullanıcı deneyimi sunmak amacıyla geliştirme süresince uygulama davranışını sürekli doğruladım.",
         "problem": "Kullanıcıların antrenman ve beslenme takibini tek bir mobil uygulamadan, platform bağımsız şekilde yapabilmesi hedeflendi.",
         "solution": "React Native ve Expo ile antrenman kaydı, beslenme takibi ve ilerleme göstergeleri sunan çapraz platform bir mobil uygulama geliştirdim.",
         "features": [
-          "Antrenman kaydı",
-          "Beslenme takibi",
+          "Antrenman planlama ve kaydı",
+          "Kalori ve beslenme takibi",
+          "Vücut ölçüleri takibi",
           "İlerleme göstergeleri",
+          "Çoklu dil desteği",
           "iOS ve Android desteği"
         ]
       },
       "en": {
         "title": "MyFitly – Fitness & Diet App",
-        "description": "A cross-platform fitness and nutrition application featuring workout tracking, meal management and user progress monitoring.",
+        "description": "A fitness and nutrition app built with React Native and Supabase, featuring workout planning, calorie and nutrition tracking, and body metrics.",
         "longDescription": "Built a mobile application for fitness and nutrition tracking as part of a hands-on mobile development course. Implemented core features including exercise logging, daily diet tracking, and progress visualization. Validated application behavior throughout development to ensure a reliable and consistent user experience across iOS and Android.",
         "problem": "Users needed to track workouts and nutrition from a single, platform-independent mobile app.",
         "solution": "I built a cross-platform mobile app with React Native and Expo, featuring workout logging, nutrition tracking and progress indicators.",
         "features": [
-          "Workout logging",
-          "Nutrition tracking",
+          "Workout planning and logging",
+          "Calorie and nutrition tracking",
+          "Body metrics tracking",
           "Progress indicators",
+          "Multilingual support",
           "iOS and Android support"
         ]
       }
     },
     {
-      "slug": "firefighting-drone",
+      "slug": "workify-ai",
       "technologies": [
-        "Python",
-        "Arduino",
-        "C++",
-        "Embedded Systems",
-        "Sensors"
+        "React Native",
+        "Expo",
+        "JavaScript",
+        "AsyncStorage",
+        "AI"
       ],
-      "category": "Embedded Systems",
+      "category": "Mobile Application",
       "featured": false,
-      "image": "/projects/firefighting-drone.webp",
+      "image": "/projects/workify-ai.webp",
+      "githubUrl": "https://github.com/OmerP14/workify-ai-mobile",
       "year": "2025",
-      "status": "Graduation Project",
-      "repoVisibility": "none",
-      "tags": [
-        "University Graduation Project"
-      ],
+      "status": "Completed",
+      "repoVisibility": "public",
       "tr": {
-        "title": "Yangın Söndürme Dronu – Bitirme Projesi",
-        "description": "Yüksek taşıma kapasitesine sahip yangın söndürme dronunun yazılım mantığı, uzaktan kontrol mekanizmaları, sensör entegrasyonları ve gömülü sistem bileşenlerini kapsayan üniversite bitirme projesi.",
-        "longDescription": "Bitirme projesi olarak özerk bir yangın söndürme dronu için yazılım sisteminin tamamını tasarlayıp hayata geçirdim. Sistem mimarisi, kontrol akış mantığı ve güvenilir özerk operasyonu mümkün kılmak için sensör entegrasyonuna odaklandım. Sistem güvenliği ve doğruluğunu garanti altına almak amacıyla her aşamada işlevsel doğrulama gerçekleştirdim.",
-        "problem": "Orman yangınlarına hızlı müdahale edebilecek, yüksek taşıma kapasiteli ve uzaktan kontrol edilebilen bir söndürme sisteminin yazılım altyapısı eksikti.",
-        "solution": "Uzaktan kontrol mekanizmaları, sensör entegrasyonları ve gömülü sistem bileşenlerini kapsayan yazılım mantığını bitirme projesi olarak tasarlayıp geliştirdim.",
+        "title": "Workify AI",
+        "description": "Çevrimdışı öncelikli yerel veri, verimlilik araçları, takvim ve yapay zeka destekli içgörüler sunan, rol tabanlı bir React Native görev yönetimi uygulaması.",
+        "longDescription": "React Native ve Expo ile rol tabanlı bir görev ve ekip yönetimi uygulaması geliştirdim. Uygulama çevrimdışı öncelikli çalışıyor; veriler cihazda tutuluyor ve internet olmadan da kullanılabiliyor. Görev yönetimi, verimlilik akışları ve takvim özelliklerini yapay zeka destekli içgörülerle bir araya getiriyor.",
+        "problem": "Ekiplerin görevlerini takip ederken farklı araçlar arasında geçiş yapması ve bağlantı olmadığında uygulamaların çalışmaması verimliliği düşürüyor.",
+        "solution": "Görevleri, takvimi ve verimlilik araçlarını tek bir mobil uygulamada toplayan, çevrimdışı çalışan ve yapay zeka ile içgörü sunan bir uygulama geliştirdim.",
         "features": [
-          "Uzaktan kontrol mekanizması",
-          "Sensör entegrasyonu",
-          "Gömülü sistem yazılımı",
-          "Yüksek taşıma kapasiteli söndürme mekanizması"
+          "Rol tabanlı görev ve ekip yönetimi",
+          "Çevrimdışı öncelikli yerel veri",
+          "Takvim özellikleri",
+          "Verimlilik akışları",
+          "Yapay zeka destekli içgörüler"
         ]
       },
       "en": {
-        "title": "Firefighting Drone – Graduation Project",
-        "description": "A graduation project focused on the software logic, remote-control mechanisms, sensor integrations and embedded systems of a high-capacity firefighting drone.",
-        "longDescription": "Designed and implemented the full software system for an autonomous firefighting drone as the university graduation project. Focused on system architecture, control flow logic, and sensor integration to enable reliable autonomous operation. Conducted functional validation at each development stage to ensure system safety and correctness under simulated conditions.",
-        "problem": "Forest fires needed a fast-response system with high payload capacity and remote-control capability, but lacked a dedicated software foundation.",
-        "solution": "I designed and built the software logic covering remote-control mechanisms, sensor integrations and embedded system components as my graduation project.",
+        "title": "Workify AI",
+        "description": "A role-based React Native task management app with offline-first local data, productivity tools, a calendar and AI-powered insights.",
+        "longDescription": "I built a role-based task and team management app with React Native and Expo. It is offline-first: data is stored on the device and the app works without an internet connection. It combines task management, productivity workflows and calendar features with AI-powered insights.",
+        "problem": "Switching between tools to track tasks, and apps that stop working without a connection, hurt team productivity.",
+        "solution": "I built an offline-first mobile app that brings tasks, a calendar and productivity tools together and adds AI-powered insights.",
         "features": [
-          "Remote-control mechanism",
-          "Sensor integration",
-          "Embedded systems software",
-          "High-capacity suppression mechanism"
+          "Role-based task and team management",
+          "Offline-first local data",
+          "Calendar features",
+          "Productivity workflows",
+          "AI-powered insights"
         ]
       }
     },
     {
-      "slug": "iot-smart-monitoring",
+      "slug": "flowshot",
       "technologies": [
-        "Arduino",
         "Python",
-        "MQTT",
-        "IoT",
-        "Sensors"
+        "PySide6",
+        "Pillow"
       ],
-      "category": "IoT Project",
+      "category": "Desktop Application",
       "featured": false,
-      "image": "/projects/iot-monitoring.webp",
-      "year": "2024",
-      "status": "Academic Project",
-      "repoVisibility": "none",
-      "tr": {
-        "title": "IoT Akıllı İzleme Sistemleri",
-        "description": "Sensörlerden gerçek zamanlı veri toplayan, verileri işleyen ve otomatik kontrol mantıkları uygulayan IoT tabanlı çevresel izleme sistemi.",
-        "longDescription": "Çevresel veri toplama ve izleme için donanım sensörleri kullanan bir dizi IoT projesi geliştirdim. Veri işleme hatları ve temel otomatik kontrol mantığı kurdum; geliştirme ve test süreçleri boyunca sensör doğruluğunu ve sistem davranışını doğruladım. Gömülü sistemler ve gerçek zamanlı veri akışları konusunda uygulamalı deneyim kazandım.",
-        "problem": "Çevresel verilerin gerçek zamanlı olarak toplanıp izlenmesi ve otomatik kontrol mekanizmalarıyla yönetilmesi gerekiyordu.",
-        "solution": "Sensörlerden gerçek zamanlı veri toplayan, verileri işleyen ve otomatik kontrol mantıkları uygulayan bir IoT sistemi geliştirdim.",
-        "features": [
-          "Gerçek zamanlı sensör verisi",
-          "MQTT ile veri iletimi",
-          "Otomatik kontrol mantığı",
-          "Veri işleme hattı"
-        ]
-      },
-      "en": {
-        "title": "IoT Smart Monitoring Systems",
-        "description": "An IoT-based environmental monitoring system that collects real-time sensor data, processes measurements and supports automated control logic.",
-        "longDescription": "Developed a series of IoT projects using hardware sensors for environmental data collection and monitoring. Implemented data pipelines and basic automated control logic, then verified sensor accuracy and system behavior throughout development and testing. Gained practical experience with embedded systems and real-time data flows.",
-        "problem": "Environmental data needed to be collected and monitored in real time, with automated control mechanisms.",
-        "solution": "I built an IoT system that collects real-time sensor data, processes it, and applies automated control logic.",
-        "features": [
-          "Real-time sensor data",
-          "MQTT data transport",
-          "Automated control logic",
-          "Data processing pipeline"
-        ]
-      }
-    },
-    {
-      "slug": "personal-portfolio",
-      "technologies": [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS"
-      ],
-      "category": "Portfolio Website",
-      "featured": false,
-      "image": "/projects/portfolio.webp",
+      "image": "/projects/flowshot.webp",
+      "githubUrl": "https://github.com/OmerP14/flowshot-desktop",
       "year": "2026",
-      "status": "In Development",
-      "repoVisibility": "private",
+      "status": "Completed",
+      "repoVisibility": "public",
       "tr": {
-        "title": "Kişisel Portföy Sitesi",
-        "description": "Yazılım, mobil uygulama, yapay zekâ, SaaS ve gömülü sistem projelerimi sergilemek için geliştirdiğim modern, responsive ve performans odaklı kişisel portföy sitesi.",
-        "longDescription": "Yazılım, mobil, yapay zekâ, SaaS ve gömülü sistem alanlarında geliştirdiğim projeleri tek bir çatı altında sergilemek amacıyla bu portföy sitesini tasarlayıp geliştiriyorum. Next.js ve Tailwind CSS ile koyu temalı, mor tonlu ve modern bir arayüz oluşturdum; çoklu dil desteği, animasyonlu bölümler ve responsive bir yapı ile masaüstü, tablet ve mobilde tutarlı bir deneyim sunuyor.",
-        "problem": "Yazılım, mobil, yapay zekâ, SaaS ve gömülü sistem projelerimi tek, modern ve performanslı bir yerde sergileyebileceğim bir platforma ihtiyaç duydum.",
-        "solution": "Next.js ve Tailwind CSS ile modern, responsive ve performans odaklı bir kişisel portföy sitesi geliştiriyorum.",
+        "title": "FlowShot",
+        "description": "Kullanıcı etkileşimlerini kaydeden ve otomatik olarak adım adım görsel dokümantasyon üreten masaüstü iş akışı kaydedici.",
+        "longDescription": "Çalışırken yapılan fare tıklamalarını kaydeden, her tıklama için tıklanan noktası işaretlenmiş bir ekran görüntüsü alan ve tüm iş akışını şık, paylaşılabilir bir HTML kullanım kılavuzu olarak dışa aktaran yerel bir Windows masaüstü uygulaması geliştirdim. Bulut, hesap ya da telemetri yok; projeler okunabilir JSON dosyaları olarak saklanıyor.",
+        "problem": "Adım adım kullanım kılavuzu hazırlamak; ekran görüntüsü almak, işaretlemek ve açıklama yazmak gibi zaman alan manuel işler gerektiriyor.",
+        "solution": "Tıklamaları otomatik olarak işaretli ekran görüntülerine dönüştüren ve tek tıkla HTML kılavuz üreten bir masaüstü uygulaması geliştirdim.",
         "features": [
-          "Proje vitrini",
-          "Responsive tasarım",
-          "Koyu tema ve modern arayüz",
-          "Çoklu dil desteği (TR/EN)"
+          "Tek tıkla kayıt",
+          "Otomatik işaretli ekran görüntüleri",
+          "Çoklu monitör desteği",
+          "Düzenlenebilir adım zaman çizelgesi",
+          "Tek dosya HTML dışa aktarım",
+          "Klavye kısayolları"
         ]
       },
       "en": {
-        "title": "Personal Portfolio Website",
-        "description": "A modern and responsive portfolio website built to showcase my software, mobile, AI, SaaS and embedded systems projects.",
-        "longDescription": "I designed and built this portfolio site to showcase the projects I've developed across software, mobile, AI, SaaS and embedded systems under one roof. Using Next.js and Tailwind CSS, I created a dark, purple-toned, modern interface with multi-language support, animated sections and a fully responsive layout that stays consistent across desktop, tablet and mobile.",
-        "problem": "I needed a single, modern and performant place to showcase my software, mobile, AI, SaaS and embedded systems projects.",
-        "solution": "I'm building a modern, responsive and performance-focused personal portfolio site with Next.js and Tailwind CSS.",
+        "title": "FlowShot",
+        "description": "A desktop workflow recorder that captures user interactions and automatically generates step-by-step visual documentation.",
+        "longDescription": "I built a local Windows desktop app that records mouse clicks as you work, captures a marked screenshot for each one, and exports the whole workflow as a clean, shareable HTML user guide. No cloud, no account, no telemetry; projects are stored as readable JSON files.",
+        "problem": "Writing step-by-step guides means a lot of manual work: taking screenshots, marking them up and writing descriptions.",
+        "solution": "I built a desktop app that turns clicks into marked screenshots automatically and exports an HTML guide in one click.",
         "features": [
-          "Project showcase",
-          "Responsive design",
-          "Dark theme and modern UI",
-          "Multi-language support (TR/EN)"
+          "One-click recording",
+          "Automatic marked screenshots",
+          "Multi-monitor support",
+          "Editable step timeline",
+          "Single-file HTML export",
+          "Keyboard shortcuts"
         ]
       }
     },
@@ -311,15 +433,15 @@
       "slug": "qr-reader",
       "technologies": [
         "Python",
-        "PDF Processing",
-        "QR Code",
-        "Excel Automation"
+        "OpenCV",
+        "pandas",
+        "pyzbar"
       ],
       "category": "Python Automation",
       "featured": false,
       "image": "/projects/qr-reader.webp",
       "githubUrl": "https://github.com/OmerP14/QRReader",
-      "year": "2024",
+      "year": "2026",
       "status": "Utility Project",
       "repoVisibility": "public",
       "tr": {
@@ -346,6 +468,131 @@
           "UUID data extraction",
           "Automatic Excel export",
           "Batch document processing"
+        ]
+      }
+    },
+    {
+      "slug": "car-escape",
+      "technologies": [
+        "Unity",
+        "C#"
+      ],
+      "category": "Unity Game",
+      "featured": false,
+      "image": "",
+      "githubUrl": "https://github.com/OmerP14/araba-kacisi-oyunu",
+      "year": "2026",
+      "status": "Completed",
+      "repoVisibility": "public",
+      "tr": {
+        "title": "Car Escape",
+        "description": "Oyuncu kontrolleri, engeller, çevre etkileşimleri ve temel oynanış mekaniklerine sahip arcade tarzı bir araba kaçış oyunu.",
+        "longDescription": "Unity ve C# ile arcade tarzı bir araba kaçış oyunu geliştirdim. Oyunda araç kontrolleri, engeller, çevreyle etkileşimler ve temel oynanış döngüsü yer alıyor.",
+        "problem": "Unity'de araç fiziği, engel ve etkileşim sistemlerini sıfırdan kurarak oyun geliştirme temellerini öğrenmek istedim.",
+        "solution": "Araç kontrolleri, engeller ve çevre etkileşimlerinden oluşan oynanabilir bir arcade oyunu geliştirdim.",
+        "features": [
+          "Araç kontrolleri",
+          "Engeller",
+          "Çevre etkileşimleri",
+          "Temel oynanış mekanikleri"
+        ]
+      },
+      "en": {
+        "title": "Car Escape",
+        "description": "An arcade-style car escape game with player controls, obstacles, environmental interactions and core gameplay mechanics.",
+        "longDescription": "I built an arcade-style car escape game with Unity and C#, featuring vehicle controls, obstacles, environmental interactions and a core gameplay loop.",
+        "problem": "I wanted to learn the fundamentals of game development by building vehicle controls, obstacles and interaction systems in Unity from scratch.",
+        "solution": "I built a playable arcade game made up of vehicle controls, obstacles and environmental interactions.",
+        "features": [
+          "Vehicle controls",
+          "Obstacles",
+          "Environmental interactions",
+          "Core gameplay mechanics"
+        ]
+      }
+    },
+    {
+      "slug": "easy-home-rent",
+      "technologies": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JavaScript"
+      ],
+      "category": "Full-Stack Web Application",
+      "featured": false,
+      "image": "/projects/easy-home.webp",
+      "githubUrl": "https://github.com/OmerP14/Easyhome-website",
+      "year": "2024",
+      "status": "Academic Project",
+      "repoVisibility": "public",
+      "tr": {
+        "title": "EasyHome",
+        "description": "Kimlik doğrulama, ilan yönetimi, veritabanı entegrasyonu ve CRUD işlemleri sunan full-stack bir ev kiralama platformu.",
+        "longDescription": "Node.js, Express ve MongoDB ile ilk full-stack web uygulamalarımdan biri olan bir ev kiralama platformu geliştirdim. Kullanıcılar kayıt olup giriş yapabiliyor, ilan oluşturup düzenleyebiliyor ve ilanlara göz atabiliyor. Backend tarafında REST API, veritabanı entegrasyonu ve CRUD işlemlerini uyguladım.",
+        "problem": "Kiralık ev arayanlar ve ev sahipleri için ilanları tek bir yerde yönetebilecekleri basit bir platform ihtiyacı vardı.",
+        "solution": "Kimlik doğrulama, ilan yönetimi ve MongoDB tabanlı veri katmanına sahip full-stack bir kiralama platformu geliştirdim.",
+        "features": [
+          "Kullanıcı kaydı ve kimlik doğrulama",
+          "İlan oluşturma, düzenleme ve silme",
+          "MongoDB veritabanı entegrasyonu",
+          "REST API"
+        ]
+      },
+      "en": {
+        "title": "EasyHome",
+        "description": "A full-stack property rental platform with authentication, listing management, database integration and CRUD operations.",
+        "longDescription": "One of my first full-stack web applications: a property rental platform built with Node.js, Express and MongoDB. Users can sign up, log in, create and edit listings and browse properties. On the backend I implemented a REST API, database integration and CRUD operations.",
+        "problem": "Renters and property owners needed a simple place to manage rental listings.",
+        "solution": "I built a full-stack rental platform with authentication, listing management and a MongoDB data layer.",
+        "features": [
+          "User sign-up and authentication",
+          "Create, edit and delete listings",
+          "MongoDB database integration",
+          "REST API"
+        ]
+      }
+    },
+    {
+      "slug": "personal-portfolio",
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      "category": "Portfolio Website",
+      "featured": false,
+      "image": "/projects/portfolio.webp",
+      "liveUrl": "https://omerpehriz.com",
+      "githubUrl": "https://github.com/OmerP14/omerpehriz-portfolio",
+      "year": "2026",
+      "status": "Live",
+      "repoVisibility": "public",
+      "tr": {
+        "title": "Kişisel Portföy Sitesi",
+        "description": "Yazılım, mobil uygulama, yapay zekâ, web, masaüstü ve oyun projelerimi sergilemek için geliştirdiğim modern, responsive ve performans odaklı kişisel portföy sitesi.",
+        "longDescription": "Yazılım, mobil, yapay zekâ, web, masaüstü ve oyun alanlarında geliştirdiğim projeleri tek bir çatı altında sergilemek amacıyla bu portföy sitesini tasarlayıp geliştirdim. Next.js ve Tailwind CSS ile koyu temalı, mor tonlu ve modern bir arayüz oluşturdum; çoklu dil desteği, animasyonlu bölümler ve responsive bir yapı ile masaüstü, tablet ve mobilde tutarlı bir deneyim sunuyor.",
+        "problem": "Yazılım, mobil, yapay zekâ, web, masaüstü ve oyun projelerimi tek, modern ve performanslı bir yerde sergileyebileceğim bir platforma ihtiyaç duydum.",
+        "solution": "Next.js ve Tailwind CSS ile modern, responsive ve performans odaklı bir kişisel portföy sitesi geliştirdim.",
+        "features": [
+          "Proje vitrini",
+          "Responsive tasarım",
+          "Koyu tema ve modern arayüz",
+          "Çoklu dil desteği (TR/EN)"
+        ]
+      },
+      "en": {
+        "title": "Personal Portfolio Website",
+        "description": "A modern and responsive portfolio website built to showcase my software, mobile, AI, web, desktop and game projects.",
+        "longDescription": "I designed and built this portfolio site to showcase the projects I've developed across software, mobile, AI, web, desktop and game under one roof. Using Next.js and Tailwind CSS, I created a dark, purple-toned, modern interface with multi-language support, animated sections and a fully responsive layout that stays consistent across desktop, tablet and mobile.",
+        "problem": "I needed a single, modern and performant place to showcase my software, mobile, AI, web, desktop and game projects.",
+        "solution": "I built a modern, responsive and performance-focused personal portfolio site with Next.js and Tailwind CSS.",
+        "features": [
+          "Project showcase",
+          "Responsive design",
+          "Dark theme and modern UI",
+          "Multi-language support (TR/EN)"
         ]
       }
     }

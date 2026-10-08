@@ -1,4 +1,5 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
+import { personalInfo } from "@/content/personal";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { GradientText } from "@/components/ui/GradientText";
@@ -107,6 +108,7 @@ function TimelineItem({
 
 export async function ExperienceSection() {
   const t = await getTranslations("experience");
+  const locale = (await getLocale()) === "en" ? "en" : "tr";
   const { work: workExperienceConfig, education: educationConfig } = await getExperienceConfig();
 
   const workTexts = t.raw("work") as Array<{
@@ -176,8 +178,8 @@ export async function ExperienceSection() {
 
           <AnimatedSection delay={0.2} className="mt-8 pl-10">
             <a
-              href="/cv.pdf"
-              download
+              href={personalInfo.cvPath[locale]}
+              download={personalInfo.cvFileName[locale]}
               className="inline-flex items-center gap-2 px-6 py-3 border border-accent/30 hover:border-accent text-accent hover:bg-accent/10 font-medium rounded-xl transition-all duration-200 text-sm"
             >
               <Download size={16} />
