@@ -32,3 +32,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local CV sources (the site serves public/cv-*.pdf)
+/*.pdf

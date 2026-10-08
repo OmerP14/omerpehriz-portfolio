@@ -2,7 +2,7 @@
   "personal": {
     "title": "Yazılım Mühendisi",
     "tagline": "Modern web, mobil ve SaaS uygulamaları geliştiriyorum.",
-    "bio1": "Merhaba, ben Ömer — İstanbul Aydın Üniversitesi Yazılım Mühendisliği mezunuyum; tüm eğitimimi İngilizce dil ortamında tamamladım. Lisans süresince sadece ders değil, gerçek ürünler inşa ettim: web uygulamaları, mobil uygulamalar, yapay zeka destekli araçlar ve gömülü sistemler — her projeyle geliştirme sürecinin tamamına dokunarak.",
+    "bio1": "Merhaba, ben Ömer — İstanbul Aydın Üniversitesi Yazılım Mühendisliği mezunuyum; tüm eğitimimi İngilizce dil ortamında tamamladım. Lisans süresince sadece ders değil, gerçek ürünler inşa ettim: web uygulamaları, mobil uygulamalar, yapay zekâ destekli araçlar, oyunlar ve IoT sistemleri — her projeyle geliştirme sürecinin tamamına dokunarak.",
     "bio2": "Deneyimim frontend geliştirme, backend servisleri, veritabanı tasarımı ve API entegrasyonunu kapsıyor. Cabitas'taki stajım boyunca doğrudan canlı sistemler üzerinde çalıştım; veritabanı mimarisine katkı sağladım, uygulama iş akışlarını yönettim ve gerçek bir mühendislik ekibinde yer aldım. Geliştirdiğim her şeye hem yapıcı hem de kalite odaklı bir bakış açısıyla yaklaşıyorum.",
     "bio3": "Yazılımın yanı sıra dijital ve görsel çalışmalar da üretiyorum: açılış sayfaları, marka tasarımı ve kataloglar. İster bir web platformu, ister mobil uygulama, ister eksiksiz bir dijital varlık olsun — bir projeyi başından sonuna kadar tek elden yönetmeyi seviyorum, el değiştirme yok, sahiplik tam.",
     "availability": "Freelance çalışmaya müsait",
@@ -149,24 +149,36 @@
     "current": "Aktif",
     "work": [
       {
-        "role": "Bağımsız Yazılım Geliştiricisi",
+        "role": "Freelance Full Stack Geliştirici",
         "company": "Serbest Çalışan",
         "period": "2024 — Günümüz",
-        "description": "Kişisel yazılım projelerimi uçtan uca tasarlayıp geliştiriyorum — web uygulamaları, mobil uygulamalar ve SaaS platformları. Mimariden geliştirmeye, testten dağıtıma kadar tüm süreçleri kendim yürütüyorum."
+        "description": "Web, mobil, masaüstü ve oyun projelerini uçtan uca geliştiriyorum. Konyap ve Ober Yapı için özel CMS'li iki kurumsal web sitesini geliştirip yayına aldım; RAG ve açık kaynak dil modelleriyle yerelde çalışan yapay zekâ sistemleri de geliştiriyorum. Veritabanı tasarımından yayına kadar tüm süreci kendim yürütüyorum."
       },
       {
-        "role": "Yazılım Mühendisliği Stajyeri",
-        "company": "Cabitas, Türkiye",
+        "role": "Yazılım Mühendisi Stajyeri",
+        "company": "Cabitas, İstanbul",
+        "period": "Tem 2026",
+        "description": "FileMaker tabanlı iş uygulamalarının ve veritabanı sistemlerinin geliştirilmesine ve bakımına devam ettim. FileMaker ile veritabanı tasarımı, veri yapıları ve veri yönetimi üzerinde çalıştım."
+      },
+      {
+        "role": "Yazılım Mühendisi Stajyeri",
+        "company": "Cabitas, İstanbul",
         "period": "Eyl 2024 — Haz 2025",
-        "description": "Canlı yazılım sistemleri ve veritabanı yönetimi üzerinde çalıştım. Veritabanı yapılarının tasarlanması, bakımı ve güncellenmesine katkı sağladım; uygulama iş akışlarını destekledim. Gerçek ortamda bir mühendislik ekibiyle iş birliği yaparak üretim sistemleri konusunda uygulamalı deneyim kazandım."
+        "description": "Şirketin günlük operasyonlarında kullanılan FileMaker tabanlı iş uygulamalarına yeni özellikler geliştirdim ve bakımlarını yaptım. Bu uygulamaların arkasındaki veritabanı yapıları, veri yönetimi ve uygulama mantığı üzerinde çalıştım; geliştirme ekibiyle birlikte uygulama, test ve bakım süreçlerinde yer aldım."
       }
     ],
     "education": [
       {
-        "degree": "Lisans — Yazılım Mühendisliği",
+        "degree": "Lisans — Yazılım Mühendisliği (İngilizce)",
         "institution": "İstanbul Aydın Üniversitesi",
-        "period": "2020 — 2025",
-        "description": "Tüm eğitimimi İngilizce dil ortamında tamamladım. Lisans süresince web uygulamaları, mobil uygulamalar, yapay zeka destekli bir görev yönetim aracı, IoT sistemleri ve mezuniyet projesi olarak bir yangın söndürme dronu geliştirdim. Salt teoriden çok gerçek, teslim edilmiş işlere dayanan uygulamalı bir mühendislik anlayışıyla mezun oldum."
+        "period": "Eyl 2022 — Haz 2026",
+        "description": "Tüm eğitimimi İngilizce dil ortamında tamamladım. Lisans süresince web uygulamaları, mobil uygulamalar, yapay zekâ destekli araçlar, oyunlar ve IoT sistemleri geliştirdim. Salt teoriden çok gerçek, teslim edilmiş işlere dayanan uygulamalı bir mühendislik anlayışıyla mezun oldum."
+      },
+      {
+        "degree": "İngilizce Hazırlık Programı",
+        "institution": "İstanbul Aydın Üniversitesi",
+        "period": "Eyl 2021 — Haz 2022",
+        "description": "İngilizce eğitim verilen lisans programına hazırlık için bir yıllık İngilizce hazırlık programını tamamladım."
       }
     ]
   },

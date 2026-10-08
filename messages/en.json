@@ -2,7 +2,7 @@
   "personal": {
     "title": "Software Engineer",
     "tagline": "Building modern web, mobile, and SaaS applications.",
-    "bio1": "Hi, I'm Ömer — a Software Engineering graduate from Istanbul Aydın University, where I earned my degree studying entirely in English. Throughout my degree I built real products: web applications, mobile apps, AI-assisted tools, and embedded systems — getting hands-on with the full development process from day one, not just in theory.",
+    "bio1": "Hi, I'm Ömer — a Software Engineering graduate from Istanbul Aydın University, where I earned my degree studying entirely in English. Throughout my degree I built real products: web applications, mobile apps, AI-assisted tools, games and IoT systems — getting hands-on with the full development process from day one, not just in theory.",
     "bio2": "My experience spans frontend development, backend services, database design, and API integration. During my internship at Cabitas I worked directly on production systems — contributing to database architecture, maintaining application workflows, and collaborating in a real engineering team. I bring both a builder's instinct and an engineer's eye for quality to everything I ship.",
     "bio3": "Beyond core development, I also take on digital and visual work — landing pages, branding, and catalogs. I like owning a project end-to-end, whether it's a web platform, a mobile app, or a complete digital presence — one person, full ownership, no handoffs.",
     "availability": "Available for freelance work",
@@ -149,24 +149,36 @@
     "current": "Current",
     "work": [
       {
-        "role": "Independent Software Developer",
+        "role": "Freelance Full Stack Developer",
         "company": "Self-Employed",
         "period": "2024 — Present",
-        "description": "Designing and building personal software projects end-to-end — web applications, mobile apps, and SaaS platforms. I handle everything from architecture and development through testing and deployment."
+        "description": "Building web, mobile, desktop and game projects end to end. I built and shipped two production corporate websites with custom CMSs for Konyap and Ober Yapı, and I build local AI systems with RAG and open-source language models. I handle everything from database design to deployment."
       },
       {
-        "role": "Software Engineering Intern",
-        "company": "Cabitas, Türkiye",
+        "role": "Software Engineer Intern",
+        "company": "Cabitas, Istanbul",
+        "period": "Jul 2026",
+        "description": "Continued developing and maintaining FileMaker-based business applications and their database systems. Worked on database design, data structures and data management in FileMaker."
+      },
+      {
+        "role": "Software Engineer Intern",
+        "company": "Cabitas, Istanbul",
         "period": "Sep 2024 — Jun 2025",
-        "description": "Worked on production software systems and database management. Contributed to designing, maintaining, and updating database structures and application workflows. Collaborated with the team on real-world development tasks and gained hands-on experience with live systems."
+        "description": "Built new features for and maintained FileMaker-based business applications used in the company's daily operations. Worked on the database structures, data management and application logic behind these applications, and collaborated with the development team on implementation, testing and maintenance."
       }
     ],
     "education": [
       {
-        "degree": "Bachelor of Science — Software Engineering",
+        "degree": "B.Sc. in Software Engineering (English-medium)",
         "institution": "Istanbul Aydın University",
-        "period": "2020 — 2025",
-        "description": "Studied entirely in English. Built multiple practical projects throughout the degree — web applications, mobile apps, an AI-assisted task management tool, IoT systems, and a firefighting drone as the graduation project. Strong emphasis on hands-on engineering and real delivered work over pure theory."
+        "period": "Sep 2022 — Jun 2026",
+        "description": "Studied entirely in English. Built multiple practical projects throughout the degree — web applications, mobile apps, AI-assisted tools, games and IoT systems. Strong emphasis on hands-on engineering and real delivered work over pure theory."
+      },
+      {
+        "degree": "English Preparatory Program",
+        "institution": "Istanbul Aydın University",
+        "period": "Sep 2021 — Jun 2022",
+        "description": "Completed a one-year English preparatory program ahead of the English-medium degree."
       }
     ]
   },

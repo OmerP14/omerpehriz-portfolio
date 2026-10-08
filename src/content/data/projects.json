@@ -595,6 +595,48 @@
           "Multi-language support (TR/EN)"
         ]
       }
+    },
+    {
+      "slug": "iot-smart-monitoring",
+      "technologies": [
+        "Arduino",
+        "Python",
+        "MQTT",
+        "IoT",
+        "Sensors"
+      ],
+      "category": "IoT Project",
+      "featured": false,
+      "image": "/projects/iot-monitoring.webp",
+      "year": "2024",
+      "status": "Academic Project",
+      "repoVisibility": "none",
+      "tr": {
+        "title": "IoT Akıllı İzleme Sistemleri",
+        "description": "Sensörlerden gerçek zamanlı veri toplayan, verileri işleyen ve otomatik kontrol mantıkları uygulayan IoT tabanlı çevresel izleme sistemi.",
+        "longDescription": "Çevresel veri toplama ve izleme için donanım sensörleri kullanan bir dizi IoT projesi geliştirdim. Veri işleme hatları ve temel otomatik kontrol mantığı kurdum; geliştirme ve test süreçleri boyunca sensör doğruluğunu ve sistem davranışını doğruladım. Gömülü sistemler ve gerçek zamanlı veri akışları konusunda uygulamalı deneyim kazandım.",
+        "problem": "Çevresel verilerin gerçek zamanlı olarak toplanıp izlenmesi ve otomatik kontrol mekanizmalarıyla yönetilmesi gerekiyordu.",
+        "solution": "Sensörlerden gerçek zamanlı veri toplayan, verileri işleyen ve otomatik kontrol mantıkları uygulayan bir IoT sistemi geliştirdim.",
+        "features": [
+          "Gerçek zamanlı sensör verisi",
+          "MQTT ile veri iletimi",
+          "Otomatik kontrol mantığı",
+          "Veri işleme hattı"
+        ]
+      },
+      "en": {
+        "title": "IoT Smart Monitoring Systems",
+        "description": "An IoT-based environmental monitoring system that collects real-time sensor data, processes measurements and supports automated control logic.",
+        "longDescription": "Developed a series of IoT projects using hardware sensors for environmental data collection and monitoring. Implemented data pipelines and basic automated control logic, then verified sensor accuracy and system behavior throughout development and testing. Gained practical experience with embedded systems and real-time data flows.",
+        "problem": "Environmental data needed to be collected and monitored in real time, with automated control mechanisms.",
+        "solution": "I built an IoT system that collects real-time sensor data, processes it, and applies automated control logic.",
+        "features": [
+          "Real-time sensor data",
+          "MQTT data transport",
+          "Automated control logic",
+          "Data processing pipeline"
+        ]
+      }
     }
   ],
   "design": [

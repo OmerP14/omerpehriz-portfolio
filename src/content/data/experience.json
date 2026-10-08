@@ -2,14 +2,40 @@
   "work": [
     {
       "type": "work",
-      "technologies": ["Next.js", "React Native", "Node.js", "Supabase", "TypeScript"],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Supabase",
+        "React Native"
+      ],
       "current": true
     },
     {
       "type": "work",
-      "technologies": ["React", "Node.js", "PostgreSQL", "AWS"],
+      "technologies": [
+        "FileMaker",
+        "Database Design",
+        "Data Management"
+      ],
+      "current": false
+    },
+    {
+      "type": "work",
+      "technologies": [
+        "FileMaker",
+        "Database Design",
+        "Application Logic"
+      ],
       "current": false
     }
   ],
-  "education": [{ "type": "education" }]
+  "education": [
+    {
+      "type": "education"
+    },
+    {
+      "type": "education"
+    }
+  ]
 }
